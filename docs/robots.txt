@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mksd0398.github.io/dpdp-act-skill/sitemap.xml
