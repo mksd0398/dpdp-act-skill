@@ -1,0 +1,25 @@
+{
+  "name": "dpdp-analyze",
+  "displayName": "DPDP Act 2023 Analysis",
+  "version": "1.0.0",
+  "description": "Analyse privacy notices, consent flows, vendor contracts and whole products against India's Digital Personal Data Protection Act, 2023 and the DPDP Rules, 2025. Ships the full verbatim Act text, a rules reference, a compliance checklist and an assessment template.",
+  "author": {
+    "name": "Mayank Dsouza",
+    "url": "https://github.com/mksd0398"
+  },
+  "homepage": "https://mksd0398.github.io/dpdp-act-skill/",
+  "repository": "https://github.com/mksd0398/dpdp-act-skill",
+  "license": "MIT",
+  "keywords": [
+    "dpdp",
+    "dpdp-act",
+    "india",
+    "data-protection",
+    "privacy-law",
+    "compliance",
+    "legal",
+    "gdpr",
+    "indian-law",
+    "regtech"
+  ]
+}

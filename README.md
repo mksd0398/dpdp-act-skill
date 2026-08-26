@@ -47,16 +47,33 @@ and are the strongest interpretive aid the statute gives you.
 
 ---
 
-## Install the skill
+## Install
 
-Claude Code reads skills from `~/.claude/skills/`.
+### Recommended: as a Claude Code plugin
+
+This repository is a Claude Code plugin marketplace. Inside Claude Code, run:
+
+```
+/plugin marketplace add mksd0398/dpdp-act-skill
+```
+
+```
+/plugin install dpdp-analyze@dpdp
+```
+
+That is it. You get updates with `/plugin marketplace update dpdp`, and you can remove it cleanly
+with `/plugin uninstall dpdp-analyze@dpdp`.
+
+### Alternative: copy the skill directly
+
+If you would rather not use the plugin system, Claude Code also reads skills from `~/.claude/skills/`:
 
 ```bash
 git clone https://github.com/mksd0398/dpdp-act-skill.git
 cp -r dpdp-act-skill/skills/dpdp-analyze ~/.claude/skills/
 ```
 
-Then in Claude Code:
+### Using it
 
 ```
 /dpdp-analyze

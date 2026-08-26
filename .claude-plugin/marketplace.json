@@ -1,0 +1,45 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "dpdp",
+  "description": "Indian data protection law tooling for Claude Code. Full DPDP Act 2023 and DPDP Rules 2025 reference, plus a compliance analysis skill.",
+  "version": "1.0.0",
+  "owner": {
+    "name": "Mayank Dsouza",
+    "url": "https://github.com/mksd0398"
+  },
+  "plugins": [
+    {
+      "name": "dpdp-analyze",
+      "displayName": "DPDP Act 2023 Analysis",
+      "source": "./",
+      "description": "Analyse privacy notices, consent flows, vendor contracts and whole products against India's Digital Personal Data Protection Act, 2023 and the DPDP Rules, 2025. Ships all 44 sections of the Act verbatim from the Gazette, a rules reference, a 12-part compliance checklist and an assessment template. Not legal advice.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Mayank Dsouza",
+        "url": "https://github.com/mksd0398"
+      },
+      "homepage": "https://mksd0398.github.io/dpdp-act-skill/",
+      "repository": "https://github.com/mksd0398/dpdp-act-skill",
+      "license": "MIT",
+      "category": "legal",
+      "keywords": [
+        "dpdp",
+        "dpdp-act",
+        "dpdp-rules",
+        "india",
+        "data-protection",
+        "privacy-law",
+        "compliance",
+        "legal",
+        "gdpr",
+        "indian-law"
+      ],
+      "tags": [
+        "legal",
+        "compliance",
+        "privacy",
+        "india"
+      ]
+    }
+  ]
+}
