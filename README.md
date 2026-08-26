@@ -3,6 +3,24 @@
 [![Read the Act online](https://img.shields.io/badge/read-DPDP%20Act%202023-0b6bcb)](https://mksd0398.github.io/dpdp-act-skill/act/)
 [![Read the Rules](https://img.shields.io/badge/read-DPDP%20Rules%202025-0b6bcb)](https://mksd0398.github.io/dpdp-act-skill/rules/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Not legal advice](https://img.shields.io/badge/⚠-not%20legal%20advice-b00020)](DISCLAIMER.md)
+
+> ## ⚠️ This is not legal advice
+>
+> This repository is an **educational and compliance-reference resource**. It is **not legal
+> advice**, it is **not a substitute for a qualified lawyer**, and **no lawyer-client relationship
+> arises** from using it, reading it, or running the skill.
+>
+> The author is **not a lawyer** and is **not authorised to practise law**. Nothing here should be
+> relied on to determine your legal obligations. The analysis produced by the skill is
+> machine-generated and **can be wrong**.
+>
+> Data protection law is fact-specific, and the DPDP framework is still being brought into force in
+> stages, with key notifications yet to be issued. **Before you act on anything here, verify the
+> statutory text against the Gazette of India and consult qualified Indian legal counsel.**
+>
+> Provided "as is", with no warranty and no liability for any loss arising from its use.
+> Full terms in [DISCLAIMER.md](DISCLAIMER.md).
 
 A complete, verbatim, section-by-section reference for the **Digital Personal Data Protection Act,
 2023** (Act 22 of 2023) and the **Digital Personal Data Protection Rules, 2025**, packaged as an
@@ -232,9 +250,18 @@ Rules, 2025 are Government of India works, reproduced under s.52(1)(q) of the Co
 
 ## Disclaimer
 
-This repository is a compliance analysis resource, not legal advice, and no lawyer-client
-relationship arises from its use. Verify all statutory text against the Gazette of India before
-relying on it.
+**This is not legal advice.** See [DISCLAIMER.md](DISCLAIMER.md) for the full terms. In short:
+
+- This is an educational and compliance-reference resource, not legal advice, and not a substitute
+  for a qualified lawyer.
+- **No lawyer-client relationship** arises from using this repository or the skill.
+- The author is **not a lawyer** and is not authorised to practise law.
+- Output from the skill is **machine-generated and can be wrong**. Verify every statutory
+  reference against the Gazette of India.
+- The DPDP framework is **still being brought into force in stages**, and several key notifications
+  have not been issued. Positions stated here can change.
+- Consult **qualified Indian legal counsel** before acting on anything here.
+- Provided "as is", with no warranty and no liability for any loss arising from its use.
 
 ---
 

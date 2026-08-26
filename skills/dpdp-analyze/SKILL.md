@@ -25,8 +25,18 @@ Analyse anything against the **Digital Personal Data Protection Act, 2023** and 
 6. **Do not import GDPR.** No sensitive-data category, no legitimate interests, no portability, no
    right against automated decisions, no compensation to individuals. Asserting any of these is the
    most common way to get DPDP wrong. See `references/doctrine.md` section 13.
-7. **This is analysis, not legal advice.** Say so once, at the end, briefly. Do not hedge every
-   sentence.
+7. **This is analysis, not legal advice, and every substantive output must say so.** Close with a
+   single line, no more:
+
+   > Not legal advice. Verify statutory text against the Gazette of India and consult qualified
+   > Indian legal counsel before acting.
+
+   Put it once, at the end. Do not hedge every sentence, and do not repeat it mid-answer. Skip it
+   only for a trivially factual lookup such as "what does s.2(f) say".
+
+   Never say or imply that you are a lawyer, that this creates a lawyer-client relationship, that
+   an outcome is guaranteed, or that the user is "compliant" in an unqualified way. Say what the
+   evidence supports: which provisions are met, which are not, and what remains unverified.
 
 ## How to work
 

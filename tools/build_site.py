@@ -152,10 +152,17 @@ def page(
     <a href="{up}penalties/">Penalties</a>
     <a href="{up}dpdp-vs-gdpr/">vs GDPR</a>
     <a href="{up}faq/">FAQ</a>
+    <a href="{up}disclaimer/">Disclaimer</a>
     <a href="https://github.com/mksd0398/dpdp-act-skill">GitHub</a>
   </nav>
 </header>
 <main>
+<aside class="disclaimer" role="note">
+  <strong>&#9888; Not legal advice.</strong> This is an educational compliance reference, not legal
+  advice, and no lawyer-client relationship arises from its use. The author is not a lawyer.
+  Verify all statutory text against the Gazette of India and consult qualified Indian legal counsel
+  before acting. <a href="{up}disclaimer/">Full disclaimer</a>.
+</aside>
 {crumbs}
 {body}
 </main>
@@ -164,8 +171,11 @@ def page(
   Part II, Section 1, No. 25, dated 11 August 2023 (CG-DL-E-12082023-248045). The Rules content is
   assembled from the PIB release and cross-checked secondary sources; verify against the notified
   Gazette text before relying on it externally.</p>
-  <p><strong>Not legal advice.</strong> This is a compliance reference. No lawyer-client relationship
-  arises from its use.</p>
+  <p><strong>Not legal advice.</strong> Educational and compliance-reference material only. Not a
+  substitute for a qualified lawyer. No lawyer-client relationship arises from its use. The author is
+  not a lawyer. Output of the analysis skill is machine-generated and can be wrong. Provided
+  &ldquo;as is&rdquo;, without warranty, and with no liability for any loss arising from its use.
+  <a href="{up}disclaimer/">Read the full disclaimer</a>.</p>
   <p>Maintained by <a href="https://github.com/mksd0398">{AUTHOR}</a>.
   <a href="https://github.com/mksd0398/dpdp-act-skill">Source and corrections on GitHub</a>.
   Last built {TODAY}.</p>
@@ -575,6 +585,25 @@ def build() -> None:
         ),
     )
 
+    # ---- Disclaimer --------------------------------------------------------
+    disc = (ROOT / "DISCLAIMER.md").read_text(encoding="utf-8")
+    disc = re.sub(r"^# .*?\n", "", disc, count=1).strip()  # drop the H1; template supplies one
+    page(
+        url="disclaimer",
+        title="Disclaimer: this is not legal advice",
+        description=(
+            "This DPDP Act reference is educational material, not legal advice. No lawyer-client "
+            "relationship arises from its use, the author is not a lawyer, and machine-generated "
+            "analysis can be wrong. Consult qualified Indian legal counsel."
+        ),
+        body=(
+            "<h1>Disclaimer: this is not legal advice</h1>"
+            f'<div class="statute">{md2html(disc)}</div>'
+        ),
+        breadcrumbs=[("Home", ""), ("Disclaimer", None)],
+        changefreq="yearly",
+    )
+
     # ---- Landing -----------------------------------------------------------
     page(
         url="",
@@ -603,6 +632,8 @@ def build() -> None:
             "<p>In force date, DPO, localisation, breach clocks, SPDI Rules.</p></a>"
             "<a class='card' href='https://github.com/mksd0398/dpdp-act-skill'><h3>The skill</h3>"
             "<p>Install into Claude Code and analyse your own privacy programme.</p></a>"
+            "<a class='card' href='disclaimer/'><h3>Disclaimer</h3>"
+            "<p>Not legal advice. What this resource is, and what it is not.</p></a>"
             "</div>"
             "<h2>When does the DPDP Act come into force?</h2>"
             "<table><thead><tr><th>Effective</th><th>What commences</th></tr></thead><tbody>"
@@ -728,6 +759,12 @@ pre code{background:none;padding:0}
 border-top:1px solid var(--line);font-size:14px;flex-wrap:wrap}
 .pager a{text-decoration:none;max-width:46%}
 .pager .next{margin-left:auto;text-align:right}
+.disclaimer{background:#fff4f4;border:1px solid #e8b4b4;border-left:4px solid #b00020;
+border-radius:8px;padding:12px 16px;margin:0 0 24px;font-size:13.5px;line-height:1.55;color:#4a1620}
+.disclaimer a{color:#b00020;font-weight:600}
+@media (prefers-color-scheme:dark){
+.disclaimer{background:#2a1518;border-color:#5c2b31;border-left-color:#ff6b7d;color:#f0d6d9}
+.disclaimer a{color:#ff8b99}}
 footer.site{border-top:1px solid var(--line);margin-top:56px;padding:24px 20px 44px;
 font-size:13px;color:var(--mut)}
 footer.site p{max-width:820px;margin:0 auto .8em}

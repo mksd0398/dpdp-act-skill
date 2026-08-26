@@ -3,8 +3,12 @@
 **Assessed:** {DATE} | **Assessed against:** DPDP Act, 2023 (Act 22 of 2023) and DPDP Rules, 2025
 **Prepared by:** {NAME}
 
-> This is a compliance analysis, not legal advice. Statutory text quoted from the Gazette of India.
-> Rule references should be verified against the notified Rules before being relied on externally.
+> **NOT LEGAL ADVICE.** This is a compliance analysis prepared for internal use. It is not legal
+> advice, it is not a substitute for a qualified lawyer, and no lawyer-client relationship arises
+> from it. Parts of it are machine-generated and may be wrong. Act text is quoted from the Gazette
+> of India; Rule references must be verified against the notified Rules before external use. The
+> DPDP framework is still commencing in stages and key notifications are outstanding, so positions
+> stated here may change. Obtain qualified Indian legal counsel before acting on any finding.
 
 ---
 
