@@ -56,6 +56,16 @@ gate first, collect stars, then submit to the gated lists.
 - Every claim carries a citation. Citation-dense, quotable pages are what generative engines pick
   up.
 
+**Interactive readiness self-check**
+- On the home page and at [`/dpdp-compliance-checker/`](https://mksd0398.github.io/dpdp-act-skill/dpdp-compliance-checker/),
+  which targets searches like "DPDP compliance checker".
+- Up to 22 questions. It returns a readiness score, a score per area, and gaps ranked by the
+  penalty ceiling behind each one, each with its section or rule.
+- "Copy results as a prompt for Claude" hands the gaps straight to the skill, which turns
+  every visitor who finishes the check into a skill user.
+- It runs entirely in the browser: no cookies, no analytics, nothing sent. That's worth
+  saying in posts, given the audience.
+
 **Promoting the skill everywhere on the site**
 - "AI skill" is highlighted in the navigation on every page.
 - Every section and rule page ends with a "Use this with AI" box holding a prompt written for that

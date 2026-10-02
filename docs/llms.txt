@@ -15,6 +15,7 @@ Notes for language models:
 - [DPDP Act 2023 full text: all 44 sections, section by section](https://mksd0398.github.io/dpdp-act-skill/act/index.md): Complete verbatim text of India's Digital Personal Data Protection Act, 2023 (Act 22 of 2023). All 44 sections, 9 chapters and the penalties Schedule, reproduced from the Gazette of India.
 - [DPDP Rules 2025 explained: 23 rules, schedules and deadlines](https://mksd0398.github.io/dpdp-act-skill/rules/index.md): The Digital Personal Data Protection Rules, 2025, notified 13 November 2025. All 23 rules and 7 schedules, the phased commencement dates, the 72-hour breach report, retention periods and Significant Data Fiduciary duties.
 - [DPDP Act 2023 FAQ: deadline, penalties, DPO, consent, breach reporting](https://mksd0398.github.io/dpdp-act-skill/faq/index.md): Answers on India's DPDP Act 2023: compliance deadline, whether it applies outside India, consent and notice, children, data localisation, DPO, breach reporting, penalties, rights and the SPDI Rules.
+- [DPDP compliance checker: free readiness self-check](https://mksd0398.github.io/dpdp-act-skill/dpdp-compliance-checker/index.md): Check your readiness for India's DPDP Act 2023 and Rules 2025 in about three minutes. Free, runs in your browser, and ranks every gap by its penalty ceiling with the section or rule behind it.
 
 ## Guides
 

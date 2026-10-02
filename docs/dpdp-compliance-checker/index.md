@@ -1,0 +1,31 @@
+# DPDP compliance checker: free readiness self-check
+
+> Canonical page: https://mksd0398.github.io/dpdp-act-skill/dpdp-compliance-checker/
+> Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
+
+A free, browser-only readiness self-check for India's DPDP Act 2023 and DPDP Rules 2025. Nothing is sent anywhere. It scores readiness and ranks gaps by the Schedule penalty ceiling behind each one. Not legal advice.
+
+## Questions
+
+- **Processes digital personal data** (s.3(a), s.2(t)): Do you collect or use personal data in digital form, or digitise paper records?
+- **In India, or offering goods or services to India** (s.3): Are you based in India, or do you offer goods or services to people in India?
+- **Uses vendors that process personal data** (s.8, Data Processor): Do vendors process personal data for you, such as cloud hosting, CRM, analytics, payroll or support tools?
+- **May have users under 18** (s.2(f), s.9): Could any of your users or customers be under 18?
+- **Notified as a Significant Data Fiduciary** (s.10): Has the Central Government notified you as a Significant Data Fiduciary?
+- **Every purpose has a lawful basis** (s.4, s.7): Have you mapped every purpose you use personal data for to either consent or a specific section 7 legitimate use? Gap fix: Build a record of processing that maps each purpose to consent (s.6) or a named clause of s.7, and drop any purpose that has neither.
+- **Standalone, itemised privacy notice** (s.5, Rule 3): Do you show a standalone notice before or with every consent request, itemising the personal data and each purpose? Gap fix: Ship a standalone notice that itemises the data and purposes, names the goods or services involved, and links to withdrawal, rights and complaints to the Board.
+- **Notice and consent in Indian languages** (s.5, s.6): Can people read your notice and consent request in English or any of the 22 Eighth Schedule languages, at their choice? Gap fix: Offer the notice and consent request in the Eighth Schedule languages your users actually read.
+- **Clear opt-in consent per purpose** (s.6): Is consent a clear opt-in for each purpose, with no pre-ticked boxes, bundling, or consent assumed from continued use? Gap fix: Replace bundled or pre-ticked consent with an unticked opt-in per purpose, and stop making the service conditional on unnecessary consent.
+- **Withdrawal as easy as consent** (s.6): Can people withdraw consent as easily as they gave it, and does withdrawal stop processing at your vendors too? Gap fix: Add a one-step withdrawal control and propagate the stop to every processor within a reasonable time.
+- **Consent records you can prove** (s.6(10)): Do you log every consent and withdrawal, with the timestamp, notice version, language and purpose? Gap fix: Log every consent and withdrawal event with timestamp, notice version, language served and purpose.
+- **Rule 6 security safeguards** (s.8(5), Rule 6): Do you encrypt, mask or tokenise personal data, restrict access to it, and keep backups? Gap fix: Implement the Rule 6 minimums: encryption, masking or tokenisation; access control; and backups for continuity.
+- **Access logs kept for a year** (Rule 6): Do you log and monitor access to personal data, and keep those logs for at least a year? Gap fix: Turn on access logging and monitoring for systems holding personal data, and keep the logs for one year.
+- **Breach playbook with both clocks** (s.8(6), Rule 7): Could you tell every affected person without delay, and send the Board a detailed report within 72 hours, for any breach? Gap fix: Write and rehearse a breach playbook with both clocks: affected individuals without delay, and the Board's detailed report within 72 hours.
+- **Vendor contracts with security clauses** (s.8(2), Rule 6): Does every vendor that processes personal data for you have a written contract that includes security obligations? Gap fix: Put a written contract with security-safeguard clauses in place with every processor and sub-processor.
+- **Erasure when the purpose ends** (s.8(7), Rule 8): Do you erase personal data when consent is withdrawn or the purpose ends, including copies at vendors, unless a law requires you to keep it? Gap fix: Adopt a retention schedule and an erasure workflow that reaches processors, backups and analytics copies.
+- **Published privacy contact and grievance process** (s.8(9), Rule 9, Rule 14): Have you published a contact for privacy questions and a grievance process with a stated response time? Gap fix: Publish a privacy contact and a grievance process with a stated response period, on your website or app.
+- **Rights request workflows** (s.11, s.12, s.14, Rule 14): Can you handle access, correction, erasure and nomination requests, including telling people who you shared their data with? Gap fix: Build request workflows for access (including the list of who data was shared with), correction, erasure and nomination.
+- **Verifiable parental consent** (s.9, Rule 10): Do you verify that a parent has consented before processing a child's personal data? Gap fix: Add age assurance at sign-up and a verifiable parental consent flow that meets Rule 10.
+- **No tracking or targeted ads for under-18s** (s.9(3)): Are tracking, behavioural monitoring and targeted advertising switched off for users under 18? Gap fix: Disable ad pixels, behavioural analytics and ad targeting, including lookalike audiences, for under-18 accounts.
+- **DPO, independent auditor, annual DPIA** (s.10, Rule 13): Have you appointed a DPO based in India who reports to the board, an independent data auditor, and an annual DPIA and audit? Gap fix: Appoint the India-based DPO and an independent data auditor, and schedule the DPIA and audit every twelve months.
+- **Sector rules checked** (s.16(2), s.38): Have you checked the sector rules that apply on top of the DPDP Act, such as RBI data storage or CERT-In directions? Gap fix: List the sectoral regulators over your data, such as RBI, SEBI, IRDAI and CERT-In, and map their extra duties.
