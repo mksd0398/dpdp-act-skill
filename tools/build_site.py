@@ -51,6 +51,8 @@ AUTHOR_URL = "https://github.com/mksd0398"
 TODAY = date.today().isoformat()
 OG_IMAGE = f"{SITE}/assets/og.jpg"
 SKILL_PATH = "claude-code-skill"
+CHECKER_PATH = "dpdp-compliance-checker"
+DEADLINE = "2027-05-14T00:00:00+05:30"  # Rules 3, 5 to 16, 22 and 23 commence
 SKILL_DIR = ROOT / "skills" / "dpdp-analyze"
 ZIP_NAME = "dpdp-analyze.zip"
 
@@ -285,6 +287,7 @@ NAV = [
     ("act/", "The Act", ""),
     ("rules/", "The Rules", ""),
     ("dpdp-act-explained/", "Explained", ""),
+    (f"{CHECKER_PATH}/", "Self-check", ""),
     ("compliance-checklist/", "Checklist", ""),
     ("penalties/", "Penalties", ""),
     ("dpdp-vs-gdpr/", "vs GDPR", ""),
@@ -310,8 +313,13 @@ def page(
     markdown_twin: str | None = None,
     llms_group: str | None = None,
     og_type: str = "article",
+    hero: str = "",
+    body_class: str = "",
+    scripts: tuple[str, ...] = (),
 ) -> None:
-    """Render one page, its optional Markdown twin, and register it for sitemap and llms.txt."""
+    """Render one page, its optional Markdown twin, and register it for sitemap and llms.txt.
+    `hero` renders full-width between the header and the main column; `scripts` are file names
+    under assets/ loaded with defer."""
     canonical = f"{SITE}/{url}/" if url else f"{SITE}/"
     up = "../" * (url.count("/") + 1) if url else "./"
     lastmod = last_modified(*sources)
@@ -357,6 +365,8 @@ def page(
     nodes.extend(graph or [])
 
     alt_md = '<link rel="alternate" type="text/markdown" href="index.md">\n' if markdown_twin else ""
+    body_attr = f' class="{body_class}"' if body_class else ""
+    script_tags = "".join(f'<script src="{up}assets/{js}" defer></script>\n' for js in scripts)
     modified = f'<meta property="article:modified_time" content="{lastmod}">\n' if og_type == "article" else ""
     nav = "\n    ".join(
         f'<a{" class=" + chr(34) + c + chr(34) if c else ""} href="{up}{p}">{t}</a>' for p, t, c in NAV
@@ -388,11 +398,13 @@ def page(
 <meta name="twitter:description" content="{esc(description)}">
 <meta name="twitter:image" content="{OG_IMAGE}">
 <link rel="icon" href="{up}assets/favicon.svg" type="image/svg+xml">
+<script>document.documentElement.classList.add("js")</script>
 <link rel="stylesheet" href="{up}assets/style.css">
 {alt_md}<link rel="sitemap" type="application/xml" href="{up}sitemap.xml">
 {jsonld(nodes)}
 </head>
-<body>
+<body{body_attr}>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site">
   <a class="brand" href="{up}">&#9878; DPDP Act 2023 Reference</a>
   <nav class="top" aria-label="Main">
@@ -400,7 +412,7 @@ def page(
     <a href="{REPO}">GitHub</a>
   </nav>
 </header>
-<main>
+{hero}<main id="main">
 <aside class="disclaimer" role="note">
   <strong>&#9888; Not legal advice.</strong> This is an educational compliance reference, not legal
   advice, and no lawyer-client relationship arises from its use. The author is not a lawyer.
@@ -432,7 +444,7 @@ def page(
   <a href="{up}llms.txt">llms.txt</a> &middot;
   <a href="{up}sitemap.xml">Sitemap</a></p>
 </footer>
-</body>
+{script_tags}</body>
 </html>
 """
     write(f"{url}/index.html" if url else "index.html", doc)
@@ -961,21 +973,6 @@ SKILL_FAQ = [
      "notifications are tracked in the GitHub repository."),
 ]
 
-TRAPS = [
-    "There are only <b>two lawful bases</b>: consent, or the closed section 7 list. "
-    "There is <b>no legitimate interests</b> ground.",
-    "There is <b>no sensitive personal data category</b>.",
-    "A <b>child is anyone under 18</b>, not 13 or 16.",
-    "<b>Targeted advertising to children is banned outright</b>; consent does not cure it.",
-    "<b>Breach notification has no harm threshold</b>, and covers loss of access.",
-    "Only <b>notified Significant Data Fiduciaries</b> need a DPO.",
-    "The Act <b>does not mandate data localisation</b>.",
-    "Individuals get <b>no compensation</b>; penalties go to the Consolidated Fund.",
-    "There is <b>no portability right</b> and no right against automated decisions.",
-    "<b>Data Principals have enforceable duties</b>, with a Rs 10,000 penalty.",
-]
-
-
 # ---------------------------------------------------------------- build
 
 def build() -> None:
@@ -1013,6 +1010,7 @@ def build() -> None:
     build_gdpr()
     build_faq()
     build_skill()
+    build_checker_page()
     build_about()
     build_disclaimer()
     build_landing()
@@ -1825,7 +1823,449 @@ def build_disclaimer() -> None:
     )
 
 
+ICONS = {
+    "book": '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>',
+    "file": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/>',
+    "bulb": '<path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V17h6v-.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/>',
+    "checks": '<path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/>',
+    "scale": '<path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>',
+    "compare": '<circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><path d="M11 18H8a2 2 0 0 1-2-2V9"/>',
+    "type": '<path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/>',
+    "help": '<circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/>',
+    "sparkles": '<path d="M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2z"/><path d="M19 3v4"/><path d="M21 5h-4"/>',
+    "shield": '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>',
+    "alert": '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/>',
+    "arrow": '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
+    "lock": '<rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
+    "clock": '<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',
+    "check": '<path d="M20 6 9 17l-5-5"/>',
+}
+
+
+def icon(name: str, cls: str = "") -> str:
+    return (
+        f'<svg class="ic{" " + cls if cls else ""}" viewBox="0 0 24 24" aria-hidden="true" '
+        'fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
+        f'stroke-linejoin="round">{ICONS[name]}</svg>'
+    )
+
+
+def checker_questions() -> list[dict]:
+    """The readiness self-check. A condensed path through compliance-checklist.md: scope, a short
+    profile that switches conditional questions on, then the checks that carry real exposure.
+    `ceiling` is the Schedule maximum in crore behind a gap (0 for duties under other law)."""
+    def s(n: int) -> str:
+        return f"act/section-{n}/"
+
+    def r(n: int) -> str:
+        return f"{RULE_PAGES[n]}/"
+
+    yn, ynu = ["yes", "no"], ["yes", "no", "unsure"]
+    lb, cons, sec, life = ("Lawful basis and notice", "Consent", "Security and breaches",
+                           "Data lifecycle and rights")
+    return [
+        {"id": "digital", "kind": "scope", "opts": ynu, "area": "Scope",
+         "label": "Processes digital personal data",
+         "q": "Do you collect or use personal data in digital form, or digitise paper records?",
+         "help": "Personal data is any data about an identifiable person: customers, users, "
+                 "employees, leads.",
+         "refs": [["s.3(a)", s(3)], ["s.2(t)", "glossary/#personal-data"]],
+         "out": "The DPDP Act only applies to digital personal data: data collected digitally, or "
+                "collected on paper and digitised later (s.3(a)). Records that stay on paper are "
+                "outside it."},
+        {"id": "india", "kind": "scope", "opts": ynu, "area": "Scope",
+         "label": "In India, or offering goods or services to India",
+         "q": "Are you based in India, or do you offer goods or services to people in India?",
+         "help": "Outside India, the Act reaches processing connected to offering goods or "
+                 "services to people in India.",
+         "refs": [["s.3", s(3)]],
+         "out": "Processing outside India is covered only when it is connected to offering goods "
+                "or services to people in India (s.3(b)). Unlike the GDPR, merely monitoring "
+                "people in India is not a trigger."},
+        {"id": "vendors", "kind": "profile", "opts": ynu, "area": "About you",
+         "label": "Uses vendors that process personal data",
+         "q": "Do vendors process personal data for you, such as cloud hosting, CRM, analytics, "
+              "payroll or support tools?",
+         "help": "They are your Data Processors, and you stay responsible for them (s.8(1)).",
+         "refs": [["s.8", s(8)], ["Data Processor", "glossary/#data-processor"]]},
+        {"id": "children", "kind": "profile", "opts": ynu, "area": "About you",
+         "label": "May have users under 18",
+         "q": "Could any of your users or customers be under 18?",
+         "help": "Under the DPDP Act a child is anyone under 18, not 13 or 16.",
+         "refs": [["s.2(f)", "glossary/#child"], ["s.9", s(9)]]},
+        {"id": "sdf", "kind": "profile", "opts": yn, "area": "About you",
+         "label": "Notified as a Significant Data Fiduciary",
+         "q": "Has the Central Government notified you as a Significant Data Fiduciary?",
+         "help": "Only a government notification makes you one, never size alone. None had been "
+                 "notified at the last check, so most organisations answer No.",
+         "refs": [["s.10", s(10)]]},
+        {"id": "basis", "kind": "check", "group": lb, "area": "Lawful basis · s.4, s.7",
+         "label": "Every purpose has a lawful basis", "ceiling": 50,
+         "q": "Have you mapped every purpose you use personal data for to either consent or a "
+              "specific section 7 legitimate use?",
+         "help": "There are only two lawful bases. Legitimate interests does not exist under the "
+                 "DPDP Act.",
+         "refs": [["s.4", s(4)], ["s.7", s(7)]],
+         "fix": "Build a record of processing that maps each purpose to consent (s.6) or a named "
+                "clause of s.7, and drop any purpose that has neither."},
+        {"id": "notice", "kind": "check", "group": lb, "area": "Notice · s.5, Rule 3",
+         "label": "Standalone, itemised privacy notice", "ceiling": 50,
+         "q": "Do you show a standalone notice before or with every consent request, itemising "
+              "the personal data and each purpose?",
+         "help": "It must also link to withdrawing consent, exercising rights and complaining to "
+                 "the Data Protection Board.",
+         "refs": [["s.5", s(5)], ["Rule 3", r(3)]],
+         "fix": "Ship a standalone notice that itemises the data and purposes, names the goods or "
+                "services involved, and links to withdrawal, rights and complaints to the Board."},
+        {"id": "language", "kind": "check", "group": lb, "area": "Languages · s.5(3), s.6(3)",
+         "label": "Notice and consent in Indian languages", "ceiling": 50,
+         "q": "Can people read your notice and consent request in English or any of the 22 "
+              "Eighth Schedule languages, at their choice?",
+         "help": "This is a build requirement, not a nice-to-have.",
+         "refs": [["s.5", s(5)], ["s.6", s(6)]],
+         "fix": "Offer the notice and consent request in the Eighth Schedule languages your users "
+                "actually read."},
+        {"id": "consent", "kind": "check", "group": cons, "area": "Consent · s.6(1)",
+         "label": "Clear opt-in consent per purpose", "ceiling": 50,
+         "q": "Is consent a clear opt-in for each purpose, with no pre-ticked boxes, bundling, or "
+              "consent assumed from continued use?",
+         "help": "Consent must be free, specific, informed, unconditional and unambiguous, given "
+                 "by a clear affirmative action.",
+         "refs": [["s.6", s(6)]],
+         "fix": "Replace bundled or pre-ticked consent with an unticked opt-in per purpose, and "
+                "stop making the service conditional on unnecessary consent."},
+        {"id": "withdrawal", "kind": "check", "group": cons, "area": "Withdrawal · s.6(4), s.6(6)",
+         "label": "Withdrawal as easy as consent", "ceiling": 50,
+         "q": "Can people withdraw consent as easily as they gave it, and does withdrawal stop "
+              "processing at your vendors too?",
+         "help": "One tap to opt in and an email to support to opt out is a breach on its face.",
+         "refs": [["s.6", s(6)]],
+         "fix": "Add a one-step withdrawal control and propagate the stop to every processor "
+                "within a reasonable time."},
+        {"id": "records", "kind": "check", "group": cons, "area": "Proof · s.6(10)",
+         "label": "Consent records you can prove", "ceiling": 50,
+         "q": "Do you log every consent and withdrawal, with the timestamp, notice version, "
+              "language and purpose?",
+         "help": "If challenged, the burden of proving valid notice and consent is on you.",
+         "refs": [["s.6(10)", s(6)]],
+         "fix": "Log every consent and withdrawal event with timestamp, notice version, language "
+                "served and purpose."},
+        {"id": "security", "kind": "check", "group": sec, "area": "Security · s.8(5), Rule 6",
+         "label": "Rule 6 security safeguards", "ceiling": 250,
+         "q": "Do you encrypt, mask or tokenise personal data, restrict access to it, and keep "
+              "backups?",
+         "help": "These are minimum safeguards under Rule 6, and failure carries the Act's "
+                 "highest penalty ceiling.",
+         "refs": [["s.8(5)", s(8)], ["Rule 6", r(6)]],
+         "fix": "Implement the Rule 6 minimums: encryption, masking or tokenisation; access "
+                "control; and backups for continuity."},
+        {"id": "logging", "kind": "check", "group": sec, "area": "Monitoring · Rule 6",
+         "label": "Access logs kept for a year", "ceiling": 250,
+         "q": "Do you log and monitor access to personal data, and keep those logs for at least "
+              "a year?",
+         "help": "Rule 6 requires visibility on access and one-year retention of logs.",
+         "refs": [["Rule 6", r(6)]],
+         "fix": "Turn on access logging and monitoring for systems holding personal data, and "
+                "keep the logs for one year."},
+        {"id": "breach", "kind": "check", "group": sec, "area": "Breach reporting · s.8(6), Rule 7",
+         "label": "Breach playbook with both clocks", "ceiling": 200,
+         "q": "Could you tell every affected person without delay, and send the Board a detailed "
+              "report within 72 hours, for any breach?",
+         "help": "There is no harm threshold. Every personal data breach is reportable, "
+                 "including a ransomware lockout.",
+         "refs": [["s.8(6)", s(8)], ["Rule 7", r(7)]],
+         "fix": "Write and rehearse a breach playbook with both clocks: affected individuals "
+                "without delay, and the Board's detailed report within 72 hours."},
+        {"id": "contracts", "kind": "check", "group": sec, "cond": "vendors",
+         "area": "Vendors · s.8(2), Rule 6", "label": "Vendor contracts with security clauses",
+         "ceiling": 250,
+         "q": "Does every vendor that processes personal data for you have a written contract "
+              "that includes security obligations?",
+         "help": "A valid contract with every processor is required, and a security clause is "
+                 "one of the Rule 6 minimums.",
+         "refs": [["s.8(2)", s(8)], ["Rule 6", r(6)]],
+         "fix": "Put a written contract with security-safeguard clauses in place with every "
+                "processor and sub-processor."},
+        {"id": "retention", "kind": "check", "group": life, "area": "Retention · s.8(7), Rule 8",
+         "label": "Erasure when the purpose ends", "ceiling": 50,
+         "q": "Do you erase personal data when consent is withdrawn or the purpose ends, "
+              "including copies at vendors, unless a law requires you to keep it?",
+         "help": "Large e-commerce, online gaming and social media platforms also have a fixed "
+                 "three-year period under the Third Schedule.",
+         "refs": [["s.8(7)", s(8)], ["Rule 8", r(8)]],
+         "fix": "Adopt a retention schedule and an erasure workflow that reaches processors, "
+                "backups and analytics copies."},
+        {"id": "contact", "kind": "check", "group": life,
+         "area": "Contact and grievances · s.8(9), s.8(10)",
+         "label": "Published privacy contact and grievance process", "ceiling": 50,
+         "q": "Have you published a contact for privacy questions and a grievance process with "
+              "a stated response time?",
+         "help": "Every Data Fiduciary needs this, not only large ones.",
+         "refs": [["s.8(9)", s(8)], ["Rule 9", r(9)], ["Rule 14", r(14)]],
+         "fix": "Publish a privacy contact and a grievance process with a stated response "
+                "period, on your website or app."},
+        {"id": "rights", "kind": "check", "group": life, "area": "Rights · s.11 to s.14",
+         "label": "Rights request workflows", "ceiling": 50,
+         "q": "Can you handle access, correction, erasure and nomination requests, including "
+              "telling people who you shared their data with?",
+         "help": "There are no portability or automated-decision rights to build. Those do not "
+                 "exist under the DPDP Act.",
+         "refs": [["s.11", s(11)], ["s.12", s(12)], ["s.14", s(14)], ["Rule 14", r(14)]],
+         "fix": "Build request workflows for access (including the list of who data was shared "
+                "with), correction, erasure and nomination."},
+        {"id": "parental", "kind": "check", "group": "Children", "cond": "children",
+         "area": "Children · s.9(1), Rule 10", "label": "Verifiable parental consent",
+         "ceiling": 200,
+         "q": "Do you verify that a parent has consented before processing a child's personal "
+              "data?",
+         "help": "Rule 10 accepts identity and age details you already hold, details the person "
+                 "provides, or a token from an authorised entity such as DigiLocker.",
+         "refs": [["s.9", s(9)], ["Rule 10", r(10)]],
+         "fix": "Add age assurance at sign-up and a verifiable parental consent flow that meets "
+                "Rule 10."},
+        {"id": "kidsads", "kind": "check", "group": "Children", "cond": "children",
+         "area": "Children · s.9(3)", "label": "No tracking or targeted ads for under-18s",
+         "ceiling": 200,
+         "q": "Are tracking, behavioural monitoring and targeted advertising switched off for "
+              "users under 18?",
+         "help": "This ban holds even with parental consent.",
+         "refs": [["s.9(3)", s(9)]],
+         "fix": "Disable ad pixels, behavioural analytics and ad targeting, including lookalike "
+                "audiences, for under-18 accounts."},
+        {"id": "sdfduties", "kind": "check", "group": "Significant Data Fiduciary", "cond": "sdf",
+         "area": "SDF duties · s.10, Rule 13", "label": "DPO, independent auditor, annual DPIA",
+         "ceiling": 150,
+         "q": "Have you appointed a DPO based in India who reports to the board, an independent "
+              "data auditor, and an annual DPIA and audit?",
+         "help": "Only notified Significant Data Fiduciaries carry these duties.",
+         "refs": [["s.10", s(10)], ["Rule 13", r(13)]],
+         "fix": "Appoint the India-based DPO and an independent data auditor, and schedule the "
+                "DPIA and audit every twelve months."},
+        {"id": "sectoral", "kind": "check", "group": "Other law", "area": "Sector rules · s.16(2)",
+         "label": "Sector rules checked", "ceiling": 0,
+         "q": "Have you checked the sector rules that apply on top of the DPDP Act, such as RBI "
+              "data storage or CERT-In directions?",
+         "help": "The DPDP Act adds to these. It does not replace them.",
+         "refs": [["s.16(2)", s(16)], ["s.38", s(38)]],
+         "fix": "List the sectoral regulators over your data, such as RBI, SEBI, IRDAI and "
+                "CERT-In, and map their extra duties."},
+    ]
+
+
+def checker_widget(up: str) -> str:
+    """Server-rendered intro (so the page reads well without JavaScript), plus the data and the
+    script that turns it into the interactive self-check."""
+    qs = checker_questions()
+    data = json.dumps({"deadline": DEADLINE, "questions": qs}, ensure_ascii=False)
+    return (
+        f'<div class="checker" data-checker data-base="{up}">'
+        '<div class="ck-panel ck-intro">'
+        '<p class="ck-kicker">Free readiness self-check</p>'
+        '<h3 class="ck-title">How ready are you for 14 May 2027?</h3>'
+        f"<p>Answer up to {len(qs)} quick questions about your organisation. You get a readiness "
+        "score, your gaps ranked by the penalty ceiling behind them, and the section or rule "
+        "behind every one.</p>"
+        '<ul class="ck-meta"><li>About 3 minutes</li><li>Answers never leave your browser</li>'
+        "<li>Every question cites the law</li></ul>"
+        '<noscript><p class="ck-fine">The self-check needs JavaScript. Without it, work through '
+        f'the <a href="{up}compliance-checklist/">78-point compliance checklist</a> instead.'
+        "</p></noscript>"
+        "</div></div>"
+        f'<script type="application/json" id="checker-data">'
+        f'{data.replace("</", "<" + chr(92) + "/")}</script>'
+    )
+
+
+def build_checker_page() -> None:
+    up = "../"
+    qs = checker_questions()
+    checks = [q for q in qs if q["kind"] == "check"]
+    twin = (
+        "A free, browser-only readiness self-check for India's DPDP Act 2023 and DPDP Rules "
+        "2025. Nothing is sent anywhere. It scores readiness and ranks gaps by the Schedule "
+        "penalty ceiling behind each one. Not legal advice.\n\n## Questions\n\n"
+        + "\n".join(
+            f'- **{q["label"]}** ({", ".join(r[0] for r in q["refs"])}): {q["q"]}'
+            + (f' Gap fix: {q["fix"]}' if q.get("fix") else "")
+            for q in qs
+        )
+    )
+    page(
+        url=CHECKER_PATH,
+        title="DPDP compliance checker: free readiness self-check",
+        description=(
+            "Check your readiness for India's DPDP Act 2023 and Rules 2025 in about three "
+            "minutes. Free, runs in your browser, and ranks every gap by its penalty ceiling "
+            "with the section or rule behind it."
+        ),
+        body=(
+            "<h1>DPDP compliance checker</h1>"
+            "<p class='sub'>A free readiness self-check for the Digital Personal Data Protection "
+            "Act, 2023 and the DPDP Rules, 2025, ahead of the 14 May 2027 deadline. It runs "
+            "entirely in your browser: no sign-up, no cookies, nothing sent anywhere.</p>"
+            + checker_widget(up)
+            + "<h2>How it works</h2>"
+            "<ol>"
+            "<li><b>Scope.</b> Two questions check whether the Act reaches you at all "
+            "(s.3).</li>"
+            "<li><b>Profile.</b> Three questions switch on the duties that only apply to some "
+            "organisations: vendor contracts, children's data, and Significant Data Fiduciary "
+            "obligations.</li>"
+            f"<li><b>Readiness.</b> Up to {len(checks)} checks drawn from the "
+            "<a href='../compliance-checklist/'>78-point compliance checklist</a>, each citing "
+            "its section or rule.</li>"
+            "<li><b>Results.</b> A readiness score, a score per area, and your gaps ranked by the "
+            "Schedule penalty ceiling behind each one. Ceilings are maximums, not fines.</li>"
+            "</ol>"
+            "<h2>What to do with the results</h2>"
+            "<p>Copy them as a prompt and paste them into Claude with the free "
+            "<a href='../claude-code-skill/'>dpdp-analyze skill</a>, which works through each gap "
+            "against the actual sections. For a full audit, use the complete "
+            "<a href='../compliance-checklist/'>compliance checklist</a>.</p>"
+            "<h2>Is this a compliance certificate?</h2>"
+            "<p>No. The score reflects only your own answers. It is an educational self-check, "
+            "not legal advice and not an audit. Verify against the Gazette text and consult "
+            "qualified Indian legal counsel.</p>"
+        ),
+        sources=(THIS,),
+        breadcrumbs=[("Home", ""), ("Self-check", None)],
+        graph=[{
+            "@type": "WebApplication",
+            "@id": f"{SITE}/{CHECKER_PATH}/#app",
+            "name": "DPDP compliance checker",
+            "url": f"{SITE}/{CHECKER_PATH}/",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Any (runs in the browser)",
+            "browserRequirements": "Requires JavaScript",
+            "isAccessibleForFree": True,
+            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"},
+            "about": [{"@id": ACT_ID}, {"@id": RULES_ID}],
+            "author": {"@id": PERSON_ID},
+        }],
+        markdown_twin=twin,
+        llms_group="Start here",
+        scripts=("checker.js",),
+    )
+
+
+MYTHS = [
+    ("We can rely on legitimate interests.",
+     "There are only two lawful bases: consent (s.6) or the closed list of certain legitimate "
+     "uses (s.7). Legitimate interests does not exist under the DPDP Act."),
+    ("Health and financial data are sensitive personal data.",
+     "The DPDP Act has no sensitive data category at all. Sectoral law may still add duties."),
+    ("A child means anyone under 13.",
+     "A child is anyone under 18 (s.2(f)), and processing needs verifiable parental consent "
+     "(s.9(1))."),
+    ("We only report breaches that could cause harm.",
+     "There is no harm threshold. Every breach goes to the Board and to each affected person "
+     "(s.8(6)), and a ransomware lockout counts (s.2(u))."),
+    ("Every company needs a Data Protection Officer.",
+     "Only notified Significant Data Fiduciaries must appoint one (s.10(2)(a)). Everyone else "
+     "publishes a contact person (s.8(9))."),
+    ("Indian personal data has to stay in India.",
+     "The Act does not mandate localisation. Transfers are allowed unless a country is "
+     "restricted under s.16(1), though sector rules such as the RBI's still apply (s.16(2))."),
+    ("Affected users can sue us for compensation.",
+     "Penalties go to the Consolidated Fund of India (s.34) and civil courts are barred (s.39). "
+     "The Act gives individuals no compensation right."),
+    ("Parental consent lets us target ads at teenagers.",
+     "Tracking, behavioural monitoring and targeted advertising directed at children are banned "
+     "outright, consent or not (s.9(3))."),
+]
+
+
 def build_landing() -> None:
+    up = "./"
+    days = max(0, (date.fromisoformat(DEADLINE[:10]) - date.today()).days - 1)  # whole days left
+    milestones = [
+        ("2025-11-14", "14 Nov 2025", "Board machinery",
+         "Rules 1, 2 and 17 to 21. The Data Protection Board can be constituted."),
+        ("2026-11-14", "14 Nov 2026", "Consent Managers",
+         "Rule 4. Registration and obligations of Consent Managers."),
+        ("2027-05-14", "14 May 2027", "Everything else",
+         "Rules 3, 5 to 16, 22 and 23: notice, security, breach reporting, retention, children, "
+         "SDF duties, rights and transfers."),
+    ]
+    first_future = next((m[0] for m in milestones if m[0] > TODAY), None)
+    t0, t1 = (date.fromisoformat(milestones[0][0]), date.fromisoformat(milestones[-1][0]))
+    progress = min(1.0, max(0.0, (date.today() - t0).days / (t1 - t0).days))
+    timeline = "".join(
+        f'<li data-date="{d}" class="{"done" if d <= TODAY else "next" if d == first_future else ""}">'
+        f'<span class="tl-dot" aria-hidden="true"></span><span class="tl-date">{label}</span>'
+        f"<b>{esc(title)}</b><span class='tl-text'>{esc(text)}</span></li>"
+        for d, label, title, text in milestones
+    )
+    hero = (
+        '<section class="hero">'
+        '<div class="hero-in">'
+        '<div class="hero-copy">'
+        '<p class="pill"><span class="live-dot" aria-hidden="true"></span>'
+        f'<span><b data-days-left="{DEADLINE}">{days}</b> days until the DPDP Rules fully '
+        "commence</span></p>"
+        '<h1>Get ready for India&rsquo;s <span class="hl">DPDP Act</span>.</h1>'
+        '<p class="lead">The Digital Personal Data Protection Act, 2023 and the DPDP Rules, 2025, '
+        "verbatim and section by section. Check your readiness in three minutes, then ask an AI "
+        "that cites the section for every answer.</p>"
+        '<div class="hero-ctas">'
+        f'<a class="btn amber" href="#checker">Check your readiness {icon("arrow")}</a>'
+        f'<a class="btn glass" href="{SKILL_PATH}/">{icon("sparkles")} Get the free AI skill</a>'
+        "</div>"
+        f'<p class="hero-fine">{icon("lock")} Free and open source &middot; nothing you type '
+        'leaves your browser &middot; <a href="disclaimer/">not legal advice</a></p>'
+        "</div>"
+        f'<div class="hero-card" data-countdown="{DEADLINE}">'
+        f'<p class="hc-label">{icon("clock")} Countdown to 14 May 2027</p>'
+        '<div class="hc-clock" role="timer" aria-label="Time left until 14 May 2027">'
+        f'<div><b data-unit="d">{days}</b><span>days</span></div>'
+        '<div><b data-unit="h">00</b><span>hours</span></div>'
+        '<div><b data-unit="m">00</b><span>mins</span></div>'
+        '<div><b data-unit="s">00</b><span>secs</span></div>'
+        "</div>"
+        '<p class="hc-note">When notice, consent, security, breach reporting, retention, '
+        "children&rsquo;s data and rights all become enforceable.</p>"
+        '<a class="hc-link" href="rules/notification-and-phased-commencement/">'
+        f'See the commencement dates {icon("arrow")}</a>'
+        "</div>"
+        "</div></section>"
+    )
+    stats = (
+        '<div class="stats">'
+        '<div class="stat"><b data-count="44">44</b><span>sections of the Act, verbatim from the '
+        "Gazette</span></div>"
+        '<div class="stat"><b data-count="23">23</b><span>Rules and 7 Schedules, with their '
+        "commencement dates</span></div>"
+        '<div class="stat"><b data-count="78">78</b><span>compliance checks, each anchored to a '
+        "section or rule</span></div>"
+        '<div class="stat"><b>Rs&nbsp;<span data-count="250">250</span>&nbsp;cr</b><span>highest '
+        "penalty ceiling, for security failures</span></div>"
+        "</div>"
+    )
+    myths = "".join(
+        '<article class="myth" data-myth>'
+        '<p class="label">Myth</p>'
+        f"<h3>&ldquo;{esc(m)}&rdquo;</h3>"
+        f'<div class="fact" tabindex="-1"><p class="label">{icon("check")} What the Act says</p>'
+        f"{md2html(link_refs(f, up))}</div>"
+        '<button type="button" class="flip">Show what the Act says</button>'
+        "</article>"
+        for m, f in MYTHS
+    )
+    cards = [
+        ("act/", "book", "The Act, section by section", "All 44 sections and 9 chapters, verbatim, with every Illustration."),
+        ("rules/", "file", "The Rules, 2025", "23 rules, 7 schedules and the three commencement dates."),
+        ("dpdp-act-explained/", "bulb", "The Act explained", "The five gates, consent, exemptions, enforcement and 16 traps."),
+        ("compliance-checklist/", "checks", "Compliance checklist", "78 checks, every one anchored to a section or rule."),
+        ("penalties/", "scale", "Penalties", "The full Schedule, up to Rs 250 crore, and how the Board decides."),
+        ("dpdp-vs-gdpr/", "compare", "DPDP vs GDPR", "The 17 differences that change what you build."),
+        ("glossary/", "type", "Glossary", "Data Fiduciary, Data Principal and every defined term."),
+        ("faq/", "help", "FAQ", "32 direct answers: deadline, DPO, consent, breaches, transfers."),
+    ]
+    card_html = "".join(
+        f'<a class="card icon-card" href="{href}">{icon(ic, "card-ic")}<h3>{esc(t)}</h3>'
+        f"<p>{esc(d)}</p></a>"
+        for href, ic, t, d in cards
+    )
     popular = [
         "What is the DPDP compliance deadline?",
         "Do we need a Data Protection Officer in India?",
@@ -1834,88 +2274,121 @@ def build_landing() -> None:
         "What makes consent valid under the DPDP Act?",
         "Does the DPDP Act apply to companies outside India?",
     ]
+    demo = (
+        '<div class="term" data-demo>'
+        '<div class="term-bar"><span></span><span></span><span></span><em>claude</em></div>'
+        '<div class="term-body" aria-live="off">'
+        '<p class="t-prompt"><span class="t-caret" aria-hidden="true">&gt;</span> '
+        '<span data-type="Do we need a DPO in India?">Do we need a DPO in India?</span>'
+        '<span class="cursor" aria-hidden="true"></span></p>'
+        '<p data-line class="t-tool">Using skill: dpdp-analyze</p>'
+        "<p data-line><b>No, unless the Central Government has notified you as a Significant Data "
+        "Fiduciary.</b></p>"
+        "<p data-line>Only SDFs must appoint a DPO, based in India and responsible to the board "
+        '<span class="cite">s.10(2)(a)</span>.</p>'
+        "<p data-line>Everyone else publishes a contact person who can answer questions "
+        '<span class="cite">s.8(9)</span> <span class="cite">Rule 9</span>.</p>'
+        '<p data-line class="t-trap">Trap: size alone does not make you an SDF '
+        '<span class="cite">s.10(1)</span>.</p>'
+        '<p data-line class="t-fine">Not legal advice. Verify against the Gazette of India and '
+        "consult qualified Indian legal counsel.</p>"
+        "</div>"
+        '<button type="button" class="replay" data-replay>Replay</button>'
+        "</div>"
+    )
+    install = INSTALL.replace("\n", "&#10;")
+    body = (
+        stats
+        + '<section class="section" id="checker">'
+        '<div class="section-head"><p class="kicker">Readiness self-check</p>'
+        "<h2>How ready is your organisation?</h2>"
+        "<p>Short questions drawn from the 78-point checklist. Your score, your gaps ranked by the "
+        "penalty ceiling behind them, and the section or rule for each. Nothing you answer leaves "
+        "this page.</p></div>"
+        + checker_widget(up)
+        + "</section>"
+        '<section class="section reveal">'
+        '<div class="section-head"><p class="kicker">Commencement</p>'
+        "<h2>When does the DPDP Act come into force?</h2>"
+        "<p>In three tranches. <b>14 May 2027 is the date that matters for a compliance "
+        "programme.</b></p></div>"
+        f'<ol class="timeline" data-timeline style="--p:{progress:.3f}">{timeline}</ol>'
+        "</section>"
+        '<section class="section ai reveal">'
+        '<div class="ai-grid">'
+        '<div class="ai-copy"><p class="kicker">The AI skill</p>'
+        "<h2>Ask AI about the DPDP Act. Get the section number back.</h2>"
+        "<p>General-purpose AI answers Indian privacy questions with GDPR concepts the DPDP Act "
+        "does not contain. The free <b>dpdp-analyze</b> skill for Claude Code pins the verbatim "
+        "Act and Rules, so every answer is anchored.</p>"
+        '<ul class="ticks">'
+        f'<li>{icon("check")} Quotes only the verbatim Gazette text</li>'
+        f'<li>{icon("check")} Cites a section or rule for every claim</li>'
+        f'<li>{icon("check")} Checks commencement before calling anything binding</li>'
+        f'<li>{icon("check")} Reviews notices, consent flows, contracts and codebases</li>'
+        "</ul>"
+        f'<div class="install"><pre><code>{esc(INSTALL)}</code></pre>'
+        f'<button type="button" class="copy" data-copy="{install}">Copy</button></div>'
+        f'<p class="ai-ctas"><a class="btn primary" href="{SKILL_PATH}/">See what it can do '
+        f'{icon("arrow")}</a><span>Also runs in Claude.ai, Copilot, Gemini CLI and Codex.</span></p>'
+        "</div>"
+        + demo
+        + "</div></section>"
+        '<section class="section reveal">'
+        '<div class="section-head"><p class="kicker">Myth vs the Act</p>'
+        "<h2>What most people, and most AI tools, get wrong</h2>"
+        "<p>Tap a card to see what the statute actually says.</p></div>"
+        f'<div class="myths">{myths}</div>'
+        "</section>"
+        '<section class="section reveal">'
+        '<div class="section-head"><p class="kicker">The reference</p>'
+        "<h2>Everything in one place</h2></div>"
+        f'<div class="cards icon-cards">{card_html}</div>'
+        "</section>"
+        '<section class="section split reveal">'
+        "<div class='keyfacts'><h2>The DPDP Act at a glance</h2><dl>"
+        "<dt>Full name</dt><dd>The Digital Personal Data Protection Act, 2023 (Act No. 22 of "
+        "2023)</dd>"
+        "<dt>Assent</dt><dd>11 August 2023</dd>"
+        "<dt>Rules</dt><dd>DPDP Rules, 2025, notified 13 November 2025: 23 rules, 7 "
+        "Schedules</dd>"
+        "<dt>Deadline</dt><dd><b>14 May 2027</b> for substantive business obligations</dd>"
+        "<dt>Regulator</dt><dd>Data Protection Board of India; appeals to TDSAT</dd>"
+        "<dt>Lawful bases</dt><dd>Two: consent (s.6) or certain legitimate uses (s.7)</dd>"
+        "<dt>Child</dt><dd>Anyone under 18 (s.2(f))</dd>"
+        "<dt>Breaches</dt><dd>Every breach, to the Board and each affected person; Board "
+        "report within 72 hours (Rule 7)</dd>"
+        "<dt>Max penalty</dt><dd>Rs 250 crore, for security failures (s.8(5))</dd>"
+        "</dl></div>"
+        "<div class='popular'><h2>Popular questions</h2><ul class='toc'>"
+        + "".join(f'<li><a href="faq/#{slugify(q)}">{esc(q)}</a></li>' for q in popular)
+        + "</ul><p><a href='faq/'>All 32 questions &rarr;</a></p></div>"
+        "</section>"
+        '<section class="section endcta reveal">'
+        "<h2>Two ways to start</h2>"
+        "<p>Find your gaps in three minutes, or let Claude audit your product against the actual "
+        "sections.</p>"
+        '<div class="hero-ctas center">'
+        f'<a class="btn amber" href="#checker">Run the self-check {icon("arrow")}</a>'
+        f'<a class="btn primary" href="{SKILL_PATH}/">{icon("sparkles")} Install the AI skill</a>'
+        "</div></section>"
+    )
     page(
         url="",
         title="DPDP Act 2023 full text, Rules 2025 and compliance checklist",
         description=(
-            "Complete verbatim text of India's Digital Personal Data Protection Act, 2023 and the "
-            "DPDP Rules, 2025. All 44 sections, penalties, deadlines, a compliance checklist and a "
-            "free Claude Code skill that analyses your privacy programme."
+            "India's Digital Personal Data Protection Act, 2023 and DPDP Rules, 2025 in full, "
+            "with a free readiness self-check, a 78-point compliance checklist and a free "
+            "Claude Code skill that cites every section."
         ),
-        body=(
-            "<h1>India's Digital Personal Data Protection Act, 2023</h1>"
-            "<p class='sub'>The full statute, the Rules, and a working compliance reference. "
-            "All 44 sections verbatim from the Gazette of India, all 23 Rules of 2025, the "
-            "penalty Schedule, a 78-point checklist, and an installable AI skill that analyses "
-            "privacy notices, consent flows and vendor contracts against the actual sections.</p>"
-            "<div class='keyfacts'><h2>The DPDP Act at a glance</h2><dl>"
-            "<dt>Full name</dt><dd>The Digital Personal Data Protection Act, 2023 (Act No. 22 of "
-            "2023)</dd>"
-            "<dt>Assent</dt><dd>11 August 2023</dd>"
-            "<dt>Rules</dt><dd>DPDP Rules, 2025, notified 13 November 2025: 23 rules, 7 "
-            "Schedules</dd>"
-            "<dt>Compliance deadline</dt><dd><b>14 May 2027</b> for substantive business "
-            "obligations</dd>"
-            "<dt>Regulator</dt><dd>Data Protection Board of India; appeals to TDSAT</dd>"
-            "<dt>Lawful bases</dt><dd>Two: consent (s.6) or certain legitimate uses (s.7)</dd>"
-            "<dt>Child</dt><dd>Anyone under 18 (s.2(f))</dd>"
-            "<dt>Breach reporting</dt><dd>Every breach, to the Board and each affected person; "
-            "Board report within 72 hours (Rule 7)</dd>"
-            "<dt>Maximum penalty</dt><dd>Rs 250 crore, for security failures (s.8(5))</dd>"
-            "</dl></div>"
-            "<section class='hero-skill'><p class='label'>Free and open source</p>"
-            "<h2>Ask AI about the DPDP Act, and get the section number back</h2>"
-            "<p>General-purpose AI models get Indian data protection law wrong in repeatable ways "
-            "because they pattern-match to the GDPR. The <b>dpdp-analyze</b> skill for Claude Code "
-            "makes Claude answer from the verbatim Act and Rules, cite a section or rule for every "
-            "claim, and audit privacy notices, consent flows, vendor contracts and whole "
-            "products.</p>"
-            f"<pre><code>{esc(INSTALL)}</code></pre>"
-            "<p><a class='btn' href='claude-code-skill/'>See what it can do &rarr;</a></p>"
-            "</section>"
-            "<div class='cards'>"
-            "<a class='card' href='act/'><h3>The Act, section by section</h3>"
-            "<p>All 44 sections and 9 chapters, verbatim, with every Illustration.</p></a>"
-            "<a class='card' href='rules/'><h3>The Rules, 2025</h3>"
-            "<p>23 rules, 7 schedules, and the three commencement dates that set your deadline.</p></a>"
-            "<a class='card' href='dpdp-act-explained/'><h3>The Act explained</h3>"
-            "<p>The five gates, consent, exemptions, enforcement and 16 common misreadings.</p></a>"
-            "<a class='card' href='compliance-checklist/'><h3>Compliance checklist</h3>"
-            "<p>78 checks, every one anchored to a section or rule.</p></a>"
-            "<a class='card' href='penalties/'><h3>Penalties</h3>"
-            "<p>The full Schedule, up to Rs 250 crore, and how the Board sets the amount.</p></a>"
-            "<a class='card' href='dpdp-vs-gdpr/'><h3>DPDP vs GDPR</h3>"
-            "<p>The 17 differences that change what you build.</p></a>"
-            "<a class='card' href='glossary/'><h3>Glossary</h3>"
-            "<p>Data Fiduciary, Data Principal and every defined term, verbatim.</p></a>"
-            "<a class='card' href='faq/'><h3>FAQ</h3>"
-            "<p>Deadline, DPO, consent, localisation, breach clocks, SPDI Rules.</p></a>"
-            "<a class='card hot' href='claude-code-skill/'><h3>The AI skill</h3>"
-            "<p>Install into Claude Code and analyse your own privacy programme.</p></a>"
-            "<a class='card' href='disclaimer/'><h3>Disclaimer</h3>"
-            "<p>Not legal advice. What this resource is, and what it is not.</p></a>"
-            "</div>"
-            "<h2>When does the DPDP Act come into force?</h2>"
-            "<p>In three tranches. <b>14 May 2027 is the date that matters for a compliance "
-            "programme.</b></p>"
-            "<table><thead><tr><th>Effective</th><th>What commences</th></tr></thead><tbody>"
-            "<tr><td><b>14 November 2025</b></td><td>Data Protection Board machinery "
-            "(Rules 1, 2, 17 to 21).</td></tr>"
-            "<tr><td><b>14 November 2026</b></td><td>Consent Manager registration (Rule 4).</td></tr>"
-            "<tr><td><b>14 May 2027</b></td><td><b>Every substantive business obligation</b>: "
-            "notice, security safeguards, breach intimation, retention and erasure, children's "
-            "consent, Significant Data Fiduciary duties, rights machinery, transfers.</td></tr>"
-            "</tbody></table>"
-            "<h2>Ten things most people get wrong about the DPDP Act</h2>"
-            "<ol>" + "".join(f"<li>{t}</li>" for t in TRAPS) + "</ol>"
-            "<h2>Popular questions</h2><ul class='toc'>"
-            + "".join(f'<li><a href="faq/#{slugify(q)}">{esc(q)}</a></li>' for q in popular)
-            + "</ul><p><a href='faq/'>All questions &rarr;</a></p>"
-        ),
+        hero=hero,
+        body=body,
         sources=(THIS,),
         graph=[ACT_NODE, RULES_NODE, SKILL_NODE],
         changefreq="weekly",
         og_type="website",
+        body_class="home",
+        scripts=("checker.js", "home.js"),
         markdown_twin=(
             "Free reference for India's Digital Personal Data Protection Act, 2023 (Act No. 22 of "
             "2023) and the DPDP Rules, 2025.\n\n"
@@ -1931,10 +2404,10 @@ def build_landing() -> None:
             "- Breach: every breach to the Board and each affected person; Board report within 72 "
             "hours (Rule 7). No harm threshold (s.8(6)).\n"
             "- Maximum penalty: Rs 250 crore (s.8(5) security safeguards).\n\n"
-            "## Ten things most people get wrong\n\n"
-            + "\n".join(f"{i}. {strip_md(re.sub('<[^>]+>', '', t))}" for i, t in enumerate(TRAPS, 1))
-            + "\n\n## AI skill\n\n"
-            "Free Claude Code skill that answers from this text and cites every section: "
+            "## Myths and what the Act says\n\n"
+            + "\n".join(f"- Myth: {m} The Act: {f}" for m, f in MYTHS)
+            + f"\n\n## Tools\n\n- Readiness self-check: {SITE}/{CHECKER_PATH}/\n"
+            f"- Free Claude Code skill that answers from this text and cites every section: "
             f"{SITE}/{SKILL_PATH}/\n"
         ),
         llms_group=None,
@@ -2197,6 +2670,271 @@ footer.site p{max-width:820px;margin:0 auto .8em}
 footer.site a{color:var(--mut)}
 footer.site .promo{font-size:14px;color:var(--fg)}
 footer.site .promo a{color:var(--acc)}
+/* ---------- shared bits ---------- */
+:root{--amber:#f5a524;--amber-fg:#1a1205;--ok:#15803d;--warn:#a16207;--bad:#b91c1c;--unsure:#5b6270;
+--shadow:0 1px 2px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.06);--radius:14px}
+@media (prefers-color-scheme:dark){:root{--ok:#4ade80;--warn:#fbbf24;--bad:#f87171;--unsure:#9aa3b2;
+--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25)}}
+.skip{position:absolute;left:-9999px;top:8px;z-index:100;background:var(--bg);color:var(--acc);padding:8px 12px;border-radius:8px}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.ic{width:1.1em;height:1.1em;flex:none;vertical-align:-.15em}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:10px;
+border:1px solid transparent;font:inherit;font-weight:650;cursor:pointer;text-decoration:none;
+transition:transform .15s ease-out,background-color .15s,border-color .15s,box-shadow .15s;touch-action:manipulation}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn.primary{background:var(--hot);color:var(--hotfg)}
+.btn.amber{background:var(--amber);color:var(--amber-fg);box-shadow:0 6px 20px rgba(245,165,36,.28)}
+.btn.amber:hover{box-shadow:0 10px 28px rgba(245,165,36,.38)}
+.btn.glass{background:rgba(255,255,255,.08);color:#eef2f8;border-color:rgba(255,255,255,.22)}
+.btn.glass:hover{background:rgba(255,255,255,.14)}
+.btn.ghost{background:transparent;color:var(--acc);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--acc)}
+
+/* ---------- home layout ---------- */
+body.home main{max-width:1120px}
+body.home .disclaimer{margin-top:4px}
+.section{margin:72px 0}
+.section-head{max-width:720px;margin-bottom:24px}
+.section-head h2{margin:.25em 0 .3em;font-size:clamp(24px,3.2vw,32px);letter-spacing:-.02em}
+.section-head p{color:var(--mut);margin:0}
+.kicker{text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:700;color:var(--acc);margin:0}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;color:#eef2f8;
+background:radial-gradient(900px 480px at 85% -10%,rgba(56,120,220,.55),transparent 60%),
+radial-gradient(700px 420px at -10% 110%,rgba(245,165,36,.20),transparent 60%),
+linear-gradient(160deg,#0b1220 0%,#0f1d36 55%,#0c1830 100%)}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;
+background-image:linear-gradient(rgba(143,185,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(143,185,255,.08) 1px,transparent 1px);
+background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse at 60% 30%,#000 30%,transparent 75%);
+mask-image:radial-gradient(ellipse at 60% 30%,#000 30%,transparent 75%)}
+.hero-in{position:relative;max-width:1120px;margin:0 auto;padding:64px 20px 72px;display:grid;
+grid-template-columns:1.25fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(34px,5.6vw,60px);line-height:1.05;letter-spacing:-.03em;margin:.35em 0 .3em;color:#fff}
+.hero .hl{background:linear-gradient(90deg,#8fb9ff,#c4a7ff 55%,#fbbf24);-webkit-background-clip:text;
+background-clip:text;color:transparent}
+.hero .lead{font-size:clamp(16px,1.6vw,19px);color:#c9d4e5;max-width:600px;margin:0 0 26px}
+.pill{display:inline-flex;align-items:center;gap:10px;margin:0;padding:6px 14px 6px 10px;border-radius:999px;
+background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);font-size:14px;color:#dce6f5}
+.pill b{color:#fbbf24;font-variant-numeric:tabular-nums}
+.live-dot{width:9px;height:9px;border-radius:50%;background:#fbbf24;box-shadow:0 0 0 0 rgba(251,191,36,.7);
+animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(251,191,36,.6)}70%{box-shadow:0 0 0 10px rgba(251,191,36,0)}100%{box-shadow:0 0 0 0 rgba(251,191,36,0)}}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero-ctas.center{justify-content:center}
+.hero-fine{margin:18px 0 0;font-size:14px;color:#a9b6ca}
+.hero-fine .ic{margin-right:6px}
+.hero-fine a{color:#dce6f5}
+.hero-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;
+padding:22px 22px 18px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.hc-label{display:flex;align-items:center;gap:8px;margin:0 0 14px;font-size:13px;letter-spacing:.06em;
+text-transform:uppercase;color:#a9c4f0;font-weight:700}
+.hc-clock{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.hc-clock div{background:rgba(9,15,28,.55);border:1px solid rgba(143,185,255,.18);border-radius:12px;
+padding:12px 6px;text-align:center}
+.hc-clock b{display:block;font-size:clamp(26px,3.4vw,36px);line-height:1.1;color:#fff;font-variant-numeric:tabular-nums}
+.hc-clock span{font-size:12px;color:#a9b6ca;text-transform:uppercase;letter-spacing:.08em}
+.hc-note{font-size:14px;color:#c9d4e5;margin:14px 0 10px}
+.hc-link{display:inline-flex;align-items:center;gap:6px;color:#8fb9ff;font-weight:600;font-size:14px;text-decoration:none}
+.hc-link:hover{text-decoration:underline}
+@media (max-width:860px){.hero-in{grid-template-columns:1fr;padding:44px 16px 52px;gap:28px}}
+
+/* ---------- stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:8px 0 0}
+.stat{border:1px solid var(--line);border-radius:var(--radius);padding:18px;background:var(--soft)}
+.stat b{display:block;font-size:clamp(28px,3.6vw,38px);line-height:1.1;letter-spacing:-.02em;color:var(--acc);
+font-variant-numeric:tabular-nums}
+.stat>span{display:block;margin-top:4px;font-size:14px;line-height:1.45;color:var(--mut)}
+@media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- checker ---------- */
+.checker{border:1px solid var(--line);border-radius:18px;background:var(--bg);box-shadow:var(--shadow);
+overflow:hidden;position:relative}
+.checker::before{content:"";display:block;height:4px;background:linear-gradient(90deg,#0b4f9e,#7c5cff,#f5a524)}
+.ck-panel{padding:26px clamp(18px,4vw,36px) 28px}
+.ck-kicker{text-transform:uppercase;letter-spacing:.1em;font-size:12px;font-weight:700;color:var(--acc);margin:0}
+.ck-title{font-size:clamp(22px,2.6vw,28px);margin:.3em 0 .4em;letter-spacing:-.01em}
+.ck-title:focus,.ck-q:focus{outline:none}
+.ck-meta{display:flex;flex-wrap:wrap;gap:8px 18px;list-style:none;padding:0;margin:14px 0 20px;color:var(--mut);font-size:14px}
+.ck-meta li::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--amber);margin-right:8px;vertical-align:1px}
+.ck-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.ck-top{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--mut)}
+.ck-step{font-weight:600;font-variant-numeric:tabular-nums}
+.ck-link{background:none;border:0;padding:10px 4px;min-height:44px;color:var(--acc);font:inherit;font-size:14px;
+font-weight:600;cursor:pointer}
+.ck-link:hover{text-decoration:underline}
+.ck-bar{height:8px;border-radius:999px;background:var(--soft);border:1px solid var(--line);overflow:hidden;margin:4px 0 22px}
+.ck-bar span{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#0b4f9e,#7c5cff);
+transition:width .3s ease-out}
+.ck-card{animation:ck-in .26s ease-out}
+@keyframes ck-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.ck-area{display:inline-block;margin:0;padding:3px 10px;border-radius:999px;background:var(--soft);
+border:1px solid var(--line);font-size:13px;color:var(--mut);font-weight:600}
+.ck-q{font-size:clamp(19px,2.2vw,24px);line-height:1.35;margin:.6em 0 .35em;letter-spacing:-.01em}
+.ck-help{color:var(--mut);margin:0 0 18px;font-size:15px}
+.ck-opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.ck-opt{display:flex;align-items:center;gap:10px;min-height:52px;padding:10px 14px;border-radius:12px;
+border:1.5px solid var(--line);background:var(--soft);color:var(--fg);font:inherit;font-weight:650;cursor:pointer;
+text-align:left;transition:border-color .15s,background-color .15s,transform .12s;touch-action:manipulation}
+.ck-opt:hover{border-color:var(--acc);transform:translateY(-1px)}
+.ck-opt:active{transform:scale(.98)}
+.ck-opt kbd{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:6px;font:600 12px/1 ui-monospace,monospace;
+background:var(--bg);border:1px solid var(--line);color:var(--mut)}
+.ck-opt.ck-yes:hover,.ck-opt.ck-yes[aria-pressed=true]{border-color:var(--ok)}
+.ck-opt.ck-partly:hover,.ck-opt.ck-partly[aria-pressed=true]{border-color:var(--warn)}
+.ck-opt.ck-no:hover,.ck-opt.ck-no[aria-pressed=true]{border-color:var(--bad)}
+.ck-opt[aria-pressed=true]{background:var(--bg);box-shadow:0 0 0 3px rgba(11,79,158,.12)}
+.ck-refs{font-size:13.5px;color:var(--mut);margin:16px 0 0}
+.ck-refs a{margin-right:6px;font-weight:600}
+.ck-nav{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+.ck-hint{font-size:12.5px;color:var(--mut)}
+@media (hover:none){.ck-hint{display:none}}
+.ck-fine{font-size:13px;color:var(--mut)}
+.ck-score{display:grid;grid-template-columns:150px 1fr;gap:26px;align-items:center}
+.ck-ring{width:150px;height:150px;transform:rotate(-90deg)}
+.ck-ring circle{fill:none;stroke-width:11}
+.ck-ring-bg{stroke:var(--soft)}
+.ck-ring-fg{stroke-linecap:round;transition:stroke-dashoffset 1s cubic-bezier(.2,.8,.2,1)}
+.ck-ring.ck-good .ck-ring-fg{stroke:var(--ok)}
+.ck-ring.ck-mid .ck-ring-fg{stroke:var(--warn)}
+.ck-ring.ck-low .ck-ring-fg{stroke:var(--bad)}
+.ck-ring text{transform:rotate(90deg);transform-origin:60px 60px;fill:var(--fg)}
+.ck-ring-num{font:800 26px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.ck-ring-sub{font:600 11px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;fill:var(--mut)!important;letter-spacing:.08em;text-transform:uppercase}
+.ck-counts{display:flex;flex-wrap:wrap;gap:6px 16px;margin:0 0 8px;font-size:14px;color:var(--mut)}
+.ck-bars{list-style:none;padding:0;margin:24px 0 8px;display:grid;gap:10px}
+.ck-bars li{display:grid;grid-template-columns:minmax(120px,220px) 1fr 48px;gap:12px;align-items:center;font-size:14px}
+.ck-meter{height:10px;border-radius:999px;background:var(--soft);border:1px solid var(--line);overflow:hidden}
+.ck-meter-fill{display:block;height:100%;border-radius:999px}
+.ck-meter-fill.ck-good{background:var(--ok)}.ck-meter-fill.ck-mid{background:var(--warn)}.ck-meter-fill.ck-low{background:var(--bad)}
+.ck-bar-val{text-align:right;font-variant-numeric:tabular-nums;color:var(--mut)}
+.ck-result h4{font-size:18px;margin:26px 0 4px}
+.ck-gaps{list-style:none;padding:0;margin:12px 0;display:grid;gap:10px;counter-reset:gap}
+.ck-gap{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;padding:14px 16px;border:1px solid var(--line);
+border-radius:12px;background:var(--soft)}
+.ck-gap p{margin:.25em 0}
+.ck-chip{display:inline-block;white-space:nowrap;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:700;border:1px solid}
+.ck-chip.ck-no{color:var(--bad);border-color:var(--bad)}
+.ck-chip.ck-partly{color:var(--warn);border-color:var(--warn)}
+.ck-chip.ck-unsure{color:var(--unsure);border-color:var(--unsure)}
+.ck-ceiling{white-space:nowrap}
+.ck-cta{margin:22px 0 10px;padding:16px 18px;border-radius:12px;border:1px solid var(--acc);background:var(--soft)}
+.ck-cta p{margin:.2em 0 .8em}
+.ck-status{font-size:14px;color:var(--ok);min-height:1.2em;margin:.6em 0 0!important}
+@media (max-width:620px){.ck-score{grid-template-columns:1fr;justify-items:start}.ck-ring{width:128px;height:128px}
+.ck-bars li{grid-template-columns:1fr 44px}.ck-bar-label{grid-column:1/-1}.ck-gap{grid-template-columns:1fr}}
+
+/* ---------- timeline ---------- */
+.timeline{--p:0;list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:repeat(3,1fr);
+gap:18px;position:relative}
+.timeline::before,.timeline::after{content:"";position:absolute;top:11px;left:12px;height:3px;border-radius:3px}
+.timeline::before{right:12px;background:var(--line)}
+.timeline::after{width:calc((100% - 24px) * var(--p));background:linear-gradient(90deg,#0b4f9e,#7c5cff)}
+.timeline li{position:relative;padding-top:34px}
+.tl-dot{position:absolute;top:2px;left:4px;width:22px;height:22px;border-radius:50%;background:var(--bg);
+border:3px solid var(--line);z-index:1}
+.timeline li.done .tl-dot{background:var(--acc);border-color:var(--acc)}
+.timeline li.next .tl-dot{border-color:var(--amber);box-shadow:0 0 0 6px rgba(245,165,36,.18)}
+.tl-date{display:block;font-size:13px;font-weight:700;letter-spacing:.04em;color:var(--mut);text-transform:uppercase}
+.timeline b{display:block;font-size:18px;margin:2px 0 4px}
+.tl-text{color:var(--mut);font-size:14.5px}
+.timeline li:last-child b{color:var(--acc)}
+@media (max-width:720px){.timeline{grid-template-columns:1fr;gap:6px;padding-left:4px}
+.timeline::before,.timeline::after{display:none}
+.timeline li{padding:0 0 18px 40px;border-left:3px solid var(--line);margin-left:11px}
+.timeline li.done{border-left-color:var(--acc)}
+.tl-dot{left:-13px;top:0}}
+
+/* ---------- AI section ---------- */
+.ai{border-radius:22px;padding:clamp(22px,4vw,44px);color:#e6ecf5;
+background:radial-gradient(600px 300px at 100% 0,rgba(124,92,255,.35),transparent 60%),linear-gradient(150deg,#0b1220,#13213d)}
+.ai h2{color:#fff;font-size:clamp(24px,3.2vw,32px);letter-spacing:-.02em;margin:.25em 0 .4em}
+.ai p{color:#c9d4e5}
+.ai .kicker{color:#8fb9ff}
+.ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.ai-grid>*{min-width:0}
+@media (max-width:900px){.ai-grid{grid-template-columns:1fr}}
+.ticks{list-style:none;padding:0;margin:16px 0 20px;display:grid;gap:8px}
+.ticks li{display:flex;gap:10px;align-items:flex-start;color:#e6ecf5}
+.ticks .ic{color:#4ade80;margin-top:3px}
+.install{position:relative}
+.install pre{background:rgba(0,0,0,.35);border-color:rgba(255,255,255,.12);color:#e6ecf5;padding-right:84px}
+.install code{color:#e6ecf5}
+.copy{position:absolute;top:10px;right:10px;min-height:36px;padding:6px 12px;border-radius:8px;cursor:pointer;
+background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2);font:600 13px/1 inherit}
+.copy:hover{background:rgba(255,255,255,.18)}
+.ai-ctas{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center;margin:18px 0 0}
+.ai-ctas span{font-size:14px;color:#a9b6ca}
+.term{position:relative;border-radius:14px;overflow:hidden;background:#070b14;border:1px solid rgba(255,255,255,.12);
+box-shadow:0 24px 60px rgba(0,0,0,.45);font:14px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.term-bar{display:flex;align-items:center;gap:7px;padding:10px 14px;background:rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.08)}
+.term-bar span{width:11px;height:11px;border-radius:50%;background:#ff5f57}
+.term-bar span:nth-child(2){background:#febc2e}.term-bar span:nth-child(3){background:#28c840}
+.term-bar em{margin-left:8px;font-style:normal;color:#8b95a7;font-size:12.5px}
+.term-body{padding:18px 18px 54px;min-height:300px}
+.term-body p{margin:0 0 10px;color:#d6deeb}
+.t-prompt{color:#fff!important}
+.t-caret{color:#f5a524;font-weight:700}
+.t-tool{color:#8fb9ff!important}
+.t-trap{color:#fbbf24!important}
+.t-fine{color:#8b95a7!important;font-size:12.5px}
+.cite{display:inline-block;padding:0 6px;border-radius:5px;background:rgba(143,185,255,.14);color:#a9c8ff;font-size:12.5px}
+.cursor{display:inline-block;width:8px;height:1.1em;background:#f5a524;vertical-align:-3px;margin-left:2px;animation:blink 1s steps(1) infinite}
+.term.done .cursor{display:none}
+@keyframes blink{50%{opacity:0}}
+.js .term [data-line]{opacity:0;transform:translateY(4px);transition:opacity .3s ease-out,transform .3s ease-out}
+.js .term [data-line].shown{opacity:1;transform:none}
+.replay{position:absolute;right:12px;bottom:12px;min-height:36px;padding:6px 12px;border-radius:8px;cursor:pointer;
+background:rgba(255,255,255,.08);color:#c9d4e5;border:1px solid rgba(255,255,255,.16);font:600 12.5px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.replay:hover{background:rgba(255,255,255,.16)}
+
+/* ---------- myths ---------- */
+.myths{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;align-items:start}
+.myth{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--radius);padding:18px;background:var(--soft);
+transition:border-color .2s,box-shadow .2s}
+.myth .label{color:var(--bad)}
+.myth h3{margin:.4em 0 .6em;font-size:17px;line-height:1.35}
+.fact{border-top:1px dashed var(--line);padding-top:10px;margin-bottom:10px;animation:ck-in .25s ease-out}
+.fact .label{color:var(--ok);display:flex;align-items:center;gap:6px}
+.fact p{margin:.3em 0;font-size:15px}
+.fact:focus{outline:none}
+.myth.closed .fact{display:none}
+.myth:not(.closed){border-color:var(--ok);box-shadow:var(--shadow)}
+.flip{margin-top:auto;align-self:flex-start;min-height:44px;padding:8px 14px;border-radius:10px;cursor:pointer;
+background:var(--bg);color:var(--acc);border:1px solid var(--line);font:inherit;font-weight:650;font-size:14px}
+.flip:hover{border-color:var(--acc)}
+.myth:not([data-myth]) .flip,.myth .flip:only-child{display:none}
+html:not(.js) .flip{display:none}
+
+/* ---------- icon cards ---------- */
+.icon-cards{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.icon-card{transition:transform .18s ease-out,border-color .18s,box-shadow .18s}
+.icon-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.card-ic{width:36px;height:36px;padding:7px;border-radius:10px;background:var(--bg);border:1px solid var(--line);color:var(--acc);margin-bottom:10px}
+
+/* ---------- glance + popular ---------- */
+.split{display:grid;grid-template-columns:1.2fr 1fr;gap:20px;align-items:start}
+.split .keyfacts{margin:0}
+.popular h2{font-size:18px;margin:.2em 0 .6em}
+@media (max-width:860px){.split{grid-template-columns:1fr}}
+
+/* ---------- closing CTA ---------- */
+.endcta{text-align:center;padding:40px 20px;border-radius:22px;border:1px solid var(--line);
+background:radial-gradient(500px 200px at 50% 0,rgba(124,92,255,.12),transparent 70%),var(--soft)}
+.endcta h2{margin:0 0 .3em;font-size:clamp(24px,3vw,30px)}
+.endcta p{color:var(--mut);margin:0 auto 20px;max-width:520px}
+
+/* ---------- reveal on scroll ---------- */
+.js .reveal{opacity:0;transform:translateY(16px);transition:opacity .5s ease-out,transform .5s ease-out}
+.js .reveal.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+*,*::before,*::after{animation:none!important;transition:none!important}
+.js .reveal{opacity:1;transform:none}
+.js .term [data-line]{opacity:1;transform:none}}
+@media (max-width:720px){.section{margin:52px 0}}
 """
 
 

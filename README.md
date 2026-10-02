@@ -40,6 +40,7 @@ whole products against Indian data protection law.
 | [The Act, section by section](https://mksd0398.github.io/dpdp-act-skill/act/) | All 44 sections verbatim, each with a one-line summary |
 | [The Rules, 2025](https://mksd0398.github.io/dpdp-act-skill/rules/) | 23 rules, 7 schedules, commencement dates |
 | [The DPDP Act explained](https://mksd0398.github.io/dpdp-act-skill/dpdp-act-explained/) | The five gates, consent, exemptions, enforcement, 16 traps |
+| [Readiness self-check](https://mksd0398.github.io/dpdp-act-skill/dpdp-compliance-checker/) | A three-minute interactive check that scores your readiness and ranks your gaps by penalty ceiling. Runs in your browser. |
 | [Compliance checklist](https://mksd0398.github.io/dpdp-act-skill/compliance-checklist/) | 78 checks, each anchored to a section or rule |
 | [Glossary](https://mksd0398.github.io/dpdp-act-skill/glossary/) | Every section 2 definition, verbatim, with plain-English notes |
 | [FAQ](https://mksd0398.github.io/dpdp-act-skill/faq/) | 30+ direct answers, each with its source |
