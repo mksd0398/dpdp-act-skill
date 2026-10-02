@@ -160,7 +160,11 @@ def last_modified(*sources: Path) -> str:
 
 # ---------------------------------------------------------------- citation links
 
-_OTHER_ACT = re.compile(r"(IT Act|RTI Act|TRAI Act|IBC|IPC|2005|Copyright Act)[^.;]{0,12}$")
+# "IT Act s.43A", "TRAI Act s.14(c)", and the second half of "IBC s.3(12) and s.3(14)"
+_OTHER_ACT = re.compile(
+    r"(?:IT Act|RTI Act|TRAI Act|IBC|IPC|2005|Copyright Act, 1957)\W{0,3} "
+    r"(?:s\.[\w()]+(?:,| and| or) )?$"
+)
 _SEC_RE = re.compile(r"(?<![\w.\[/])s\.(\d{1,2})((?:\([0-9a-z]+\))*)(?![\w])")
 _RULE_RE = re.compile(r"(?<![\w\[/])(Rules?) (\d{1,2})((?:\([0-9a-z]+\))*)(?![\w])")
 RULE_PAGES: dict[int, str] = {}  # rule number -> rules/<slug>, filled in by build()
@@ -175,7 +179,7 @@ def link_refs(text: str, up: str, *, skip_section: int | None = None,
         n = int(m.group(1))
         if not 1 <= n <= 44 or n == skip_section:
             return m.group(0)
-        if _OTHER_ACT.search(text[max(0, m.start() - 22): m.start()]):
+        if _OTHER_ACT.search(text[max(0, m.start() - 40): m.start()]):
             return m.group(0)
         return f"[{m.group(0)}]({up}act/section-{n}/)"
 
