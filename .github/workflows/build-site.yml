@@ -4,8 +4,10 @@ on:
   push:
     branches: [main]
     paths:
-      - 'skills/dpdp-analyze/references/**'
-      - 'tools/build_site.py'
+      - 'skills/dpdp-analyze/**'
+      - 'tools/**'
+      - 'DISCLAIMER.md'
+      - 'docs/**'
   workflow_dispatch:
 
 permissions:
@@ -16,6 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history, so each page's lastmod is its source's real commit date
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -28,3 +32,11 @@ jobs:
           git add docs
           git diff --staged --quiet || git commit -m "chore: rebuild site from reference sources"
           git push
+      - name: Ping IndexNow (Bing, which feeds ChatGPT search and Copilot)
+        continue-on-error: true
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            python tools/indexnow.py "${{ github.event.before }}" HEAD
+          else
+            python tools/indexnow.py all
+          fi

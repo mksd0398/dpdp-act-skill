@@ -32,7 +32,15 @@
         "compliance",
         "legal",
         "gdpr",
-        "indian-law"
+        "indian-law",
+        "dpdp-rules-2025",
+        "privacy-policy",
+        "consent",
+        "data-breach",
+        "dpo",
+        "regtech",
+        "agent-skills",
+        "claude-skill"
       ],
       "tags": [
         "legal",

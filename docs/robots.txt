@@ -1,4 +1,24 @@
+# Search engines and AI answer engines are welcome to crawl, index, cite and learn from
+# this site. The DPDP Act text is a Government of India work; the commentary is MIT.
 User-agent: *
+Allow: /
+
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bingbot
+User-agent: CCBot
+User-agent: DuckAssistBot
+User-agent: Meta-ExternalAgent
+User-agent: MistralAI-User
+User-agent: cohere-ai
 Allow: /
 
 Sitemap: https://mksd0398.github.io/dpdp-act-skill/sitemap.xml

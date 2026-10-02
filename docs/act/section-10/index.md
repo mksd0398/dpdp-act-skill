@@ -1,0 +1,36 @@
+# Section 10 DPDP Act 2023: Additional obligations of
+
+> Canonical page: https://mksd0398.github.io/dpdp-act-skill/act/section-10/
+> Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
+
+**CHAPTER II: OBLIGATIONS OF DATA FIDUCIARY.** The Digital Personal Data Protection Act, 2023 (Act 22 of 2023), section 10. Verbatim from the Gazette of India.
+
+Summary (maintainers', not statutory text): Government-notified only; DPO in India responsible to the board; independent data auditor; periodic DPIA and audit
+
+## Section 10. Additional obligations of Significant Data Fiduciary
+
+(1) The Central Government may notify any Data Fiduciary or class of Data Fiduciaries as Significant Data
+Fiduciary, on the basis of an assessment of such relevant factors as it may determine, including—
+  (a) the volume and sensitivity of personal data processed;
+  (b) risk to the rights of Data Principal;
+  (c) potential impact on the sovereignty and integrity of India;
+  (d) risk to electoral democracy;
+  (e) security of the State; and
+  (f) public order.
+
+(2) The Significant Data Fiduciary shall—
+  (a) appoint a Data Protection Officer who shall—
+    (i) represent the Significant Data Fiduciary under the provisions of this Act;
+    (ii) be based in India;
+    (iii) be an individual responsible to the Board of Directors or similar governing body of the
+    Significant Data Fiduciary; and
+    (iv) be the point of contact for the grievance redressal mechanism under the provisions of this Act;
+  (b) appoint an independent data auditor to carry out data audit, who shall evaluate the compliance of the
+  Significant Data Fiduciary in accordance with the provisions of this Act; and
+  (c) undertake the following other measures, namely:—
+    (i) periodic Data Protection Impact Assessment, which shall be a process comprising a description of the
+    rights of Data Principals and the purpose of processing of their personal data, assessment and management
+    of the risk to the rights of the Data Principals, and such other matters regarding such process as may be
+    prescribed;
+    (ii) periodic audit; and
+    (iii) such other measures, consistent with the provisions of this Act, as may be prescribed.
