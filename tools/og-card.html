@@ -1,0 +1,45 @@
+<!doctype html>
+<!-- Source for tools/static/assets/og.jpg (1200x630 social preview card).
+     Re-render with:  node tools/render_og.mjs  -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  *{box-sizing:border-box;margin:0}
+  html,body{width:1200px;height:630px}
+  body{font-family:"DejaVu Sans",Arial,sans-serif;color:#eef2f8;
+    background:radial-gradient(1100px 520px at 88% 8%,#1d4f8f 0%,rgba(29,79,143,0) 60%),
+               linear-gradient(135deg,#0b1220 0%,#101b30 55%,#0d1a2e 100%);
+    padding:60px 72px 52px;display:flex;flex-direction:column;justify-content:space-between}
+  .eyebrow{font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:#8fb9ff;font-weight:700}
+  h1{font-size:62px;white-space:nowrap;line-height:1.04;letter-spacing:-.02em;margin-top:18px;font-weight:800}
+  h1 span{color:#8fb9ff}
+  .sub{font-size:28px;line-height:1.35;color:#c9d4e5;margin-top:22px;max-width:980px}
+  .chips{display:flex;gap:10px;flex-wrap:wrap}
+  .chip{font-size:20px;padding:9px 16px;border-radius:999px;background:rgba(143,185,255,.12);
+    border:1px solid rgba(143,185,255,.35);color:#dce8ff}
+  .chip.hot{background:#8fb9ff;color:#0b1220;font-weight:700;border-color:#8fb9ff}
+  .foot{display:flex;justify-content:space-between;align-items:flex-end;font-size:22px;color:#9fb0c8}
+  .foot b{color:#eef2f8}
+  .seal{font-size:96px;line-height:1;color:#8fb9ff;opacity:.9}
+</style>
+</head>
+<body>
+  <div>
+    <div class="eyebrow">India &middot; Data protection law</div>
+    <h1>DPDP Act 2023 <span>+</span> Rules 2025</h1>
+    <p class="sub">Full verbatim text, section by section. Penalties, a compliance checklist,
+      and a free AI skill that answers from the actual statute.</p>
+  </div>
+  <div class="chips">
+    <span class="chip">44 sections verbatim</span>
+    <span class="chip">23 Rules, 7 Schedules</span>
+    <span class="chip">78-point checklist</span>
+    <span class="chip hot">Free Claude Code skill</span>
+  </div>
+  <div class="foot">
+    <div><b>mksd0398.github.io/dpdp-act-skill</b><br>Open source &middot; MIT &middot; Not legal advice</div>
+    <div class="seal">&#9878;</div>
+  </div>
+</body>
+</html>

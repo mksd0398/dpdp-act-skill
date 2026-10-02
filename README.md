@@ -3,7 +3,13 @@
 [![Read the Act online](https://img.shields.io/badge/read-DPDP%20Act%202023-0b6bcb)](https://mksd0398.github.io/dpdp-act-skill/act/)
 [![Read the Rules](https://img.shields.io/badge/read-DPDP%20Rules%202025-0b6bcb)](https://mksd0398.github.io/dpdp-act-skill/rules/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Install the Claude Code skill](https://img.shields.io/badge/Claude%20Code-install%20skill-d97757)](https://mksd0398.github.io/dpdp-act-skill/claude-code-skill/)
+[![Agent Skills format](https://img.shields.io/badge/Agent%20Skills-SKILL.md-555)](https://agentskills.io)
 [![Not legal advice](https://img.shields.io/badge/⚠-not%20legal%20advice-b00020)](DISCLAIMER.md)
+
+**A free, open-source DPDP Act skill for Claude Code, plus the verbatim text of India's Digital
+Personal Data Protection Act 2023 and DPDP Rules 2025.** Ask Claude about Indian data protection law and
+get the section number back.
 
 > ## ⚠️ This is not legal advice
 >
@@ -28,6 +34,16 @@ installable **Claude Code skill** that analyses privacy notices, consent flows, 
 whole products against Indian data protection law.
 
 **Read it in your browser:** [mksd0398.github.io/dpdp-act-skill](https://mksd0398.github.io/dpdp-act-skill/)
+
+| On the site | |
+|---|---|
+| [The Act, section by section](https://mksd0398.github.io/dpdp-act-skill/act/) | All 44 sections verbatim, each with a one-line summary |
+| [The Rules, 2025](https://mksd0398.github.io/dpdp-act-skill/rules/) | 23 rules, 7 schedules, commencement dates |
+| [The DPDP Act explained](https://mksd0398.github.io/dpdp-act-skill/dpdp-act-explained/) | The five gates, consent, exemptions, enforcement, 16 traps |
+| [Compliance checklist](https://mksd0398.github.io/dpdp-act-skill/compliance-checklist/) | 78 checks, each anchored to a section or rule |
+| [Glossary](https://mksd0398.github.io/dpdp-act-skill/glossary/) | Every section 2 definition, verbatim, with plain-English notes |
+| [FAQ](https://mksd0398.github.io/dpdp-act-skill/faq/) | 30+ direct answers, each with its source |
+| [Penalties](https://mksd0398.github.io/dpdp-act-skill/penalties/) and [DPDP vs GDPR](https://mksd0398.github.io/dpdp-act-skill/dpdp-vs-gdpr/) | The Schedule, and the 17 differences that change what you build |
 
 ---
 
@@ -73,6 +89,21 @@ git clone https://github.com/mksd0398/dpdp-act-skill.git
 cp -r dpdp-act-skill/skills/dpdp-analyze ~/.claude/skills/
 ```
 
+### Other AI tools
+
+The skill is a standard `SKILL.md` folder in the open [Agent Skills](https://agentskills.io) format,
+so it is not tied to Claude Code.
+
+| Tool | How |
+|---|---|
+| **Claude.ai** (web, desktop, mobile) | Download [`dpdp-analyze.zip`](https://mksd0398.github.io/dpdp-act-skill/downloads/dpdp-analyze.zip), then Customize > Skills > + > Create skill > Upload a skill. Code execution must be on. |
+| **GitHub Copilot** (CLI, VS Code, coding agent) | `gh skill install mksd0398/dpdp-act-skill dpdp-analyze` |
+| **Gemini CLI** | `gemini skills install https://github.com/mksd0398/dpdp-act-skill.git --path skills/dpdp-analyze` |
+| **Many agents at once** | `npx skills add mksd0398/dpdp-act-skill` |
+| **OpenAI Codex, Cursor, Goose, OpenCode, Junie, Amp** | Copy `skills/dpdp-analyze` into `~/.agents/skills/`, or `.agents/skills/` in a project |
+| **Claude API** | Upload the folder with the [Skills API](https://platform.claude.com/docs/en/build-with-claude/skills-guide) |
+| **RAG, custom GPTs, prompt libraries** | Index [`references/`](skills/dpdp-analyze/references/) or the site's [`llms-full.txt`](https://mksd0398.github.io/dpdp-act-skill/llms-full.txt) |
+
 ### Using it
 
 ```
@@ -88,8 +119,10 @@ Or just ask a question. The skill triggers on Indian privacy topics without bein
 - "We had a data breach, what do we have to do?"
 - "Are we a Significant Data Fiduciary?"
 
-Works with Claude Code, and the reference files are plain Markdown so they drop into any other
-agent, RAG index or prompt library unchanged.
+The reference files are plain Markdown, so they drop into any agent, RAG index or prompt library
+unchanged. AI crawlers and agents can start from the site's
+[`llms.txt`](https://mksd0398.github.io/dpdp-act-skill/llms.txt); every content page also has a
+Markdown twin at `index.md`.
 
 ---
 
@@ -253,6 +286,18 @@ live obligations.
 
 ---
 
+## Help others find it
+
+If this saved you time, the most useful things you can do are:
+
+- **Star the repository.** Several skill directories and awesome lists only list projects above a
+  star threshold.
+- **Share the site** with whoever owns privacy, security or product compliance for Indian users:
+  [mksd0398.github.io/dpdp-act-skill](https://mksd0398.github.io/dpdp-act-skill/).
+- **Report an error.** A correction to the statutory text is worth more than a star.
+
+To cite it, use GitHub's "Cite this repository" button, which reads [`CITATION.cff`](CITATION.cff).
+
 ## Contributing
 
 Corrections to statutory text take priority over everything else. Please cite the Gazette reference
@@ -286,4 +331,6 @@ Rules, 2025 are Government of India works, reproduced under s.52(1)(q) of the Co
 protection law, DPDP compliance checklist, Data Protection Board of India, Significant Data
 Fiduciary, Data Fiduciary obligations, Data Principal rights, DPDP penalties, DPDP vs GDPR, India
 privacy law, personal data breach notification India, verifiable parental consent India, consent
-manager DPDP, Claude Code skill, AI legal compliance.
+manager DPDP, DPDP compliance deadline 14 May 2027, DPDP privacy policy review, Data Protection
+Officer India, data localisation India, Claude Code skill, Claude Code plugin, Agent Skills, SKILL.md,
+AI legal compliance, privacy compliance AI.

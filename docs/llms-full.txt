@@ -1,0 +1,2016 @@
+# DPDP Act 2023 Reference: full text
+
+> Source: https://mksd0398.github.io/dpdp-act-skill/ and https://github.com/mksd0398/dpdp-act-skill
+> Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
+
+
+---
+
+# THE DIGITAL PERSONAL DATA PROTECTION ACT, 2023
+
+**Act No. 22 of 2023.** Assented by the President on **11 August 2023**. Published in
+The Gazette of India, Extraordinary, Part II, Section 1, No. 25, New Delhi, Friday,
+11 August 2023 / Sravana 20, 1945 (Saka). CG-DL-E-12082023-248045.
+
+> Long title: An Act to provide for the processing of digital personal data in a manner that
+> recognises both the right of individuals to protect their personal data and the need to
+> process such personal data for lawful purposes and for matters connected therewith or
+> incidental thereto.
+>
+> Enacting formula: BE it enacted by Parliament in the Seventy-fourth Year of the Republic of India.
+
+**Structure:** 44 sections in 9 Chapters, plus one Schedule of penalties.
+
+This file is the operative text reproduced verbatim from the Gazette. Page furniture and the
+sidebar marginal notes have been converted into headings. **Nothing in the operative text has
+been paraphrased.** Illustrations are reproduced because they are part of the enacted text and
+are the strongest interpretive aid this statute gives you.
+
+---
+
+## CHAPTER I: PRELIMINARY
+
+### Section 1. Short title and commencement
+
+(1) This Act may be called the Digital Personal Data Protection Act, 2023.
+
+(2) It shall come into force on such date as the Central Government may, by notification in
+the Official Gazette, appoint and different dates may be appointed for different provisions
+of this Act and any reference in any such provision to the commencement of this Act shall be
+construed as a reference to the coming into force of that provision.
+
+> **Practitioner note:** Section 1(2) is why "is DPDP in force?" is a real question and not a
+> formality. The Act permits section-by-section commencement. Always check current commencement
+> notifications before asserting that any obligation is live.
+
+### Section 2. Definitions
+
+In this Act, unless the context otherwise requires,—
+
+(a) **"Appellate Tribunal"** means the Telecom Disputes Settlement and Appellate Tribunal
+established under section 14 of the Telecom Regulatory Authority of India Act, 1997 (24 of 1997);
+
+(b) **"automated"** means any digital process capable of operating automatically in response
+to instructions given or otherwise for the purpose of processing data;
+
+(c) **"Board"** means the Data Protection Board of India established by the Central Government
+under section 18;
+
+(d) **"certain legitimate uses"** means the uses referred to in section 7;
+
+(e) **"Chairperson"** means the Chairperson of the Board;
+
+(f) **"child"** means an individual who has not completed the age of eighteen years;
+
+(g) **"Consent Manager"** means a person registered with the Board, who acts as a single point
+of contact to enable a Data Principal to give, manage, review and withdraw her consent through
+an accessible, transparent and interoperable platform;
+
+(h) **"data"** means a representation of information, facts, concepts, opinions or instructions
+in a manner suitable for communication, interpretation or processing by human beings or by
+automated means;
+
+(i) **"Data Fiduciary"** means any person who alone or in conjunction with other persons
+determines the purpose and means of processing of personal data;
+
+(j) **"Data Principal"** means the individual to whom the personal data relates and where such
+individual is—
+  (i) a child, includes the parents or lawful guardian of such a child;
+  (ii) a person with disability, includes her lawful guardian, acting on her behalf;
+
+(k) **"Data Processor"** means any person who processes personal data on behalf of a Data Fiduciary;
+
+(l) **"Data Protection Officer"** means an individual appointed by the Significant Data Fiduciary
+under clause (a) of sub-section (2) of section 10;
+
+(m) **"digital office"** means an office that adopts an online mechanism wherein the proceedings,
+from receipt of intimation or complaint or reference or directions or appeal, as the case may be,
+to the disposal thereof, are conducted in online or digital mode;
+
+(n) **"digital personal data"** means personal data in digital form;
+
+(o) **"gain"** means—
+  (i) a gain in property or supply of services, whether temporary or permanent; or
+  (ii) an opportunity to earn remuneration or greater remuneration or to gain a financial
+  advantage otherwise than by way of legitimate remuneration;
+
+(p) **"loss"** means—
+  (i) a loss in property or interruption in supply of services, whether temporary or permanent; or
+  (ii) a loss of opportunity to earn remuneration or greater remuneration or to gain a financial
+  advantage otherwise than by way of legitimate remuneration;
+
+(q) **"Member"** means a Member of the Board and includes the Chairperson;
+
+(r) **"notification"** means a notification published in the Official Gazette and the expressions
+"notify" and "notified" shall be construed accordingly;
+
+(s) **"person"** includes—
+  (i) an individual;
+  (ii) a Hindu undivided family;
+  (iii) a company;
+  (iv) a firm;
+  (v) an association of persons or a body of individuals, whether incorporated or not;
+  (vi) the State; and
+  (vii) every artificial juristic person, not falling within any of the preceding sub-clauses;
+
+(t) **"personal data"** means any data about an individual who is identifiable by or in relation
+to such data;
+
+(u) **"personal data breach"** means any unauthorised processing of personal data or accidental
+disclosure, acquisition, sharing, use, alteration, destruction or loss of access to personal data,
+that compromises the confidentiality, integrity or availability of personal data;
+
+(v) **"prescribed"** means prescribed by rules made under this Act;
+
+(w) **"proceeding"** means any action taken by the Board under the provisions of this Act;
+
+(x) **"processing"** in relation to personal data, means a wholly or partly automated operation
+or set of operations performed on digital personal data, and includes operations such as
+collection, recording, organisation, structuring, storage, adaptation, retrieval, use, alignment
+or combination, indexing, sharing, disclosure by transmission, dissemination or otherwise making
+available, restriction, erasure or destruction;
+
+(y) **"she"** in relation to an individual includes the reference to such individual irrespective
+of gender;
+
+(z) **"Significant Data Fiduciary"** means any Data Fiduciary or class of Data Fiduciaries as may
+be notified by the Central Government under section 10;
+
+(za) **"specified purpose"** means the purpose mentioned in the notice given by the Data Fiduciary
+to the Data Principal in accordance with the provisions of this Act and the rules made thereunder; and
+
+(zb) **"State"** means the State as defined under article 12 of the Constitution.
+
+### Section 3. Application of Act
+
+Subject to the provisions of this Act, it shall—
+
+(a) apply to the processing of digital personal data within the territory of India where the
+personal data is collected—
+  (i) in digital form; or
+  (ii) in non-digital form and digitised subsequently;
+
+(b) also apply to processing of digital personal data outside the territory of India, if such
+processing is in connection with any activity related to offering of goods or services to Data
+Principals within the territory of India;
+
+(c) not apply to—
+  (i) personal data processed by an individual for any personal or domestic purpose; and
+  (ii) personal data that is made or caused to be made publicly available by—
+    (A) the Data Principal to whom such personal data relates; or
+    (B) any other person who is under an obligation under any law for the time being in force
+    in India to make such personal data publicly available.
+
+> **Illustration.** X, an individual, while blogging her views, has publicly made available her
+> personal data on social media. In such case, the provisions of this Act shall not apply.
+
+---
+
+## CHAPTER II: OBLIGATIONS OF DATA FIDUCIARY
+
+### Section 4. Grounds for processing personal data
+
+(1) A person may process the personal data of a Data Principal only in accordance with the
+provisions of this Act and for a lawful purpose,—
+  (a) for which the Data Principal has given her consent; or
+  (b) for certain legitimate uses.
+
+(2) For the purposes of this section, the expression "lawful purpose" means any purpose which is
+not expressly forbidden by law.
+
+### Section 5. Notice
+
+(1) Every request made to a Data Principal under section 6 for consent shall be accompanied or
+preceded by a notice given by the Data Fiduciary to the Data Principal, informing her,—
+  (i) the personal data and the purpose for which the same is proposed to be processed;
+  (ii) the manner in which she may exercise her rights under sub-section (4) of section 6 and
+  section 13; and
+  (iii) the manner in which the Data Principal may make a complaint to the Board,
+in such manner and as may be prescribed.
+
+> **Illustration.** X, an individual, opens a bank account using the mobile app or website of Y,
+> a bank. To complete the Know-Your-Customer requirements under law for opening of bank account,
+> X opts for processing of her personal data by Y in a live, video-based customer identification
+> process. Y shall accompany or precede the request for the personal data with notice to X,
+> describing the personal data and the purpose of its processing.
+
+(2) Where a Data Principal has given her consent for the processing of her personal data before
+the date of commencement of this Act,—
+  (a) the Data Fiduciary shall, as soon as it is reasonably practicable, give to the Data
+  Principal a notice informing her,—
+    (i) the personal data and the purpose for which the same has been processed;
+    (ii) the manner in which she may exercise her rights under sub-section (4) of section 6 and
+    section 13; and
+    (iii) the manner in which the Data Principal may make a complaint to the Board,
+  in such manner and as may be prescribed.
+  (b) the Data Fiduciary may continue to process the personal data until and unless the Data
+  Principal withdraws her consent.
+
+> **Illustration.** X, an individual, gave her consent to the processing of her personal data for
+> an online shopping app or website operated by Y, an e-commerce service provider, before the
+> commencement of this Act. Upon commencement of the Act, Y shall, as soon as practicable, give
+> through email, in-app notification or other effective method information to X, describing the
+> personal data and the purpose of its processing.
+
+(3) The Data Fiduciary shall give the Data Principal the option to access the contents of the
+notice referred to in sub-sections (1) and (2) in English or any language specified in the Eighth
+Schedule to the Constitution.
+
+### Section 6. Consent
+
+(1) The consent given by the Data Principal shall be free, specific, informed, unconditional and
+unambiguous with a clear affirmative action, and shall signify an agreement to the processing of
+her personal data for the specified purpose and be limited to such personal data as is necessary
+for such specified purpose.
+
+> **Illustration.** X, an individual, downloads Y, a telemedicine app. Y requests the consent of X
+> for (i) the processing of her personal data for making available telemedicine services, and
+> (ii) accessing her mobile phone contact list, and X signifies her consent to both. Since phone
+> contact list is not necessary for making available telemedicine services, her consent shall be
+> limited to the processing of her personal data for making available telemedicine services.
+
+(2) Any part of consent referred in sub-section (1) which constitutes an infringement of the
+provisions of this Act or the rules made thereunder or any other law for the time being in force
+shall be invalid to the extent of such infringement.
+
+> **Illustration.** X, an individual, buys an insurance policy using the mobile app or website of
+> Y, an insurer. She gives to Y her consent for (i) the processing of her personal data by Y for
+> the purpose of issuing the policy, and (ii) waiving her right to file a complaint to the Data
+> Protection Board of India. Part (ii) of the consent, relating to waiver of her right to file a
+> complaint, shall be invalid.
+
+(3) Every request for consent under the provisions of this Act or the rules made thereunder shall
+be presented to the Data Principal in a clear and plain language, giving her the option to access
+such request in English or any language specified in the Eighth Schedule to the Constitution and
+providing the contact details of a Data Protection Officer, where applicable, or of any other
+person authorised by the Data Fiduciary to respond to any communication from the Data Principal
+for the purpose of exercise of her rights under the provisions of this Act.
+
+(4) Where consent given by the Data Principal is the basis of processing of personal data, such
+Data Principal shall have the right to withdraw her consent at any time, with the ease of doing so
+being comparable to the ease with which such consent was given.
+
+(5) The consequences of the withdrawal referred to in sub-section (4) shall be borne by the Data
+Principal, and such withdrawal shall not affect the legality of processing of the personal data
+based on consent before its withdrawal.
+
+> **Illustration.** X, an individual, is the user of an online shopping app or website operated by
+> Y, an e-commerce service provider. X consents to the processing of her personal data by Y for the
+> purpose of fulfilling her supply order and places an order for supply of a good while making
+> payment for the same. If X withdraws her consent, Y may stop enabling X to use the app or website
+> for placing orders, but may not stop the processing for supply of the goods already ordered and
+> paid for by X.
+
+(6) If a Data Principal withdraws her consent to the processing of personal data under
+sub-section (5), the Data Fiduciary shall, within a reasonable time, cease and cause its Data
+Processors to cease processing the personal data of such Data Principal unless such processing
+without her consent is required or authorised under the provisions of this Act or the rules made
+thereunder or any other law for the time being in force in India.
+
+> **Illustration.** X, a telecom service provider, enters into a contract with Y, a Data Processor,
+> for emailing telephone bills to the customers of X. Z, a customer of X, who had earlier given her
+> consent to X for the processing of her personal data for emailing of bills, downloads the mobile
+> app of X and opts to receive bills only on the app. X shall itself cease, and shall cause Y to
+> cease, the processing of the personal data of Z for emailing bills.
+
+(7) The Data Principal may give, manage, review or withdraw her consent to the Data Fiduciary
+through a Consent Manager.
+
+(8) The Consent Manager shall be accountable to the Data Principal and shall act on her behalf in
+such manner and subject to such obligations as may be prescribed.
+
+(9) Every Consent Manager shall be registered with the Board in such manner and subject to such
+technical, operational, financial and other conditions as may be prescribed.
+
+(10) Where a consent given by the Data Principal is the basis of processing of personal data and a
+question arises in this regard in a proceeding, the Data Fiduciary shall be obliged to prove that a
+notice was given by her to the Data Principal and consent was given by such Data Principal to the
+Data Fiduciary in accordance with the provisions of this Act and the rules made thereunder.
+
+### Section 7. Certain legitimate uses
+
+A Data Fiduciary may process personal data of a Data Principal for any of following uses, namely:—
+
+**(a)** for the specified purpose for which the Data Principal has voluntarily provided her personal
+data to the Data Fiduciary, and in respect of which she has not indicated to the Data Fiduciary that
+she does not consent to the use of her personal data.
+
+> **Illustration (I).** X, an individual, makes a purchase at Y, a pharmacy. She voluntarily provides
+> Y her personal data and requests Y to acknowledge receipt of the payment made for the purchase by
+> sending a message to her mobile phone. Y may process the personal data of X for the purpose of
+> sending the receipt.
+>
+> **Illustration (II).** X, an individual, electronically messages Y, a real estate broker, requesting
+> Y to help identify a suitable rented accommodation for her and shares her personal data for this
+> purpose. Y may process her personal data to identify and intimate to her the details of accommodation
+> available on rent. Subsequently, X informs Y that X no longer needs help from Y. Y shall cease to
+> process the personal data of X;
+
+**(b)** for the State and any of its instrumentalities to provide or issue to the Data Principal such
+subsidy, benefit, service, certificate, licence or permit as may be prescribed, where—
+  (i) she has previously consented to the processing of her personal data by the State or any of its
+  instrumentalities for any subsidy, benefit, service, certificate, licence or permit; or
+  (ii) such personal data is available in digital form in, or in non-digital form and digitised
+  subsequently from, any database, register, book or other document which is maintained by the State
+  or any of its instrumentalities and is notified by the Central Government,
+subject to standards followed for processing being in accordance with the policy issued by the Central
+Government or any law for the time being in force for governance of personal data.
+
+> **Illustration.** X, a pregnant woman, enrols herself on an app or website to avail of government's
+> maternity benefits programme, while consenting to provide her personal data for the purpose of
+> availing of such benefits. Government may process the personal data of X processing to determine her
+> eligibility to receive any other prescribed benefit from the government;
+
+**(c)** for the performance by the State or any of its instrumentalities of any function under any law
+for the time being in force in India or in the interest of sovereignty and integrity of India or
+security of the State;
+
+**(d)** for fulfilling any obligation under any law for the time being in force in India on any person
+to disclose any information to the State or any of its instrumentalities, subject to such processing
+being in accordance with the provisions regarding disclosure of such information in any other law for
+the time being in force;
+
+**(e)** for compliance with any judgment or decree or order issued under any law for the time being in
+force in India, or any judgment or order relating to claims of a contractual or civil nature under any
+law for the time being in force outside India;
+
+**(f)** for responding to a medical emergency involving a threat to the life or immediate threat to the
+health of the Data Principal or any other individual;
+
+**(g)** for taking measures to provide medical treatment or health services to any individual during an
+epidemic, outbreak of disease, or any other threat to public health;
+
+**(h)** for taking measures to ensure safety of, or provide assistance or services to, any individual
+during any disaster, or any breakdown of public order.
+
+> *Explanation.*—For the purposes of this clause, the expression "disaster" shall have the same meaning
+> as assigned to it in clause (d) of section 2 of the Disaster Management Act, 2005 (53 of 2005); or
+
+**(i)** for the purposes of employment or those related to safeguarding the employer from loss or
+liability, such as prevention of corporate espionage, maintenance of confidentiality of trade secrets,
+intellectual property, classified information or provision of any service or benefit sought by a Data
+Principal who is an employee.
+
+### Section 8. General obligations of Data Fiduciary
+
+(1) A Data Fiduciary shall, irrespective of any agreement to the contrary or failure of a Data Principal
+to carry out the duties provided under this Act, be responsible for complying with the provisions of this
+Act and the rules made thereunder in respect of any processing undertaken by it or on its behalf by a
+Data Processor.
+
+(2) A Data Fiduciary may engage, appoint, use or otherwise involve a Data Processor to process personal
+data on its behalf for any activity related to offering of goods or services to Data Principals only
+under a valid contract.
+
+(3) Where personal data processed by a Data Fiduciary is likely to be—
+  (a) used to make a decision that affects the Data Principal; or
+  (b) disclosed to another Data Fiduciary,
+the Data Fiduciary processing such personal data shall ensure its completeness, accuracy and consistency.
+
+(4) A Data Fiduciary shall implement appropriate technical and organisational measures to ensure effective
+observance of the provisions of this Act and the rules made thereunder.
+
+(5) A Data Fiduciary shall protect personal data in its possession or under its control, including in
+respect of any processing undertaken by it or on its behalf by a Data Processor, by taking reasonable
+security safeguards to prevent personal data breach.
+
+(6) In the event of a personal data breach, the Data Fiduciary shall give the Board and each affected Data
+Principal, intimation of such breach in such form and manner as may be prescribed.
+
+(7) A Data Fiduciary shall, unless retention is necessary for compliance with any law for the time being
+in force,—
+  (a) erase personal data, upon the Data Principal withdrawing her consent or as soon as it is reasonable
+  to assume that the specified purpose is no longer being served, whichever is earlier; and
+  (b) cause its Data Processor to erase any personal data that was made available by the Data Fiduciary
+  for processing to such Data Processor.
+
+> **Illustration (I).** X, an individual, registers herself on an online marketplace operated by Y, an
+> e-commerce service provider. X gives her consent to Y for the processing of her personal data for
+> selling her used car. The online marketplace helps conclude the sale. Y shall no longer retain her
+> personal data.
+>
+> **Illustration (II).** X, an individual, decides to close her savings account with Y, a bank. Y is
+> required by law applicable to banks to maintain the record of the identity of its clients for a period
+> of ten years beyond closing of accounts. Since retention is necessary for compliance with law, Y shall
+> retain X's personal data for the said period.
+
+(8) The purpose referred to in clause (a) of sub-section (7) shall be deemed to no longer be served, if
+the Data Principal does not—
+  (a) approach the Data Fiduciary for the performance of the specified purpose; and
+  (b) exercise any of her rights in relation to such processing,
+for such time period as may be prescribed, and different time periods may be prescribed for different
+classes of Data Fiduciaries and for different purposes.
+
+(9) A Data Fiduciary shall publish, in such manner as may be prescribed, the business contact information
+of a Data Protection Officer, if applicable, or a person who is able to answer on behalf of the Data
+Fiduciary, the questions, if any, raised by the Data Principal about the processing of her personal data.
+
+(10) A Data Fiduciary shall establish an effective mechanism to redress the grievances of Data Principals.
+
+(11) For the purposes of this section, it is hereby clarified that a Data Principal shall be considered as
+not having approached the Data Fiduciary for the performance of the specified purpose, in any period during
+which she has not initiated contact with the Data Fiduciary for such performance, in person or by way of
+communication in electronic or physical form.
+
+### Section 9. Processing of personal data of children
+
+(1) The Data Fiduciary shall, before processing any personal data of a child or a person with disability
+who has a lawful guardian obtain verifiable consent of the parent of such child or the lawful guardian, as
+the case may be, in such manner as may be prescribed.
+
+> *Explanation.*—For the purpose of this sub-section, the expression "consent of the parent" includes the
+> consent of lawful guardian, wherever applicable.
+
+(2) A Data Fiduciary shall not undertake such processing of personal data that is likely to cause any
+detrimental effect on the well-being of a child.
+
+(3) A Data Fiduciary shall not undertake tracking or behavioural monitoring of children or targeted
+advertising directed at children.
+
+(4) The provisions of sub-sections (1) and (3) shall not be applicable to processing of personal data of a
+child by such classes of Data Fiduciaries or for such purposes, and subject to such conditions, as may be
+prescribed.
+
+(5) The Central Government may, if satisfied that a Data Fiduciary has ensured that its processing of
+personal data of children is done in a manner that is verifiably safe, notify for such processing by such
+Data Fiduciary the age above which that Data Fiduciary shall be exempt from the applicability of all or any
+of the obligations under sub-sections (1) and (3) in respect of processing by that Data Fiduciary as the
+notification may specify.
+
+### Section 10. Additional obligations of Significant Data Fiduciary
+
+(1) The Central Government may notify any Data Fiduciary or class of Data Fiduciaries as Significant Data
+Fiduciary, on the basis of an assessment of such relevant factors as it may determine, including—
+  (a) the volume and sensitivity of personal data processed;
+  (b) risk to the rights of Data Principal;
+  (c) potential impact on the sovereignty and integrity of India;
+  (d) risk to electoral democracy;
+  (e) security of the State; and
+  (f) public order.
+
+(2) The Significant Data Fiduciary shall—
+  (a) appoint a Data Protection Officer who shall—
+    (i) represent the Significant Data Fiduciary under the provisions of this Act;
+    (ii) be based in India;
+    (iii) be an individual responsible to the Board of Directors or similar governing body of the
+    Significant Data Fiduciary; and
+    (iv) be the point of contact for the grievance redressal mechanism under the provisions of this Act;
+  (b) appoint an independent data auditor to carry out data audit, who shall evaluate the compliance of the
+  Significant Data Fiduciary in accordance with the provisions of this Act; and
+  (c) undertake the following other measures, namely:—
+    (i) periodic Data Protection Impact Assessment, which shall be a process comprising a description of the
+    rights of Data Principals and the purpose of processing of their personal data, assessment and management
+    of the risk to the rights of the Data Principals, and such other matters regarding such process as may be
+    prescribed;
+    (ii) periodic audit; and
+    (iii) such other measures, consistent with the provisions of this Act, as may be prescribed.
+
+---
+
+## CHAPTER III: RIGHTS AND DUTIES OF DATA PRINCIPAL
+
+### Section 11. Right to access information about personal data
+
+(1) The Data Principal shall have the right to obtain from the Data Fiduciary to whom she has previously
+given consent, including consent as referred to in clause (a) of section 7 (hereinafter referred to as the
+said Data Fiduciary), for processing of personal data, upon making to it a request in such manner as may be
+prescribed,—
+  (a) a summary of personal data which is being processed by such Data Fiduciary and the processing
+  activities undertaken by that Data Fiduciary with respect to such personal data;
+  (b) the identities of all other Data Fiduciaries and Data Processors with whom the personal data has been
+  shared by such Data Fiduciary, along with a description of the personal data so shared; and
+  (c) any other information related to the personal data of such Data Principal and its processing, as may
+  be prescribed.
+
+(2) Nothing contained in clause (b) or clause (c) of sub-section (1) shall apply in respect of the sharing
+of any personal data by the said Data Fiduciary with any other Data Fiduciary authorised by law to obtain
+such personal data, where such sharing is pursuant to a request made in writing by such other Data Fiduciary
+for the purpose of prevention or detection or investigation of offences or cyber incidents, or for
+prosecution or punishment of offences.
+
+### Section 12. Right to correction and erasure of personal data
+
+(1) A Data Principal shall have the right to correction, completion, updating and erasure of her personal
+data for the processing of which she has previously given consent, including consent as referred to in
+clause (a) of section 7, in accordance with any requirement or procedure under any law for the time being in
+force.
+
+(2) A Data Fiduciary shall, upon receiving a request for correction, completion or updating from a Data
+Principal,—
+  (a) correct the inaccurate or misleading personal data;
+  (b) complete the incomplete personal data; and
+  (c) update the personal data.
+
+(3) A Data Principal shall make a request in such manner as may be prescribed to the Data Fiduciary for
+erasure of her personal data, and upon receipt of such a request, the Data Fiduciary shall erase her personal
+data unless retention of the same is necessary for the specified purpose or for compliance with any law for
+the time being in force.
+
+### Section 13. Right of grievance redressal
+
+(1) A Data Principal shall have the right to have readily available means of grievance redressal provided by
+a Data Fiduciary or Consent Manager in respect of any act or omission of such Data Fiduciary or Consent
+Manager regarding the performance of its obligations in relation to the personal data of such Data Principal
+or the exercise of her rights under the provisions of this Act and the rules made thereunder.
+
+(2) The Data Fiduciary or Consent Manager shall respond to any grievances referred to in sub-section (1)
+within such period as may be prescribed from the date of its receipt for all or any class of Data Fiduciaries.
+
+(3) The Data Principal shall exhaust the opportunity of redressing her grievance under this section before
+approaching the Board.
+
+### Section 14. Right to nominate
+
+(1) A Data Principal shall have the right to nominate, in such manner as may be prescribed, any other
+individual, who shall, in the event of death or incapacity of the Data Principal, exercise the rights of the
+Data Principal in accordance with the provisions of this Act and the rules made thereunder.
+
+(2) For the purposes of this section, the expression "incapacity" means inability to exercise the rights of
+the Data Principal under the provisions of this Act or the rules made thereunder due to unsoundness of mind
+or infirmity of body.
+
+### Section 15. Duties of Data Principal
+
+A Data Principal shall perform the following duties, namely:—
+
+(a) comply with the provisions of all applicable laws for the time being in force while exercising rights
+under the provisions of this Act;
+
+(b) to ensure not to impersonate another person while providing her personal data for a specified purpose;
+
+(c) to ensure not to suppress any material information while providing her personal data for any document,
+unique identifier, proof of identity or proof of address issued by the State or any of its instrumentalities;
+
+(d) to ensure not to register a false or frivolous grievance or complaint with a Data Fiduciary or the Board; and
+
+(e) to furnish only such information as is verifiably authentic, while exercising the right to correction or
+erasure under the provisions of this Act or the rules made thereunder.
+
+---
+
+## CHAPTER IV: SPECIAL PROVISIONS
+
+### Section 16. Processing of personal data outside India
+
+(1) The Central Government may, by notification, restrict the transfer of personal data by a Data Fiduciary
+for processing to such country or territory outside India as may be so notified.
+
+(2) Nothing contained in this section shall restrict the applicability of any law for the time being in force
+in India that provides for a higher degree of protection for or restriction on transfer of personal data by a
+Data Fiduciary outside India in relation to any personal data or Data Fiduciary or class thereof.
+
+### Section 17. Exemptions
+
+(1) The provisions of Chapter II, except sub-sections (1) and (5) of section 8, and those of Chapter III and
+section 16 shall not apply where—
+
+  (a) the processing of personal data is necessary for enforcing any legal right or claim;
+
+  (b) the processing of personal data by any court or tribunal or any other body in India which is entrusted
+  by law with the performance of any judicial or quasi-judicial or regulatory or supervisory function, where
+  such processing is necessary for the performance of such function;
+
+  (c) personal data is processed in the interest of prevention, detection, investigation or prosecution of any
+  offence or contravention of any law for the time being in force in India;
+
+  (d) personal data of Data Principals not within the territory of India is processed pursuant to any contract
+  entered into with any person outside the territory of India by any person based in India;
+
+  (e) the processing is necessary for a scheme of compromise or arrangement or merger or amalgamation of two or
+  more companies or a reconstruction by way of demerger or otherwise of a company, or transfer of undertaking of
+  one or more company to another company, or involving division of one or more companies, approved by a court or
+  tribunal or other authority competent to do so by any law for the time being in force; and
+
+  (f) the processing is for the purpose of ascertaining the financial information and assets and liabilities of
+  any person who has defaulted in payment due on account of a loan or advance taken from a financial institution,
+  subject to such processing being in accordance with the provisions regarding disclosure of information or data
+  in any other law for the time being in force.
+
+  > *Explanation.*—For the purposes of this clause, the expressions "default" and "financial institution" shall
+  > have the meanings respectively assigned to them in sub-sections (12) and (14) of section 3 of the Insolvency
+  > and Bankruptcy Code, 2016 (31 of 2016).
+  >
+  > **Illustration.** X, an individual, takes a loan from Y, a bank. X defaults in paying her monthly loan
+  > repayment instalment on the date on which it falls due. Y may process the personal data of X for ascertaining
+  > her financial information and assets and liabilities.
+
+(2) The provisions of this Act shall not apply in respect of the processing of personal data—
+
+  (a) by such instrumentality of the State as the Central Government may notify, in the interests of sovereignty
+  and integrity of India, security of the State, friendly relations with foreign States, maintenance of public
+  order or preventing incitement to any cognizable offence relating to any of these, and the processing by the
+  Central Government of any personal data that such instrumentality may furnish to it; and
+
+  (b) necessary for research, archiving or statistical purposes if the personal data is not to be used to take
+  any decision specific to a Data Principal and such processing is carried on in accordance with such standards
+  as may be prescribed.
+
+(3) The Central Government may, having regard to the volume and nature of personal data processed, notify
+certain Data Fiduciaries or class of Data Fiduciaries, including startups, as Data Fiduciaries to whom the
+provisions of section 5, sub-sections (3) and (7) of section 8 and sections 10 and 11 shall not apply.
+
+> *Explanation.*—For the purposes of this sub-section, the term "startup" means a private limited company or a
+> partnership firm or a limited liability partnership incorporated in India, which is eligible to be and is
+> recognised as such in accordance with the criteria and process notified by the department to which matters
+> relating to startups are allocated in the Central Government.
+
+(4) In respect of processing by the State or any instrumentality of the State, the provisions of sub-section (7)
+of section 8 and sub-section (3) of section 12 and, where such processing is for a purpose that does not include
+making of a decision that affects the Data Principal, sub-section (2) of section 12 shall not apply.
+
+(5) The Central Government may, before expiry of five years from the date of commencement of this Act, by
+notification, declare that any provision of this Act shall not apply to such Data Fiduciary or classes of Data
+Fiduciaries for such period as may be specified in the notification.
+
+---
+
+## CHAPTER V: DATA PROTECTION BOARD OF INDIA
+
+### Section 18. Establishment of Board
+
+(1) With effect from such date as the Central Government may, by notification, appoint, there shall be
+established, for the purposes of this Act, a Board to be called the Data Protection Board of India.
+
+(2) The Board shall be a body corporate by the name aforesaid, having perpetual succession and a common seal,
+with power, subject to the provisions of this Act, to acquire, hold and dispose of property, both movable and
+immovable, and to contract and shall, by the said name, sue or be sued.
+
+(3) The headquarters of the Board shall be at such place as the Central Government may notify.
+
+### Section 19. Composition and qualifications for appointment of Chairperson and Members
+
+(1) The Board shall consist of a Chairperson and such number of other Members as the Central Government may notify.
+
+(2) The Chairperson and other Members shall be appointed by the Central Government in such manner as may be prescribed.
+
+(3) The Chairperson and other Members shall be a person of ability, integrity and standing who possesses special
+knowledge or practical experience in the fields of data governance, administration or implementation of laws
+related to social or consumer protection, dispute resolution, information and communication technology, digital
+economy, law, regulation or techno-regulation, or in any other field which in the opinion of the Central Government
+may be useful to the Board, and at least one among them shall be an expert in the field of law.
+
+### Section 20. Salary, allowances payable to and term of office
+
+(1) The salary, allowances and other terms and conditions of service of the Chairperson and other Members shall be
+such as may be prescribed, and shall not be varied to their disadvantage after their appointment.
+
+(2) The Chairperson and other Members shall hold office for a term of two years and shall be eligible for
+re-appointment.
+
+### Section 21. Disqualifications for appointment and continuation as Chairperson and Members of Board
+
+(1) A person shall be disqualified for being appointed and continued as the Chairperson or a Member, if she—
+  (a) has been adjudged as an insolvent;
+  (b) has been convicted of an offence, which in the opinion of the Central Government, involves moral turpitude;
+  (c) has become physically or mentally incapable of acting as a Member;
+  (d) has acquired such financial or other interest, as is likely to affect prejudicially her functions as a Member; or
+  (e) has so abused her position as to render her continuance in office prejudicial to the public interest.
+
+(2) The Chairperson or Member shall not be removed from her office by the Central Government unless she has been
+given an opportunity of being heard in the matter.
+
+### Section 22. Resignation by Members and filling of vacancy
+
+(1) The Chairperson or any other Member may give notice in writing to the Central Government of resigning from her
+office, and such resignation shall be effective from the date on which the Central Government permits her to
+relinquish office, or upon expiry of a period of three months from the date of receipt of such notice, or upon a
+duly appointed successor entering upon her office, or upon the expiry of the term of her office, whichever is earliest.
+
+(2) A vacancy caused by the resignation or removal or death of the Chairperson or any other Member, or otherwise,
+shall be filled by fresh appointment in accordance with the provisions of this Act.
+
+(3) The Chairperson and any other Member shall not, for a period of one year from the date on which they cease to
+hold such office, except with the previous approval of the Central Government, accept any employment, and shall also
+disclose to the Central Government any subsequent acceptance of employment with any Data Fiduciary against whom
+proceedings were initiated by or before such Chairperson or other Member.
+
+### Section 23. Proceedings of Board
+
+(1) The Board shall observe such procedure in regard to the holding of and transaction of business at its meetings,
+including by digital means, and authenticate its orders, directions and instruments in such manner as may be prescribed.
+
+(2) No act or proceeding of the Board shall be invalid merely by reason of—
+  (a) any vacancy in or any defect in the constitution of the Board;
+  (b) any defect in the appointment of a person acting as the Chairperson or other Member of the Board; or
+  (c) any irregularity in the procedure of the Board, which does not affect the merits of the case.
+
+(3) When the Chairperson is unable to discharge her functions owing to absence, illness or any other cause, the
+senior-most Member shall discharge the functions of the Chairperson until the date on which the Chairperson resumes
+her duties.
+
+### Section 24. Officers and employees of Board
+
+The Board may, with previous approval of the Central Government, appoint such officers and employees as it may deem
+necessary for the efficient discharge of its functions under the provisions of this Act, on such terms and conditions
+of appointment and service as may be prescribed.
+
+### Section 25. Members and officers to be public servants
+
+The Chairperson, Members, officers and employees of the Board shall be deemed, when acting or purporting to act in
+pursuance of provisions of this Act, to be public servants within the meaning of section 21 of the Indian Penal Code
+(45 of 1860).
+
+### Section 26. Powers of Chairperson
+
+The Chairperson shall exercise the following powers, namely:—
+
+(a) general superintendence and giving direction in respect of all administrative matters of the Board;
+
+(b) authorise any officer of the Board to scrutinise any intimation, complaint, reference or correspondence addressed
+to the Board; and
+
+(c) authorise performance of any of the functions of the Board and conduct any of its proceedings, by an individual
+Member or groups of Members and to allocate proceedings among them.
+
+---
+
+## CHAPTER VI: POWERS, FUNCTIONS AND PROCEDURE TO BE FOLLOWED BY BOARD
+
+### Section 27. Powers and functions of Board
+
+(1) The Board shall exercise and perform the following powers and functions, namely:—
+  (a) on receipt of an intimation of personal data breach under sub-section (6) of section 8, to direct any urgent
+  remedial or mitigation measures in the event of a personal data breach, and to inquire into such personal data
+  breach and impose penalty as provided in this Act;
+  (b) on a complaint made by a Data Principal in respect of a personal data breach or a breach in observance by a
+  Data Fiduciary of its obligations in relation to her personal data or the exercise of her rights under the
+  provisions of this Act, or on a reference made to it by the Central Government or a State Government, or in
+  compliance of the directions of any court, to inquire into such breach and impose penalty as provided in this Act;
+  (c) on a complaint made by a Data Principal in respect of a breach in observance by a Consent Manager of its
+  obligations in relation to her personal data, to inquire into such breach and impose penalty as provided in this Act;
+  (d) on receipt of an intimation of breach of any condition of registration of a Consent Manager, to inquire into
+  such breach and impose penalty as provided in this Act; and
+  (e) on a reference made by the Central Government in respect of the breach in observance of the provisions of
+  sub-section (2) of section 37 by an intermediary, to inquire into such breach and impose penalty as provided in
+  this Act.
+
+(2) The Board may, for the effective discharge of its functions under the provisions of this Act, after giving the
+person concerned an opportunity of being heard and after recording reasons in writing, issue such directions as it
+may consider necessary to such person, who shall be bound to comply with the same.
+
+(3) The Board may, on a representation made to it by a person affected by a direction issued under sub-section (1)
+or sub-section (2), or on a reference made by the Central Government, modify, suspend, withdraw or cancel such
+direction and, while doing so, impose such conditions as it may deem fit, subject to which the modification,
+suspension, withdrawal or cancellation shall have effect.
+
+### Section 28. Procedure to be followed by Board
+
+(1) The Board shall function as an independent body and shall, as far as practicable, function as a digital office,
+with the receipt of complaints and the allocation, hearing and pronouncement of decisions in respect of the same being
+digital by design, and adopt such techno-legal measures as may be prescribed.
+
+(2) The Board may, on receipt of an intimation or complaint or reference or directions as referred to in
+sub-section (1) of section 27, take action in accordance with the provisions of this Act and the rules made thereunder.
+
+(3) The Board shall determine whether there are sufficient grounds to proceed with an inquiry.
+
+(4) In case the Board determines that there are insufficient grounds, it may, for reasons to be recorded in writing,
+close the proceedings.
+
+(5) In case the Board determines that there are sufficient grounds to proceed with inquiry, it may, for reasons to be
+recorded in writing, inquire into the affairs of any person for ascertaining whether such person is complying with or
+has complied with the provisions of this Act.
+
+(6) The Board shall conduct such inquiry following the principles of natural justice and shall record reasons for its
+actions during the course of such inquiry.
+
+(7) For the purposes of discharging its functions under this Act, the Board shall have the same powers as are vested
+in a civil court under the Code of Civil Procedure, 1908 (5 of 1908), in respect of matters relating to—
+  (a) summoning and enforcing the attendance of any person and examining her on oath;
+  (b) receiving evidence of affidavit requiring the discovery and production of documents;
+  (c) inspecting any data, book, document, register, books of account or any other document; and
+  (d) such other matters as may be prescribed.
+
+(8) The Board or its officers shall not prevent access to any premises or take into custody any equipment or any item
+that may adversely affect the day-to-day functioning of a person.
+
+(9) The Board may require the services of any police officer or any officer of the Central Government or a State
+Government to assist it for the purposes of this section and it shall be the duty of every such officer to comply with
+such requisition.
+
+(10) During the course of the inquiry, if the Board considers it necessary, it may for reasons to be recorded in
+writing, issue interim orders after giving the person concerned an opportunity of being heard.
+
+(11) On completion of the inquiry and after giving the person concerned an opportunity of being heard, the Board may
+for reasons to be recorded in writing, either close the proceedings or proceed in accordance with section 33.
+
+(12) At any stage after receipt of a complaint, if the Board is of the opinion that the complaint is false or
+frivolous, it may issue a warning or impose costs on the complainant.
+
+---
+
+## CHAPTER VII: APPEAL AND ALTERNATE DISPUTE RESOLUTION
+
+### Section 29. Appeal to Appellate Tribunal
+
+(1) Any person aggrieved by an order or direction made by the Board under this Act may prefer an appeal before the
+Appellate Tribunal.
+
+(2) Every appeal under sub-section (1) shall be filed within a period of sixty days from the date of receipt of the
+order or direction appealed against and it shall be in such form and manner and shall be accompanied by such fee as
+may be prescribed.
+
+(3) The Appellate Tribunal may entertain an appeal after the expiry of the period specified in sub-section (2), if it
+is satisfied that there was sufficient cause for not preferring the appeal within that period.
+
+(4) On receipt of an appeal under sub-section (1), the Appellate Tribunal may, after giving the parties to the appeal,
+an opportunity of being heard, pass such orders thereon as it thinks fit, confirming, modifying or setting aside the
+order appealed against.
+
+(5) The Appellate Tribunal shall send a copy of every order made by it to the Board and to the parties to the appeal.
+
+(6) The appeal filed before the Appellate Tribunal under sub-section (1) shall be dealt with by it as expeditiously as
+possible and endeavour shall be made by it to dispose of the appeal finally within six months from the date on which
+the appeal is presented to it.
+
+(7) Where any appeal under sub-section (6) could not be disposed of within the period of six months, the Appellate
+Tribunal shall record its reasons in writing for not disposing of the appeal within that period.
+
+(8) Without prejudice to the provisions of section 14A and section 16 of the Telecom Regulatory Authority of India
+Act, 1997 (24 of 1997), the Appellate Tribunal shall deal with an appeal under this section in accordance with such
+procedure as may be prescribed.
+
+(9) Where an appeal is filed against the orders of the Appellate Tribunal under this Act, the provisions of section 18
+of the Telecom Regulatory Authority of India Act, 1997 (24 of 1997) shall apply.
+
+(10) In respect of appeals filed under the provisions of this Act, the Appellate Tribunal shall, as far as practicable,
+function as a digital office, with the receipt of appeal, hearing and pronouncement of decisions in respect of the same
+being digital by design.
+
+### Section 30. Orders passed by Appellate Tribunal to be executable as decree
+
+(1) An order passed by the Appellate Tribunal under this Act shall be executable by it as a decree of civil court, and
+for this purpose, the Appellate Tribunal shall have all the powers of a civil court.
+
+(2) Notwithstanding anything contained in sub-section (1), the Appellate Tribunal may transmit any order made by it to
+a civil court having local jurisdiction and such civil court shall execute the order as if it were a decree made by
+that court.
+
+### Section 31. Alternate dispute resolution
+
+If the Board is of the opinion that any complaint may be resolved by mediation, it may direct the parties concerned to
+attempt resolution of the dispute through such mediation by such mediator as the parties may mutually agree upon, or as
+provided for under any law for the time being in force in India.
+
+### Section 32. Voluntary undertaking
+
+(1) The Board may accept a voluntary undertaking in respect of any matter related to observance of the provisions of
+this Act from any person at any stage of a proceeding under section 28.
+
+(2) The voluntary undertaking referred to in sub-section (1) may include an undertaking to take such action within such
+time as may be determined by the Board, or refrain from taking such action, and or publicising such undertaking.
+
+(3) The Board may, after accepting the voluntary undertaking and with the consent of the person who gave the voluntary
+undertaking vary the terms included in the voluntary undertaking.
+
+(4) The acceptance of the voluntary undertaking by the Board shall constitute a bar on proceedings under the provisions
+of this Act as regards the contents of the voluntary undertaking, except in cases covered by sub-section (5).
+
+(5) Where a person fails to adhere to any term of the voluntary undertaking accepted by the Board, such breach shall be
+deemed to be breach of the provisions of this Act and the Board may, after giving such person an opportunity of being
+heard, proceed in accordance with the provisions of section 33.
+
+---
+
+## CHAPTER VIII: PENALTIES AND ADJUDICATION
+
+### Section 33. Penalties
+
+(1) If the Board determines on conclusion of an inquiry that breach of the provisions of this Act or the rules made
+thereunder by a person is significant, it may, after giving the person an opportunity of being heard, impose such
+monetary penalty specified in the Schedule.
+
+(2) While determining the amount of monetary penalty to be imposed under sub-section (1), the Board shall have regard
+to the following matters, namely:—
+  (a) the nature, gravity and duration of the breach;
+  (b) the type and nature of the personal data affected by the breach;
+  (c) repetitive nature of the breach;
+  (d) whether the person, as a result of the breach, has realised a gain or avoided any loss;
+  (e) whether the person took any action to mitigate the effects and consequences of the breach, and the timeliness and
+  effectiveness of such action;
+  (f) whether the monetary penalty to be imposed is proportionate and effective, having regard to the need to secure
+  observance of and deter breach of the provisions of this Act; and
+  (g) the likely impact of the imposition of the monetary penalty on the person.
+
+### Section 34. Crediting sums realised by way of penalties to Consolidated Fund of India
+
+All sums realised by way of penalties imposed by the Board under this Act, shall be credited to the Consolidated Fund
+of India.
+
+---
+
+## CHAPTER IX: MISCELLANEOUS
+
+### Section 35. Protection of action taken in good faith
+
+No suit, prosecution or other legal proceedings shall lie against the Central Government, the Board, its Chairperson
+and any Member, officer or employee thereof for anything which is done or intended to be done in good faith under the
+provisions of this Act or the rules made thereunder.
+
+### Section 36. Power to call for information
+
+The Central Government may, for the purposes of this Act, require the Board and any Data Fiduciary or intermediary to
+furnish such information as it may call for.
+
+### Section 37. Power of Central Government to issue directions
+
+(1) The Central Government or any of its officers specially authorised by it in this behalf may, upon receipt of a
+reference in writing from the Board that—
+  (a) intimates the imposition of monetary penalty by the Board on a Data Fiduciary in two or more instances; and
+  (b) advises, in the interests of the general public, the blocking for access by the public to any information
+  generated, transmitted, received, stored or hosted, in any computer resource that enables such Data Fiduciary to
+  carry on any activity relating to offering of goods or services to Data Principals within the territory of India,
+after giving an opportunity of being heard to that Data Fiduciary, on being satisfied that it is necessary or expedient
+so to do, in the interests of the general public, for reasons to be recorded in writing, by order, direct any agency of
+the Central Government or any intermediary to block for access by the public or cause to be blocked for access by the
+public any such information.
+
+(2) Every intermediary who receives a direction issued under sub-section (1) shall be bound to comply with the same.
+
+(3) For the purposes of this section, the expressions "computer resource", "information" and "intermediary" shall have
+the meanings respectively assigned to them in the Information Technology Act, 2000 (21 of 2000).
+
+### Section 38. Consistency with other laws
+
+(1) The provisions of this Act shall be in addition to and not in derogation of any other law for the time being in force.
+
+(2) In the event of any conflict between a provision of this Act and a provision of any other law for the time being in
+force, the provision of this Act shall prevail to the extent of such conflict.
+
+### Section 39. Bar of jurisdiction
+
+No civil court shall have the jurisdiction to entertain any suit or proceeding in respect of any matter for which the
+Board is empowered under the provisions of this Act and no injunction shall be granted by any court or other authority
+in respect of any action taken or to be taken in pursuance of any power under the provisions of this Act.
+
+### Section 40. Power to make rules
+
+(1) The Central Government may, by notification, and subject to the condition of previous publication, make rules not
+inconsistent with the provisions of this Act, to carry out the purposes of this Act.
+
+(2) In particular and without prejudice to the generality of the foregoing power, such rules may provide for all or any
+of the following matters, namely:—
+  (a) the manner in which the notice given by the Data Fiduciary to a Data Principal shall inform her, under
+  sub-section (1) of section 5;
+  (b) the manner in which the notice given by the Data Fiduciary to a Data Principal shall inform her, under
+  sub-section (2) of section 5;
+  (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6;
+  (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section (9) of section 6;
+  (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data
+  may be processed under clause (b) of section 7;
+  (f) the form and manner of intimation of personal data breach to the Board under sub-section (6) of section 8;
+  (g) the time period for the specified purpose to be deemed as no longer being served, under sub-section (8) of section 8;
+  (h) the manner of publishing the business contact information of a Data Protection Officer under sub-section (9) of section 8;
+  (i) the manner of obtaining verifiable consent under sub-section (1) of section 9;
+  (j) the classes of Data Fiduciaries, the purposes of processing of personal data of a child and the conditions relating
+  thereto, under sub-section (4) of section 9;
+  (k) the other matters comprising the process of Data Protection Impact Assessment under sub-clause (i) of clause (c) of
+  sub-section (2) of section 10;
+  (l) the other measures that the Significant Data Fiduciary shall undertake under sub-clause (iii) of clause (c) of
+  sub-section (2) of section 10;
+  (m) the manner in which a Data Principal shall make a request to the Data Fiduciary to obtain information and any other
+  information related to the personal data of such Data Principal and its processing, under sub-section (1) of section 11;
+  (n) the manner in which a Data Principal shall make a request to the Data Fiduciary for erasure of her personal data
+  under sub-section (3) of section 12;
+  (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13;
+  (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;
+  (q) the standards for processing the personal data for exemption under clause (b) of sub-section (2) of section 17;
+  (r) the manner of appointment of the Chairperson and other Members of the Board under sub-section (2) of section 19;
+  (s) the salary, allowances and other terms and conditions of services of the Chairperson and other Members of the Board
+  under sub-section (1) of section 20;
+  (t) the manner of authentication of orders, directions and instruments under sub-section (1) of section 23;
+  (u) the terms and conditions of appointment and service of officers and employees of the Board under section 24;
+  (v) the techno-legal measures to be adopted by the Board under sub-section (1) of section 28;
+  (w) the other matters under clause (d) of sub-section (7) of section 28;
+  (x) the form, manner and fee for filing an appeal under sub-section (2) of section 29;
+  (y) the procedure for dealing an appeal under sub-section (8) of section 29;
+  (z) any other matter which is to be or may be prescribed or in respect of which provision is to be, or may be, made by rules.
+
+### Section 41. Laying of rules and certain notifications
+
+Every rule made and every notification issued under section 16 and section 42 of this Act shall be laid, as soon as may
+be after it is made, before each House of Parliament, while it is in session, for a total period of thirty days which may
+be comprised in one session or in two or more successive sessions, and if before the expiry of the session immediately
+following the session or the successive sessions aforesaid, both Houses agree in making any modification in the rule or
+notification or both Houses agree that the rule or notification should not be made or issued, the rule or notification
+shall thereafter have effect only in such modified form or be of no effect, as the case may be; so, however, that any
+such modification or annulment shall be without prejudice to the validity of anything previously done under that rule or
+notification.
+
+### Section 42. Power to amend Schedule
+
+(1) The Central Government may, by notification, amend the Schedule, subject to the restriction that no such notification
+shall have the effect of increasing any penalty specified therein to more than twice of what was specified in it when
+this Act was originally enacted.
+
+(2) Any amendment notified under sub-section (1) shall have effect as if enacted in this Act and shall come into force on
+the date of the notification.
+
+### Section 43. Power to remove difficulties
+
+(1) If any difficulty arises in giving effect to the provisions of this Act, the Central Government may, by order
+published in the Official Gazette, make such provisions not inconsistent with the provisions of this Act as may appear to
+it to be necessary or expedient for removing the difficulty.
+
+(2) No order as referred to in sub-section (1) shall be made after the expiry of three years from the date of
+commencement of this Act.
+
+(3) Every order made under this section shall be laid, as soon as may be after it is made, before each House of Parliament.
+
+### Section 44. Amendments to certain Acts
+
+(1) In section 14 of the Telecom Regulatory Authority of India Act, 1997 (24 of 1997), in clause (c), for sub-clauses (i)
+and (ii), the following sub-clauses shall be substituted, namely:—
+
+> "(i) the Appellate Tribunal under the Information Technology Act, 2000;
+> (ii) the Appellate Tribunal under the Airports Economic Regulatory Authority of India Act, 2008; and
+> (iii) the Appellate Tribunal under the Digital Personal Data Protection Act, 2023.".
+
+(2) The Information Technology Act, 2000 (21 of 2000) shall be amended in the following manner, namely:—
+  (a) **section 43A shall be omitted;**
+  (b) in section 81, in the proviso, after the words and figures "the Patents Act, 1970" (39 of 1970), the words and
+  figures "or the Digital Personal Data Protection Act, 2023" shall be inserted; and
+  (c) in section 87, in sub-section (2), clause (ob) shall be omitted.
+
+(3) In section 8 of the Right to Information Act, 2005 (22 of 2005), in sub-section (1), for clause (j), the following
+clause shall be substituted, namely:—
+
+> "(j) information which relates to personal information;".
+
+---
+
+## THE SCHEDULE
+[See section 33 (1)]
+
+| Sl. No. | Breach of provisions of this Act or rules made thereunder | Penalty |
+|---|---|---|
+| 1. | Breach in observing the obligation of Data Fiduciary to take reasonable security safeguards to prevent personal data breach under sub-section (5) of section 8. | May extend to **two hundred and fifty crore rupees**. |
+| 2. | Breach in observing the obligation to give the Board or affected Data Principal notice of a personal data breach under sub-section (6) of section 8. | May extend to **two hundred crore rupees**. |
+| 3. | Breach in observance of additional obligations in relation to children under section 9. | May extend to **two hundred crore rupees**. |
+| 4. | Breach in observance of additional obligations of Significant Data Fiduciary under section 10. | May extend to **one hundred and fifty crore rupees**. |
+| 5. | Breach in observance of the duties under section 15. | May extend to **ten thousand rupees**. |
+| 6. | Breach of any term of voluntary undertaking accepted by the Board under section 32. | **Up to the extent applicable for the breach in respect of which the proceedings under section 28 were instituted.** |
+| 7. | Breach of any other provision of this Act or the rules made thereunder. | May extend to **fifty crore rupees**. |
+
+*Signed:* DR. REETA VASISHTA, Secretary to the Govt. of India.
+
+
+---
+
+# The Digital Personal Data Protection Rules, 2025
+
+## Provenance and confidence warning, read this first
+
+`act-full-text.md` is **verbatim from the Gazette** and can be quoted directly.
+
+**This file is not.** It was assembled from the PIB release and multiple secondary sources
+cross-checked against each other. Rule numbering, headings, the phased dates, and the
+substance below were corroborated across independent sources, and quoted sub-rule text is
+reproduced as those sources give it. Treat it as **reliable working knowledge, not as a citable
+primary source**.
+
+**Before quoting any Rule to a client, in a legal opinion, or in anything that leaves the
+building, verify against the notified Gazette text at meity.gov.in / egazette.gov.in.** Say so
+in the output. Where this file and a client's own copy of the Rules disagree, the Gazette wins.
+
+Where a specific point below is contested between sources, it is flagged inline.
+
+---
+
+## 1. Notification and phased commencement
+
+- Notified by the **Ministry of Electronics and Information Technology (MeitY)** on
+  **13 November 2025**, published **14 November 2025**.
+- **23 Rules and 7 Schedules.**
+- MeitY simultaneously notified commencement of the Act's provisions in three tranches, keyed to
+  **14 November 2025**, **14 November 2026**, and **14 May 2027**.
+
+| Tranche | Effective | What comes into force |
+|---|---|---|
+| Immediate | **14 November 2025** | Rules 1, 2, and 17 to 21. Definitions, plus the machinery to constitute and run the Data Protection Board (appointment of Chairperson and Members, salary and service terms, Board meetings, digital-office functioning, Board staff). |
+| 12 months | **14 November 2026** | **Rule 4**, registration and obligations of Consent Managers. |
+| 18 months | **14 May 2027** | **Rules 3, 5 to 16, and 22 to 23.** This is the tranche that carries essentially every substantive business obligation: notice, security safeguards, breach intimation, retention and erasure, contact-person publication, children's consent, SDF duties, Data Principal rights machinery, transfers, research exemption, appeals, and calling for information. |
+
+**The practical consequence, and the thing to tell every client:** as of the 2026 tranche, the
+operative compliance duties for ordinary Data Fiduciaries are **not yet enforceable**. The date
+that matters for a build plan is **14 May 2027**. Do not describe Rules 3 or 5 to 16 as currently
+binding. Do describe them as the fixed target the programme must hit.
+
+Note the sequencing problem worth flagging in advice: Consent Manager registration bites at
+14 November 2026, though the Board that registers them has to be constituted first.
+
+---
+
+## 2. Rule map
+
+| Rule | Heading |
+|---|---|
+| 1 | Short title and commencement |
+| 2 | Definitions |
+| 3 | Notice given by Data Fiduciary to Data Principal |
+| 4 | Registration and obligations of Consent Manager |
+| 5 | Processing of personal data for provision or issue of subsidy, benefit, service, certificate, licence or permit by State and its instrumentalities |
+| 6 | Reasonable security safeguards |
+| 7 | Intimation of personal data breach |
+| 8 | Time period for specified purpose to be deemed as no longer being served |
+| 9 | Contact information of person to answer questions about processing |
+| 10 | Verifiable consent for processing of personal data of child |
+| 11 | Verifiable consent for processing of personal data of person with disability who has lawful guardian |
+| 12 | Exemptions from certain obligations applicable to processing of personal data of child |
+| 13 | Additional obligations of Significant Data Fiduciary |
+| 14 | Rights of Data Principals |
+| 15 | Transfer of personal data outside the territory of India |
+| 16 | Exemption from Act for research, archiving or statistical purposes |
+| 17 | Appointment of Chairperson and other Members |
+| 18 | Salary, allowances and other terms and conditions of service |
+| 19 | Procedure for meetings of Board |
+| 20 | Functioning of Board as digital office |
+| 21 | Terms and conditions of appointment and service of officers and employees |
+| 22 | Appeal to Appellate Tribunal |
+| 23 | Calling for information from Data Fiduciary or intermediary |
+
+| Schedule | Subject |
+|---|---|
+| First | Conditions of registration and obligations of Consent Manager |
+| Second | Standards for processing personal data by the State |
+| Third | Class of Data Fiduciaries, purposes, and time period (the retention table) |
+| Fourth | Classes of Data Fiduciaries with exemptions (children's-data exemptions) |
+| Fifth | Terms and conditions of service of Chairperson and Members |
+| Sixth | Terms and conditions of appointment of Board officers and employees |
+| Seventh | Purpose and authorised person (for calling for information) |
+
+---
+
+## 3. Rule 3, notice
+
+The notice must—
+
+(a) **be presented and be understandable independently** of any other information the Data
+Fiduciary has made or may make available. This kills the practice of burying privacy terms inside
+a general T&C document.
+
+(b) give, **in clear and plain language**, a fair account of the details needed for specific and
+informed consent, including at minimum:
+  (i) an **itemised description** of the personal data; and
+  (ii) the specified purpose or purposes, and a **specific description of the goods or services**
+  to be provided or the uses to be enabled by the processing.
+
+(c) give the **particular communication link** for the website or app, and a description of other
+means, by which the Data Principal may:
+  (i) **withdraw consent, with ease comparable to giving it**;
+  (ii) exercise her rights under the Act; and
+  (iii) **make a complaint to the Board**.
+
+**Build implications.** A standalone consent notice screen. A machine-readable itemised data
+inventory per consent purpose. Purpose strings tied to concrete goods or services, not to
+categories like "improving our services". A one-click withdrawal link, live at the URL you
+declared. Plus the Eighth Schedule language option, which comes from s.5(3) and s.6(3) of the Act.
+
+---
+
+## 4. Rule 4 and the First Schedule, Consent Managers
+
+- Must be **incorporated as a company in India**.
+- Must have **minimum net worth of Rs 2 crore**. *(Corroborated across sources; verify the figure
+  in the First Schedule, Part A before quoting it.)*
+- Must have sufficient **technical, operational and financial capacity**, and sound financial
+  condition and general character of management.
+- Registers with the **Board**. Obligations run **to the Data Principal**, per s.6(8) of the Act.
+- Effective **14 November 2026**.
+
+---
+
+## 5. Rule 6, reasonable security safeguards
+
+This is the rule that turns Act s.8(5) from an abstraction into an audit checklist. A Data
+Fiduciary must protect personal data in its possession or control, including processing done on
+its behalf by a Data Processor, by taking reasonable security safeguards **which shall include, at
+the minimum**:
+
+(a) **appropriate data security measures**, such as securing personal data through **encryption,
+obfuscation, masking, or the use of virtual tokens** mapped to that personal data;
+
+(b) **appropriate measures to control access** to the computer resources used by the Data
+Fiduciary or Data Processor, wherever applicable;
+
+(c) **visibility on access**, through appropriate **logs, monitoring and review**, enabling
+detection of unauthorised access, its investigation, and remediation to prevent recurrence;
+
+(d) **reasonable measures for continued processing** where confidentiality, integrity or
+availability is compromised by destruction or loss of access, **such as data backups**;
+
+(e) **retain such logs and personal data for a period of one year**, to enable detection,
+investigation, remediation and continued processing, unless another law in force requires
+otherwise;
+
+(f) **appropriate provision in the contract** between the Data Fiduciary and the Data Processor,
+wherever applicable, for taking reasonable security safeguards;
+
+(g) **appropriate technical and organisational measures** to ensure effective observance of
+security safeguards.
+
+Rule 6(2): "computer resource" takes its Information Technology Act, 2000 meaning.
+
+**This is a floor, not a ceiling.** "At the minimum" means an incident where you did all seven can
+still be a s.8(5) breach. But missing any one of the seven is close to a self-proving breach, with
+a Rs 250 crore ceiling behind it.
+
+**Note the tension in (e):** a mandatory **one-year log retention** sits against the s.8(7) erasure
+duty. Reconcile them by scoping (e) to access logs and the associated personal data needed for
+security forensics, and document that reasoning.
+
+---
+
+## 6. Rule 7, intimation of personal data breach
+
+**Two audiences, two clocks.**
+
+**To each affected Data Principal, Rule 7(1): without delay**, through her registered contact or
+user account, describing:
+- the **nature, extent and timing** of the breach;
+- the **likely consequences** relevant to her;
+- **mitigation measures** implemented or being implemented;
+- **safety measures she can take** to protect her interests;
+- **contact details** of a person able to answer queries.
+
+**To the Board, Rule 7(2): two stages.**
+1. **Without delay**, on becoming aware: a description of the breach, including its nature, extent,
+   timing and location of occurrence, and the likely impact.
+2. **Within 72 hours** of becoming aware (or a longer period the Board allows on written request),
+   an updated and detailed report covering:
+   - broad facts, and the events, circumstances and reasons leading to the breach;
+   - measures implemented or proposed to mitigate risk;
+   - findings regarding the person who caused the breach;
+   - remedial measures taken to prevent recurrence;
+   - a report on the intimations given to affected Data Principals.
+
+**Points to hammer in advice:**
+- **No harm or materiality threshold**, from Act s.8(6). Every breach as defined in s.2(u) is in
+  scope, including **loss of access**, so ransomware and serious availability incidents qualify.
+- The **individual notice is "without delay"**, not 72 hours. Do not let a client build a process
+  that batches user notification behind the regulator report.
+- The 72-hour clock runs from **becoming aware**, and the Board's report requires you to have
+  already identified the cause and the person responsible, which is a demanding forensic ask.
+
+---
+
+## 7. Rule 8 and the Third Schedule, retention and erasure
+
+- **Rule 8(1):** a Data Fiduciary of a class, processing for the corresponding purposes specified
+  in the **Third Schedule**, shall **erase** the personal data once the specified period has
+  elapsed since the Data Principal last approached it or exercised her rights, **unless retention
+  is necessary for compliance with any law in force**.
+- **Rule 8(2):** give the Data Principal notice **at least forty-eight hours before** completion of
+  that period, so she can prevent erasure by approaching the Fiduciary or exercising a right.
+- **Rule 8(3):** retain personal data, **associated traffic data and other logs** of the processing
+  for a **minimum of one year** from the date of such processing.
+
+**Third Schedule classes and periods** *(corroborated across sources; verify exact wording and
+thresholds against the Gazette before quoting):*
+
+| Class of Data Fiduciary | Period |
+|---|---|
+| **E-commerce entity** with not less than **two crore** registered users in India | **3 years** |
+| **Online gaming intermediary** with not less than **fifty lakh** registered users in India | **3 years** |
+| **Social media intermediary** with not less than **two crore** registered users in India | **3 years** |
+
+The three-year clock runs from the Data Principal's **last approach** to the Fiduciary for the
+specified purpose, or her last exercise of a right, whichever is later.
+
+**Scope note:** the Third Schedule fixes a **deemed** expiry only for these classes and purposes.
+For everyone else, s.8(7) still applies on its own terms: erase on withdrawal, or when it is
+reasonable to assume the specified purpose is no longer served.
+
+---
+
+## 8. Rules 10 and 11, verifiable consent for children and persons with disability
+
+**Rule 10(1):** the Data Fiduciary must adopt appropriate technical and organisational measures to
+ensure **verifiable consent of the parent** is obtained before processing a child's personal data,
+and must **observe due diligence** to check that the person identifying herself as the parent is an
+**adult who is identifiable if required** in connection with any law in force in India, by
+reference to:
+- (a) **reliable details of identity and age already held** by the Data Fiduciary; or
+- (b) details of identity and age **voluntarily provided**, either
+  - (i) by the individual, or
+  - (ii) through a **virtual token mapped to such details, issued by an authorised entity**.
+
+**Rule 10(2)** definitions: "adult" is a person who has completed eighteen years. "Authorised
+entity" is an entity entrusted by law or by the Central or a State Government with issuing identity
+and age details or a virtual token mapped to them, or a person appointed or permitted by such an
+entity, and includes details made available and verified by a **Digital Locker service provider**
+(DigiLocker), an intermediary notified by the Central Government under the IT Act, 2000.
+
+**Rule 11** applies the equivalent mechanism to a **person with disability who has a lawful
+guardian**, with the guardian verified as duly appointed under the relevant disability or
+guardianship law.
+
+**Rule 12** and the **Fourth Schedule** carve out classes of Data Fiduciaries and purposes exempt
+from s.9(1) and s.9(3), under the Act's s.9(4) power. This is where healthcare providers,
+educational institutions, childcare providers and certain State functions typically sit, in each
+case limited to specified purposes such as health services, education, transport safety tracking,
+or issuing a subsidy or benefit. **Verify the Fourth Schedule directly before relying on any
+exemption for a client.**
+
+**Remember what Rule 12 cannot do:** s.9(4) permits exemption only from s.9(1) and s.9(3). The
+s.9(2) prohibition on processing likely to cause **detrimental effect on a child's well-being** is
+never exemptible.
+
+---
+
+## 9. Rule 13, Significant Data Fiduciary obligations
+
+*(One secondary source numbers these obligations Rule 12; the corroborated numbering is Rule 13.
+Verify before citing the rule number.)*
+
+**(1)** Once in every period of **twelve months** from the date it is notified as an SDF, or
+included in a notified class, undertake a **Data Protection Impact Assessment and an audit** to
+ensure effective observance of the Act and Rules.
+
+**(2)** Cause the person carrying out the DPIA and audit to **furnish a report to the Board**
+containing significant observations.
+
+**(3)** Observe **due diligence to verify that technical measures, including algorithmic
+software**, adopted for hosting, display, uploading, modification, publishing, transmission,
+storage, updating or sharing of personal data are **not likely to pose a risk to the rights of Data
+Principals**. This is India's algorithmic accountability hook, and it is unusual: the Act itself
+contains no automated-decision provision, so this duty exists only for SDFs and only via the Rules.
+
+**(4)** Undertake measures to ensure that personal data **specified by the Central Government**, on
+the recommendations of a **committee constituted by it**, is processed subject to the restriction
+that **the personal data and the traffic data pertaining to its flow are not transferred outside
+the territory of India**.
+
+**(5)** Defines "committee" for the purposes of the rule.
+
+**This is where localisation actually lives.** The Act's s.16 is a negative list and imposes no
+localisation. Rule 13(4) creates a **targeted, committee-driven localisation mandate that applies
+only to notified SDFs and only to categories of data the Government specifies**. Correct advice:
+"DPDP does not mandate localisation generally; if your client is notified an SDF, Rule 13(4) may
+localise specified categories once the committee acts; and sectoral regulators such as the RBI
+already localise independently under Act s.16(2)."
+
+---
+
+## 10. Rule 14, rights of Data Principals
+
+**(1)** The Data Fiduciary and Consent Manager must **prominently publish on its website or app**:
+  (a) the **means** by which a Data Principal may make a request to exercise her rights; and
+  (b) the **particulars**, if any, such as a username or other identifier, needed to identify her.
+
+**(2)** She exercises rights by making a request to the Data Fiduciary **to whom she has previously
+given consent**, using the published means and particulars.
+
+**(3)** The Data Fiduciary and Consent Manager must **publish the period within which they will
+respond to grievances**, being a **reasonable period not exceeding ninety days**, and must
+implement appropriate technical and organisational measures to meet it. *(Verify the ninety-day
+figure against the Gazette; some commentary reports different numbers.)*
+
+**(4)** She may **nominate one or more individuals** under Act s.14, in accordance with the terms of
+service and applicable law.
+
+**(5)** "Identifier" means any sequence of characters issued by the Data Fiduciary to identify her,
+such as a customer ID, enrolment ID, email address, mobile number or licence number.
+
+**Read Rule 14(2) against Act s.11(1) and s.12(1).** Both are worded around processing where she
+has previously given consent, including s.7(a) consent. Rights machinery under DPDP is narrower
+than a GDPR DSAR programme, and advice should not over-build it.
+
+---
+
+## 11. Rule 15, transfers outside India
+
+Personal data processed by a Data Fiduciary under the Act **may be transferred outside the
+territory of India**, subject to the restriction that the Data Fiduciary shall meet such
+requirements as the **Central Government may, by general or special order, specify** in respect of
+making that personal data available to **any foreign State**, or to any person or entity **under
+the control of, or any agency of, such a State**.
+
+Reading:
+- Confirms the **permissive default**. There is no adequacy regime, no SCCs, no transfer impact
+  assessment under DPDP.
+- The specific concern addressed is **onward availability to foreign governments**, not commercial
+  transfer as such.
+- **Act s.16(1)** negative-list notifications remain the mechanism for restricting named countries,
+  and **s.16(2)** preserves stricter sectoral law.
+
+---
+
+## 12. Other rules in brief
+
+- **Rule 5 and the Second Schedule:** standards for State processing under Act s.7(b), covering
+  lawful and transparent use, purpose limitation, accuracy, security, retention, accountability and
+  a grievance mechanism.
+- **Rule 9:** publish the **business contact information** of the DPO where applicable, or of the
+  person who can answer questions about processing, **on the website or app and in every response**
+  to a communication from a Data Principal exercising her rights. This is the Act s.8(9) duty made
+  concrete, and it applies to **non-SDFs too**.
+- **Rule 16:** the Act does not apply to processing **necessary for research, archiving or
+  statistical purposes** if carried on in accordance with the **standards in the Second Schedule**.
+- **Rules 17 to 21:** Board constitution, search-cum-selection process, service terms, meetings, and
+  digital-office functioning. Live since 14 November 2025.
+- **Rule 22:** appeals to TDSAT, filed **digitally**, with the Tribunal regulating its own procedure.
+- **Rule 23 and the Seventh Schedule:** the Central Government may require a Data Fiduciary or
+  intermediary to furnish information for a specified purpose, through an authorised person, with a
+  confidentiality restriction where disclosure would prejudice India's sovereignty and integrity or
+  security of the State.
+
+---
+
+## 13. What is still missing even with the Rules
+
+- **No SDF has been notified** by class or by name under Act s.10(1) as at the last verification.
+  Until that notification exists, no company is legally an SDF, and Rule 13 binds nobody.
+- **No country has been notified** as restricted under Act s.16(1).
+- **No startup relief** notified under Act s.17(3).
+- **No State instrumentality** exempted under Act s.17(2)(a) by public notification.
+- **No s.9(5) verifiably-safe age** notified for any Data Fiduciary.
+- The **Rule 13(4) committee** and its list of localised data categories.
+- **"Significant" in s.33(1) remains undefined**, and there is no Board jurisprudence, so penalty
+  exposure cannot be modelled from precedent.
+
+Always state which of these are still open when giving a client a risk picture. The honest answer
+to "what is my exposure" in the current posture is that the ceilings are known, the triggers are
+known, and the enforcement practice is entirely unknown.
+
+
+---
+
+# DPDP doctrine: how this statute actually works
+
+Read this before answering any DPDP question. It encodes the structural moves that decide most
+answers, and the misreadings that produce wrong advice. Every claim here is anchored to a section
+in `act-full-text.md`. If a claim is not anchored, do not assert it.
+
+---
+
+## 1. The five gates
+
+Almost every DPDP question resolves by walking these in order. Do not skip a gate.
+
+**Gate 1: Is it digital personal data?**
+- "Personal data" = any data **about an individual who is identifiable by or in relation to such
+  data** (s.2(t)). Wide. No "identifiability threshold" test in the Act.
+- The Act only bites on **digital** personal data (s.2(n), s.3(a)). Paper records collected and kept
+  on paper are outside it. Paper **digitised subsequently** is inside it (s.3(a)(ii)).
+- Truly anonymised data has no identifiable individual, so it falls out at this gate. The Act does
+  not define "anonymisation", so this is an evidentiary argument, not a safe harbour.
+
+**Gate 2: Does the Act apply at all?**
+- Inside India: yes, if collected digitally or digitised later (s.3(a)).
+- Outside India: only if the processing is **in connection with any activity related to offering of
+  goods or services to Data Principals within the territory of India** (s.3(b)).
+- Carve-outs (s.3(c)): purely personal or domestic processing by an individual; and personal data
+  made publicly available by the Data Principal herself, or by someone under a legal obligation to
+  publish it.
+
+**Gate 3: Who is who?**
+- **Data Fiduciary** = determines purpose *and* means (s.2(i)). Note the conjunctive "and".
+- **Data Processor** = processes on behalf of a Data Fiduciary (s.2(k)).
+- **Data Principal** = the individual; for a child, includes the parent or lawful guardian; for a
+  person with disability, includes her lawful guardian acting on her behalf (s.2(j)).
+- **Significant Data Fiduciary** = only exists once the Central Government **notifies** you or your
+  class (s.2(z), s.10(1)). You cannot self-classify into it and you cannot be one by size alone.
+
+**Gate 4: What is the lawful basis?**
+There are exactly **two** (s.4(1)):
+- (a) **consent** meeting s.6(1); or
+- (b) **certain legitimate uses**, meaning only the closed list in s.7(a) to s.7(i).
+
+And the purpose must be a "lawful purpose", defined as any purpose **not expressly forbidden by
+law** (s.4(2)).
+
+**Gate 5: Which obligations attach, and is anything exempted?**
+- Baseline Data Fiduciary duties: s.5 notice, s.6 consent mechanics, s.8 general obligations.
+- Child-specific: s.9.
+- SDF-only: s.10.
+- Then check s.17 exemptions, which is where a lot of real-world answers land.
+
+---
+
+## 2. The consent architecture
+
+**s.6(1) five adjectives, all mandatory:** consent must be *free, specific, informed, unconditional
+and unambiguous*, with a **clear affirmative action**. That kills pre-ticked boxes, bundled
+"I agree to everything" checkboxes, and consent inferred from continued use.
+
+**Automatic narrowing (s.6(1) + its Illustration).** Consent is "limited to such personal data as is
+necessary for such specified purpose". The telemedicine Illustration is the point: even where the
+user ticks yes to contact-list access, the consent is *legally read down* to only what the service
+needs. So over-collection is not cured by a tick.
+
+**Severability (s.6(2)).** An offending part of a consent is invalid **to the extent of the
+infringement**, not the whole consent. The insurance Illustration: a waiver-of-complaint clause is
+struck; the policy-issuance consent survives.
+
+**Withdrawal (s.6(4)-(6)).**
+- Withdrawal must be **as easy as giving** it. A one-click opt-in with an email-us-to-opt-out is a
+  s.6(4) breach on its face.
+- Withdrawal is **prospective only**; prior processing stays legal (s.6(5)).
+- Consequences of withdrawal are borne by the Data Principal (s.6(5)). The e-commerce Illustration:
+  you may cut off future ordering, but you must still fulfil goods already ordered and paid for.
+- On withdrawal the Data Fiduciary must, within a reasonable time, **cease and cause its Processors
+  to cease** (s.6(6)). Processor pass-through is your contractual obligation, not optional.
+
+**Notice pairs with consent (s.5(1)).** Notice must accompany or precede every consent request, and
+must itemise: (i) the personal data and the purpose, (ii) how to exercise s.6(4) withdrawal and
+s.13 grievance rights, (iii) how to complain to the Board.
+
+**Legacy consent (s.5(2)).** Consent obtained before commencement stays valid, but you owe a
+retrospective notice "as soon as reasonably practicable", and processing continues until withdrawal.
+This is the migration path for every existing Indian database.
+
+**Language (s.5(3), s.6(3)).** The Data Principal must be given the **option** to access the notice
+and the consent request in English **or any Eighth Schedule language**. That is 22 languages. This is
+a build requirement, not a nicety.
+
+**Burden of proof (s.6(10)).** In a proceeding, the **Data Fiduciary must prove** notice was given
+and consent was validly obtained. Practical consequence: consent logs with timestamp, notice version,
+language served, and the exact purpose string are the compliance artefact. No log, no defence.
+
+**Consent Managers (s.2(g), s.6(7)-(9)).** An optional intermediary layer. Must be registered with
+the Board, is accountable **to the Data Principal** (not to the Data Fiduciary), and the Board can
+inquire into and penalise its breaches directly (s.27(1)(c), s.27(1)(d)).
+
+---
+
+## 3. Section 7 legitimate uses, read narrowly
+
+s.7 is a **closed list**. There is no residual "legitimate interests" balancing test. If a use is not
+in s.7(a)-(i), the only remaining basis is consent.
+
+| s.7 | Ground | The trap |
+|---|---|---|
+| (a) | Voluntarily provided for a specified purpose, and she has not indicated non-consent | This is the workhorse for walk-in and inbound scenarios. It dies the moment she says stop (see Illustration II). It does **not** license secondary use, and it does **not** cover data you collected rather than she volunteered. |
+| (b) | State issuing a prescribed subsidy, benefit, service, certificate, licence or permit | Needs either prior consent to the State, or the data to sit in a **notified** State database. Also needs the prescribed list to exist. |
+| (c) | State function under law, or sovereignty/integrity/security of State | Broad. State-only. |
+| (d) | Legal obligation on any person to disclose information to the State | Private bodies can use this, but only for the disclosure obligation itself. |
+| (e) | Compliance with a judgment, decree or order (Indian, or foreign contractual/civil claims) | |
+| (f) | Medical emergency, threat to life or immediate threat to health | Of the Data Principal **or any other individual**. |
+| (g) | Medical treatment or health services during epidemic, outbreak, or threat to public health | |
+| (h) | Safety, assistance or services during disaster or breakdown of public order | "disaster" takes the Disaster Management Act, 2005 s.2(d) meaning. |
+| (i) | Employment purposes, or safeguarding the employer from loss or liability | Named examples: corporate espionage prevention, trade secret confidentiality, IP, classified information, or a service or benefit sought by an employee. This is the HR basis. It does **not** obviously cover employee wellness marketing, or monitoring dressed up as "safety". |
+
+**s.7(a) vs consent, the practical distinction.** s.7(a) requires that *she volunteered the data for
+that purpose*. If your app collected it in the background, or you inferred it, or you are using it for
+a purpose beyond the one she volunteered it for, s.7(a) is not available.
+
+---
+
+## 4. Section 8, the operating obligations
+
+| s.8 | Obligation | What it means in practice |
+|---|---|---|
+| (1) | Fiduciary is responsible regardless of contrary agreement, and regardless of Data Principal's own failure of duties | You cannot contract accountability away to a vendor. You cannot excuse yourself because the user lied. |
+| (2) | Processors only under a **valid contract** | For goods/services activity. A DPA is a statutory precondition, not best practice. |
+| (3) | Completeness, accuracy and consistency | Only triggered where data is likely to be used for a decision affecting her, **or** disclosed to another Data Fiduciary. Not a general data-quality duty. |
+| (4) | Appropriate technical and organisational measures | For observance of the Act generally (governance), distinct from (5). |
+| (5) | **Reasonable security safeguards** to prevent breach | Covers data in possession or control, including at the Processor. Highest penalty in the Schedule: up to Rs 250 crore. |
+| (6) | Breach intimation to **the Board AND each affected Data Principal** | No harm threshold. No materiality threshold. No "risk of harm" filter. This is stricter than GDPR Art 33/34. Up to Rs 200 crore. |
+| (7) | Erase on withdrawal, or when the specified purpose is no longer served, whichever is earlier, and cause the Processor to erase | Unless retention is necessary for compliance with law (bank KYC Illustration). |
+| (8) + (11) | Deemed purpose-expiry after a prescribed period of no contact and no rights exercised | The period is set by Rules and may differ by class of Fiduciary and by purpose. |
+| (9) | Publish DPO business contact info, or a person who can answer questions | Non-SDFs still need a published contact point. |
+| (10) | Effective grievance redressal mechanism | Pairs with s.13. |
+
+**The s.8(6) point deserves repeating because people get it wrong constantly:** the Act sets no
+threshold. Every personal data breach as defined in s.2(u) is notifiable, to the Board and to each
+affected individual, in the form and manner the Rules prescribe. s.2(u) includes mere **loss of
+access** (so ransomware and even a botched availability incident can be a "personal data breach").
+
+---
+
+## 5. Children (s.9)
+
+- **Child = under 18** (s.2(f)). India uses 18, not 13 or 16. There is no general teen-consent tier.
+- s.9(1): **verifiable** parental or lawful-guardian consent before processing a child's data, in the
+  prescribed manner. Same rule extends to a person with disability who has a lawful guardian.
+- s.9(2): no processing likely to cause **detrimental effect on the well-being of a child**. This is a
+  substantive prohibition that stands even with perfect parental consent.
+- s.9(3): **absolute bar** on (i) tracking, (ii) behavioural monitoring of children, (iii) targeted
+  advertising directed at children. Consent does not cure it.
+- s.9(4): the Rules may exempt classes of Fiduciaries or purposes from (1) and (3). Note: **not from
+  (2)**. The well-being prohibition is never exemptible under s.9(4).
+- s.9(5): a Fiduciary that proves "verifiably safe" processing can be notified an **age above which**
+  s.9(1) and s.9(3) do not apply to it. Company-specific, government-granted, not self-declared.
+- Penalty: up to Rs 200 crore (Schedule item 3).
+
+Any product with under-18 users in India: age assurance, verifiable parental consent, and a hard kill
+on behavioural ad targeting and tracking for those users. Analytics that profiles child users is
+squarely inside s.9(3).
+
+---
+
+## 6. Significant Data Fiduciaries (s.10)
+
+Trigger is **notification by the Central Government**, based on factors it may determine, including:
+volume and sensitivity of data, risk to Data Principal rights, sovereignty and integrity of India,
+**risk to electoral democracy**, security of the State, public order (s.10(1)(a)-(f)).
+
+Once notified, four hard duties:
+1. **DPO** who represents the SDF, is **based in India**, is an individual **responsible to the board
+   of directors or similar governing body**, and is the grievance point of contact (s.10(2)(a)).
+2. **Independent data auditor** to carry out a data audit evaluating compliance (s.10(2)(b)).
+3. **Periodic DPIA**, defined in the Act itself as a process comprising a description of Data
+   Principal rights and the purpose of processing, plus assessment and management of risk to those
+   rights (s.10(2)(c)(i)).
+4. **Periodic audit**, plus any other prescribed measures (s.10(2)(c)(ii)-(iii)).
+
+Penalty: up to Rs 150 crore (Schedule item 4).
+
+Note the asymmetry: **only SDFs must appoint a DPO.** Everyone else only needs to publish a contact
+person under s.8(9). Do not tell a non-notified company it must appoint a DPO under the Act.
+
+---
+
+## 7. Rights, and the rights that are NOT there
+
+**Present:**
+- s.11 access: summary of personal data + processing activities; identities of other Fiduciaries and
+  Processors it was shared with + description of what was shared; plus prescribed extras. Blocked for
+  law-enforcement sharing under s.11(2).
+- s.12 correction, completion, updating, erasure. On a correction request the Fiduciary **shall**
+  correct, complete and update (s.12(2)). On an erasure request it **shall** erase unless retention is
+  necessary for the specified purpose or for legal compliance (s.12(3)).
+- s.13 grievance redressal, with a **mandatory exhaustion rule**: she must exhaust the Fiduciary's
+  grievance mechanism **before** approaching the Board (s.13(3)).
+- s.14 nomination, so a nominee can exercise her rights on death or incapacity (unsoundness of mind or
+  infirmity of body).
+
+**Conspicuously absent. Do not invent these:**
+- No right to **data portability**.
+- No right to **object** to processing generally.
+- No right against **automated decision-making** or profiling, and no explanation right.
+- No **compensation** to the Data Principal. Penalties go to the Consolidated Fund of India (s.34).
+  DPDP gives the individual no monetary remedy. And s.44(2)(a) **omitted IT Act s.43A**, deleting the
+  old compensation route for negligent handling of sensitive personal data.
+- No private cause of action, and s.39 **bars civil courts** from matters the Board is empowered over.
+
+**Rights attach to consent-based (and s.7(a)-based) processing.** s.11(1) and s.12(1) are both worded
+"to whom she has previously given consent, including consent as referred to in clause (a) of section
+7". Processing under s.7(b) to s.7(i) does not carry these access and correction rights in the same
+way. That is a real and often-missed limitation.
+
+**Duties of the Data Principal (s.15)** are enforceable against her, penalty up to Rs 10,000
+(Schedule item 5). Frivolous complaints can also draw a warning or costs from the Board (s.28(12)).
+This is unusual internationally and is worth flagging in any comparison.
+
+---
+
+## 8. Cross-border transfers (s.16)
+
+- Default is **permitted**. s.16(1) is a **blacklist / negative-list** model: the Central Government
+  may notify countries or territories to which transfer is **restricted**.
+- s.16(2) preserves any **higher** standard in other Indian law. So sectoral localisation still binds:
+  RBI payment-data storage directions, insurance and telecom rules, CERT-In directions, and so on.
+  DPDP does not relax them.
+- Practical answer: for most transfers, DPDP itself is not the blocker. The sectoral regulator is.
+  Always ask which regulator sits over the client before saying "transfers are fine".
+
+---
+
+## 9. Exemptions (s.17), the most litigable part
+
+**s.17(1): partial exemption.** Chapter II is disapplied **except s.8(1) and s.8(5)**, and Chapter III
+and s.16 are disapplied, in six cases: (a) enforcing a legal right or claim; (b) judicial,
+quasi-judicial, regulatory or supervisory bodies performing their function; (c) prevention, detection,
+investigation or prosecution of offences; (d) processing of non-India Data Principals under a contract
+with a person outside India by a person based in India; (e) court-approved M&A, demerger and similar;
+(f) ascertaining the assets and liabilities of a **loan defaulter** (IBC s.3(12) and s.3(14) meanings).
+
+Two things survive every s.17(1) exemption: **s.8(1) accountability** and **s.8(5) security
+safeguards**. So even an exempt processor still owes reasonable security. Say this out loud in advice.
+
+**s.17(1)(d) is the outsourcing / GCC / BPO clause.** Indian entities processing foreign data under a
+foreign contract get a broad exemption. This is deliberate industrial policy and is the single most
+commercially significant exemption in the Act.
+
+**s.17(2): total exemption.** (a) notified **State instrumentalities** on sovereignty, security,
+friendly relations, public order, or incitement grounds, plus the Centre's processing of what they
+furnish; (b) **research, archiving or statistical** purposes, provided the data is not used to take a
+decision specific to a Data Principal, and prescribed standards are followed.
+
+**s.17(3): startup relief.** The Centre may notify Fiduciaries, including startups, to whom **s.5,
+s.8(3), s.8(7), s.10 and s.11** do not apply. It is a notification-based relief, not automatic. And it
+does **not** exempt s.6 consent, s.8(5) security, s.8(6) breach notice, s.9 children, s.12 or s.13.
+
+**s.17(4): the State's retention and correction carve-out.** For State processing, s.8(7) erasure and
+s.12(3) erasure do not apply; and s.12(2) correction does not apply where the processing does not
+involve a decision affecting her.
+
+**s.17(5): five-year sunset power.** For five years from commencement, the Centre may declare any
+provision inapplicable to any Fiduciary or class, for a specified period.
+
+---
+
+## 10. Enforcement mechanics
+
+- **Data Protection Board of India** (s.18). Body corporate. Chairperson plus notified Members, all
+  Centre-appointed (s.19(2)), **two-year terms**, re-appointable (s.20(2)). At least one Member must
+  be a legal expert (s.19(3)).
+- The Board is an **adjudicatory** body only. It has **no rule-making or standard-setting power**.
+  Rules are made by the Central Government under s.40. This is a major structural difference from the
+  ICO, the EDPB, or a typical independent DPA.
+- **Digital by design** (s.28(1)), civil-court powers under CPC 1908 for summons, evidence, discovery
+  and inspection (s.28(7)). But it **cannot** prevent access to premises or seize equipment (s.28(8)).
+- Board triggers (s.27(1)): breach intimation, Data Principal complaint, Centre or State reference,
+  court direction, Consent Manager complaint or registration breach, or s.37(2) intermediary reference.
+- **Mediation** may be directed (s.31). **Voluntary undertakings** may be accepted (s.32); accepting
+  one **bars** proceedings on its contents (s.32(4)), but breaching it is itself a breach of the Act
+  and reopens s.33 (s.32(5)).
+- **Penalty only if the breach is "significant"** (s.33(1)). "Significant" is undefined. The s.33(2)
+  factors (a) to (g) are the mitigation playbook, and (e) explicitly rewards prompt, effective
+  mitigation. Argue (e), (f) and (g) hard in any real matter.
+- **Appeal to TDSAT** within **60 days**, extendable for sufficient cause (s.29(2)-(3)). Endeavour to
+  dispose within six months (s.29(6)). Onward appeal follows TRAI Act s.18, meaning the Supreme Court.
+- **s.37 blocking:** after the Board has imposed a monetary penalty on a Data Fiduciary in **two or
+  more instances**, and advises blocking in the interests of the general public, the Centre may order
+  intermediaries to block public access. Effectively a market-exclusion power. Hearing required first.
+- **No criminal offences and no imprisonment anywhere in this Act.** Purely civil monetary penalties.
+
+---
+
+## 11. Knock-on amendments (s.44), commonly missed
+
+- **TRAI Act s.14(c)** amended so TDSAT is expressly the DPDP appellate tribunal.
+- **IT Act s.43A omitted.** The old statutory compensation route for a body corporate's negligent
+  handling of sensitive personal data is gone. The SPDI Rules 2011 rested on s.43A, so their footing is
+  materially undermined. Do not cite SPDI Rules as live obligations without flagging this.
+- **IT Act s.87(2)(ob) omitted**, removing the rule-making power that supported the SPDI Rules.
+- **IT Act s.81 proviso** amended so the IT Act does not override DPDP.
+- **RTI Act s.8(1)(j) replaced** with a flat exemption for "information which relates to personal
+  information". The old text's public-interest and public-activity carve-ins were deleted. This is the
+  most politically contested amendment in the Act and should be flagged in any public-sector work.
+
+---
+
+## 12. DPDP vs GDPR, the differences that change advice
+
+| Topic | DPDP 2023 | GDPR |
+|---|---|---|
+| Lawful bases | 2: consent, or s.7 closed list | 6, including legitimate interests balancing |
+| Legitimate interests | **None** | Art 6(1)(f) |
+| Sensitive data category | **None**. No special category at all | Art 9 special categories |
+| Scope trigger abroad | Only offering goods/services to India (s.3(b)) | Offering **or monitoring behaviour** |
+| Child age | **Under 18**, flat | 16, states may lower to 13 |
+| Ad targeting at children | **Prohibited outright** (s.9(3)) | Restricted, not banned |
+| Breach notice threshold | **None**, always notify Board + each individual | Risk-based; 72h to DPA; high risk to individuals |
+| DPO | Only for notified SDFs | Art 37 triggers, wider |
+| Portability | **Absent** | Art 20 |
+| Object / automated decisions | **Absent** | Arts 21, 22 |
+| Compensation to individual | **Absent**; penalties to Consolidated Fund | Art 82 |
+| Transfers | Negative list, default permitted | Adequacy / SCCs / BCRs, default restricted |
+| Regulator | Adjudicatory Board, **no rule-making** | Independent DPAs with guidance powers |
+| Individual duties + fines on individuals | **Yes**, s.15, up to Rs 10,000 | No |
+| Criminal liability | **None** | Member-State dependent |
+| Max penalty | Rs 250 crore per Schedule item | 4% global turnover / EUR 20m |
+
+**The single sentence to remember:** DPDP is consent-heavy, rights-light, State-friendly, and has no
+sensitive-data tier. Advice imported wholesale from a GDPR programme will over-build rights machinery
+and under-build consent-and-notice machinery, breach readiness, and Eighth Schedule language support.
+
+---
+
+## 13. Traps that produce wrong answers
+
+1. **Inventing "sensitive personal data".** The Act has no such category. Health, biometric, financial
+   and caste data get **no** extra treatment under DPDP. (Sectoral law may still add duties. Say that
+   instead.)
+2. **Asserting "legitimate interest" as a basis.** It does not exist. s.7 is closed.
+3. **Assuming a large company is automatically an SDF.** It is not, until notified (s.10(1)).
+4. **Telling every company to appoint a DPO.** Only notified SDFs (s.10(2)(a)). Others need only a
+   published contact under s.8(9).
+5. **Applying a breach-notification harm threshold.** There isn't one (s.8(6)).
+6. **Reading DPDP as mandating data localisation.** It does not (s.16 is a negative list). Sectoral
+   rules do, preserved by s.16(2).
+7. **Promising the individual compensation or damages.** No such remedy; s.39 bars civil courts; s.43A
+   was omitted.
+8. **Citing the SPDI Rules 2011 as unqualified live law** after s.44(2)(a) and (c).
+9. **Using 13 or 16 as the child age.** It is 18 (s.2(f)).
+10. **Saying "consent covers it" for children's behavioural ads.** s.9(3) is an outright bar.
+11. **Forgetting s.8(1) and s.8(5) survive every s.17(1) exemption.**
+12. **Treating rights under s.11 and s.12 as universal.** They are worded against consent-based and
+    s.7(a)-based processing.
+13. **Stating obligations are "in force" without checking commencement.** s.1(2) allows staggered
+    commencement, and most operative duties depend on Rules that were still phasing in.
+14. **Quoting a penalty as a fine that will be imposed.** Every Schedule figure is a **ceiling**
+    ("may extend to"), gated on the Board finding the breach "significant" (s.33(1)) and weighing the
+    s.33(2) factors.
+15. **Forgetting the Eighth Schedule language option** in notice and consent UX (s.5(3), s.6(3)).
+16. **Ignoring s.6(10)**: the burden of proving valid notice and consent sits on the business.
+
+---
+
+## 14. Open items that depend on subordinate legislation
+
+The Act delegates roughly 26 matters to Rules under s.40(2)(a) to (z). When any of these come up, the
+answer is "the Rules govern; check the current notified Rules", not a guess:
+
+manner of notice (s.5(1), s.5(2)); Consent Manager obligations and registration conditions (s.6(8),
+s.6(9)); the prescribed subsidy/benefit list (s.7(b)); form and manner of breach intimation (s.8(6));
+the no-contact period that deems purpose expiry (s.8(8)); manner of publishing DPO contact (s.8(9));
+manner of obtaining verifiable parental consent (s.9(1)); child-processing exemptions (s.9(4)); DPIA
+contents and other SDF measures (s.10(2)(c)); manner of access and erasure requests (s.11(1), s.12(3));
+grievance response period (s.13(2)); manner of nomination (s.14(1)); research/archiving/statistical
+standards (s.17(2)(b)); Board appointment, salary, procedure, techno-legal measures (s.19 to s.28);
+appeal form, fee and procedure (s.29).
+
+Plus government **notifications** rather than Rules: restricted countries (s.16(1)), SDF designation
+(s.10(1)), State-instrumentality exemptions (s.17(2)(a)), startup relief (s.17(3)), the s.9(5)
+verifiably-safe age, s.17(5) sunset declarations, and Schedule amendments (s.42, capped at doubling).
+
+
+---
+
+# DPDP compliance checklist
+
+The working checklist for auditing an organisation, a product, a contract, or a privacy notice.
+Every item carries its statutory anchor. Do not raise a finding without one.
+
+Scoring convention used in reports:
+- **GAP** = a specific provision is not met, with the evidence stated.
+- **RISK** = arguably met, but the position is weak or undocumented and would not survive s.6(10)
+  burden of proof or a Board inquiry.
+- **OPEN** = cannot be determined without a Rule, a notification, or a fact the client must supply.
+- **OK** = met, with the evidence stated.
+
+---
+
+## A. Scoping (do this before anything else)
+
+| # | Question | Anchor |
+|---|---|---|
+| A1 | Is any personal data processed in digital form, or collected on paper and digitised later? | s.2(n), s.3(a) |
+| A2 | Is the entity outside India? If so, is the processing connected to offering goods or services to Data Principals in India? Mere behaviour monitoring is **not** a trigger. | s.3(b) |
+| A3 | Does any carve-out apply: purely personal or domestic processing, or data the individual herself made public? | s.3(c) |
+| A4 | For each processing activity, is the entity a Data Fiduciary (determines purpose **and** means) or a Data Processor? Map joint arrangements. | s.2(i), s.2(k) |
+| A5 | Has the entity been **notified** as a Significant Data Fiduciary? If not, s.10 does not apply. Do not assume. | s.2(z), s.10(1) |
+| A6 | Are any children (under 18) or persons with disability having a lawful guardian in the user base? | s.2(f), s.2(j)(ii), s.9 |
+| A7 | Which s.17 exemptions are in play, and does the client understand that s.8(1) and s.8(5) survive all of them? | s.17(1) |
+| A8 | Which sectoral regulator also sits over this data: RBI, IRDAI, SEBI, TRAI, CERT-In, NHA, UIDAI? DPDP does not displace them. | s.16(2), s.38(1) |
+
+---
+
+## B. Lawful basis and purpose
+
+| # | Question | Anchor |
+|---|---|---|
+| B1 | Is there a written **record of processing activities** mapping each purpose to its lawful basis? Not required by name, but without it s.6(10) is unanswerable. | s.4, s.6(10) |
+| B2 | For each purpose, is the basis consent or a **named** s.7 clause? Reject any answer of "legitimate interest". | s.4(1), s.7 |
+| B3 | Where s.7(a) is claimed, did the Data Principal actually **volunteer** the data for **that** purpose, and has she not indicated non-consent? | s.7(a) |
+| B4 | Where s.7(i) employment is claimed, is the use genuinely employment or loss/liability protection, rather than marketing or surveillance dressed up? | s.7(i) |
+| B5 | Is each purpose a "lawful purpose", meaning not expressly forbidden by law? | s.4(2) |
+| B6 | Is any purpose broader than what the collected data set supports, so consent would be read down? | s.6(1) and Illustration |
+
+---
+
+## C. Notice
+
+| # | Question | Anchor |
+|---|---|---|
+| C1 | Does a notice accompany or **precede** every consent request? | s.5(1) |
+| C2 | Does it state the personal data and the purpose, with an **itemised description** of the data? | s.5(1)(i), Rule 3(b)(i) |
+| C3 | Does it describe the **specific goods or services** or uses enabled, rather than a vague category? | Rule 3(b)(ii) |
+| C4 | Does it explain how to **withdraw consent** (s.6(4)) and how to raise a **grievance** (s.13)? | s.5(1)(ii) |
+| C5 | Does it explain how to **complain to the Board**? Most notices miss this one. | s.5(1)(iii), Rule 3(c)(iii) |
+| C6 | Is it **standalone and understandable independently** of the T&C or any other document? | Rule 3(a) |
+| C7 | Is it offered in **English or any Eighth Schedule language**, at the user's option? 22 languages. | s.5(3) |
+| C8 | Does it give the **particular communication link** to the site or app for exercising each of these? | Rule 3(c) |
+| C9 | For consent obtained **before** commencement, has a retrospective notice gone out, or is one planned? | s.5(2) |
+
+---
+
+## D. Consent mechanics
+
+| # | Question | Anchor |
+|---|---|---|
+| D1 | Free, specific, informed, unconditional, unambiguous, with a **clear affirmative action**? No pre-ticked boxes, no consent by continued use, no bundling. | s.6(1) |
+| D2 | Is consent **granular per purpose**, or one blanket tick? | s.6(1) |
+| D3 | Is service access **conditioned** on consent to unnecessary processing? That defeats "unconditional" and "free". | s.6(1) |
+| D4 | Any waiver, indemnity or limitation clause riding on the consent that would be void? | s.6(2) and Illustration |
+| D5 | Is the consent request in **clear and plain language**, with the language option, and with DPO or authorised-person contact details? | s.6(3) |
+| D6 | Is **withdrawal as easy as giving**? Compare the click counts honestly: one-tap in, versus an email to support, is a finding. | s.6(4), Rule 3(c)(i) |
+| D7 | On withdrawal, does the system **cease processing** and **propagate the stop to every Processor** within a reasonable time? | s.6(6) |
+| D8 | Are **consent artefacts logged**: timestamp, purpose string, notice version, language served, method, and withdrawal events? | s.6(10) |
+| D9 | If a Consent Manager is used, is it registered with the Board, and is the accountability-to-the-Data-Principal relationship reflected in contracts? | s.6(7)-(9), Rule 4 |
+
+---
+
+## E. Security, breach and vendors
+
+| # | Question | Anchor |
+|---|---|---|
+| E1 | **Encryption, obfuscation, masking, or virtual tokens** applied to personal data? | Rule 6(1)(a) |
+| E2 | **Access controls** on the computer resources used by the Fiduciary and every Processor? | Rule 6(1)(b) |
+| E3 | **Logs, monitoring and review** giving visibility on who accessed personal data? | Rule 6(1)(c) |
+| E4 | **Backups and continuity** measures for loss of confidentiality, integrity or availability? | Rule 6(1)(d) |
+| E5 | Are logs and the associated personal data retained **one year**? Reconcile with s.8(7) erasure and document the reconciliation. | Rule 6(1)(e) |
+| E6 | Does **every Processor contract** contain a security-safeguards clause? | s.8(2), Rule 6(1)(f) |
+| E7 | Is there a **valid written contract** with every Processor for goods/services activity? Not a PO, not a click-through, if that will not survive scrutiny. | s.8(2) |
+| E8 | Does the breach playbook notify **each affected Data Principal without delay**, separately from the Board timeline? | s.8(6), Rule 7(1) |
+| E9 | Does it deliver the Board's **initial intimation without delay** and the **detailed 72-hour report**, with cause and responsible-person findings? | Rule 7(2) |
+| E10 | Does the playbook treat **loss of access** (ransomware, destructive incidents) as a notifiable personal data breach? | s.2(u) |
+| E11 | Has anyone told the client there is **no harm threshold**? Most breach plans imported from GDPR have one. | s.8(6) |
+| E12 | Are **onward Processors and sub-processors** in the incident escalation chain? | s.8(1), s.8(5) |
+
+---
+
+## F. Retention and erasure
+
+| # | Question | Anchor |
+|---|---|---|
+| F1 | Is there a **retention schedule** mapping purpose to trigger to period to disposal method? | s.8(7) |
+| F2 | Does erasure fire on **withdrawal of consent**, and on **purpose exhaustion**, whichever is earlier? | s.8(7)(a) |
+| F3 | Does erasure **propagate to Processors**, including backups and analytics copies? | s.8(7)(b) |
+| F4 | Where retention continues, is the **specific legal obligation** cited, per activity? | s.8(7) opening words |
+| F5 | Does the client fall in a **Third Schedule class** (large e-commerce, online gaming, social media)? If so, apply the deemed period and the erasure workflow. | Rule 8(1) |
+| F6 | Is the **48-hour pre-erasure notice** implemented for those classes? | Rule 8(2) |
+| F7 | Is the **one-year minimum** for personal data, associated traffic data and processing logs honoured? | Rule 8(3) |
+
+---
+
+## G. Children and persons with disability
+
+| # | Question | Anchor |
+|---|---|---|
+| G1 | Is there **age assurance** at the point of collection? | s.9(1) |
+| G2 | Is **verifiable parental consent** obtained, with due-diligence checks that the person is an identifiable adult, via held identity details, voluntarily provided details, or a virtual token from an authorised entity or DigiLocker? | s.9(1), Rule 10 |
+| G3 | For a person with disability having a lawful guardian, is **guardian verification** implemented? | s.2(j)(ii), s.9(1), Rule 11 |
+| G4 | Is any processing likely to cause **detrimental effect on a child's well-being**? Note this is **never exemptible**. | s.9(2), s.9(4) |
+| G5 | Is **tracking, behavioural monitoring, or targeted advertising** switched off for child users, including analytics SDKs, ad pixels, retargeting and lookalike audiences? Consent does not cure this. | s.9(3) |
+| G6 | Does the client rely on a **Fourth Schedule** exemption? Verify the class and the specific purpose against the Gazette. | s.9(4), Rule 12 |
+| G7 | Has the client wrongly assumed an age of 13 or 16? | s.2(f) |
+
+---
+
+## H. Significant Data Fiduciary (only if notified)
+
+| # | Question | Anchor |
+|---|---|---|
+| H1 | **DPO** appointed, **based in India**, an individual, **responsible to the board of directors** or similar governing body, and named as the grievance contact? | s.10(2)(a) |
+| H2 | **Independent data auditor** appointed? Independent of the compliance function being audited. | s.10(2)(b) |
+| H3 | **DPIA and audit every twelve months** from designation? | s.10(2)(c), Rule 13(1) |
+| H4 | Is the **report of significant observations furnished to the Board**? | Rule 13(2) |
+| H5 | **Algorithmic due diligence**: has the client verified that its technical measures, including algorithmic software used for hosting, display, upload, publishing, transmission, storage or sharing, do not risk Data Principal rights? | Rule 13(3) |
+| H6 | Any **localisation** obligation triggered for Government-specified categories, including traffic data on the flow? | Rule 13(4) |
+
+---
+
+## I. Rights machinery
+
+| # | Question | Anchor |
+|---|---|---|
+| I1 | Are the **means and required particulars** for exercising rights **prominently published** on the website or app? | Rule 14(1) |
+| I2 | Can the client actually produce a **s.11 access response**: summary of data, processing activities, and the identities of Fiduciaries and Processors it was shared with plus a description of what was shared? Most cannot produce the sharing list. | s.11(1) |
+| I3 | Is the **law-enforcement sharing carve-out** correctly applied and not over-applied? | s.11(2) |
+| I4 | Is there a **correction, completion and updating** workflow that actually writes back to downstream systems? | s.12(2) |
+| I5 | Is there an **erasure** workflow with the "necessary for the specified purpose or for legal compliance" test applied per record, not per system? | s.12(3) |
+| I6 | Is a **grievance mechanism** live, with the response period **published**, and within a reasonable period not exceeding ninety days? | s.8(10), s.13, Rule 14(3) |
+| I7 | Is the **nomination** facility available? | s.14, Rule 14(4) |
+| I8 | Is the **business contact information** of the DPO or answering person published, and included in every response to a rights communication? | s.8(9), Rule 9 |
+| I9 | Has the client been told there is **no portability right** and **no right against automated decisions**, so it should not over-build? | s.11 to s.14 |
+
+---
+
+## J. Cross-border and governance
+
+| # | Question | Anchor |
+|---|---|---|
+| J1 | Where does the data physically go? Any country on a **s.16(1) notified restriction list**? | s.16(1) |
+| J2 | Does a **sectoral localisation rule** bind independently (RBI payment data, insurance, telecom, CERT-In)? | s.16(2) |
+| J3 | Any arrangement making data available to a **foreign State** or a State-controlled entity? | Rule 15 |
+| J4 | Is accountability documented at board level, given s.8(1) makes contrary agreements irrelevant? | s.8(1) |
+| J5 | Where the client is a **Processor for foreign clients under a foreign contract**, has the s.17(1)(d) exemption been properly claimed, with s.8(1) and s.8(5) still honoured? | s.17(1)(d) |
+
+---
+
+## K. Documents to request in any audit
+
+1. Privacy notice and every consent screen, in every language served.
+2. Consent log schema and a sample export.
+3. Record of processing activities, purpose to lawful basis map.
+4. Data inventory and data flow diagrams, including third-country flows.
+5. All Data Processor contracts and sub-processor lists.
+6. Retention schedule and the erasure runbook.
+7. Incident response plan, with the DPDP notification annexes.
+8. Security architecture: encryption at rest and in transit, access control model, logging design.
+9. Age assurance and parental-consent design, if any child users.
+10. Grievance policy, published response period, and the last twelve months of grievance logs.
+11. SDF designation notification, DPO appointment letter, auditor engagement, last DPIA and audit report, if applicable.
+12. Any sectoral regulatory correspondence on data handling.
+
+---
+
+## L. Remediation priority order
+
+Rank findings by the Schedule ceiling behind them, then by how quickly the Board could see it.
+
+1. **s.8(5) security safeguards**, Rule 6 minimums. Ceiling Rs 250 crore. Highest exposure, and a
+   breach makes the gap self-evident.
+2. **s.8(6) and Rule 7 breach readiness.** Ceiling Rs 200 crore. Cheap to fix, catastrophic to miss,
+   and it is the failure the Board hears about first because the breach itself brings the file.
+3. **s.9 children.** Ceiling Rs 200 crore. Often a single ad-SDK configuration.
+4. **s.10 and Rule 13 SDF duties**, if notified. Ceiling Rs 150 crore.
+5. **Everything else**, Schedule item 7. Ceiling Rs 50 crore. Notice, consent, retention, rights.
+
+Then re-rank by effort. A tracking pixel disabled for under-18 accounts in an afternoon outranks a
+six-month consent re-platforming, even though both sit at the same ceiling.

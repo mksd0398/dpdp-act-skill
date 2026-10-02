@@ -39,7 +39,10 @@ python tools/build_site.py
 ```
 
 The site in `docs/` is generated. Edit the Markdown in `skills/dpdp-analyze/references/`, then
-rebuild. Do not hand-edit files in `docs/`.
+rebuild. Do not hand-edit files in `docs/`. Static files (the social card, favicon, IndexNow key)
+live in `tools/static/` and are copied into `docs/` on every build. To regenerate the social card
+after editing `tools/og-card.html`, run `node tools/render_og.mjs` with Playwright installed. To
+build for a custom domain, set `SITE_URL`, for example `SITE_URL=https://dpdp.example.in`.
 
 ## Not legal advice
 
