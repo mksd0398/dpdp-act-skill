@@ -25,6 +25,11 @@ Notes for language models:
 - [DPDP Act penalties: the full Schedule, up to Rs 250 crore](https://mksd0398.github.io/dpdp-act-skill/penalties/index.md): Every penalty under India's DPDP Act 2023: Rs 250 crore for security failures, Rs 200 crore for breach notification and children's data, Rs 150 crore for Significant Data Fiduciaries. How the Data Protection Board decides the amount.
 - [DPDP Act vs GDPR: 17 differences that change your compliance programme](https://mksd0398.github.io/dpdp-act-skill/dpdp-vs-gdpr/index.md): India's DPDP Act 2023 compared with the GDPR. No sensitive data category, no legitimate interests, no portability, no compensation, child age 18, and breach notification with no harm threshold.
 
+## Answers
+
+- [Does the DPDP Act require a cookie consent banner?](https://mksd0398.github.io/dpdp-act-skill/answers/does-the-dpdp-act-require-a-cookie-consent-banner/index.md): The DPDP Act never mentions cookies, so there is no "cookie law" in India. But a cookie or device ID that lets you single out a visitor is personal data...
+- [DPDP Act questions answered, with the section for every claim](https://mksd0398.github.io/dpdp-act-skill/answers/): Real questions people ask about India's DPDP Act 2023 and DPDP Rules 2025, answered from the verbatim statute with a section or rule citation.
+
 ## The AI skill
 
 - [DPDP Act AI skill for Claude Code: free, cites every section](https://mksd0398.github.io/dpdp-act-skill/claude-code-skill/index.md): Free Claude Code skill that analyses privacy notices, consent flows, vendor contracts and products against India's DPDP Act 2023 and Rules 2025, citing a section or rule for every claim. Install in two commands.
