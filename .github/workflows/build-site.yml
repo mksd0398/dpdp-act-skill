@@ -7,6 +7,7 @@ on:
       - 'skills/dpdp-analyze/**'
       - 'tools/**'
       - 'DISCLAIMER.md'
+      - 'answers/**'
       - 'docs/**'
   workflow_dispatch:
 
