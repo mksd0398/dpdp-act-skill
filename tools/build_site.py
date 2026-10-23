@@ -41,6 +41,7 @@ INDEX_MD = REF / "section-index.md"
 DOCTRINE_MD = REF / "doctrine.md"
 CHECKLIST_MD = REF / "compliance-checklist.md"
 SKILL_MD = ROOT / "skills" / "dpdp-analyze" / "SKILL.md"
+ANSWERS = ROOT / "answers"  # one Markdown file per real-world question, see tools/daily-answer.md
 DISCLAIMER_MD = ROOT / "DISCLAIMER.md"
 
 SITE = os.environ.get("SITE_URL", "https://mksd0398.github.io/dpdp-act-skill").rstrip("/")
@@ -293,6 +294,7 @@ NAV = [
     ("dpdp-vs-gdpr/", "vs GDPR", ""),
     ("glossary/", "Glossary", ""),
     ("faq/", "FAQ", ""),
+    ("answers/", "Answers", ""),
     (f"{SKILL_PATH}/", "AI skill", "cta"),
     ("disclaimer/", "Disclaimer", ""),
 ]
@@ -1009,6 +1011,7 @@ def build() -> None:
     build_penalties(schedule)
     build_gdpr()
     build_faq()
+    build_answers()
     build_skill()
     build_checker_page()
     build_about()
@@ -1585,6 +1588,80 @@ def build_faq() -> None:
         page_extra={"mainEntity": qa_nodes},
         markdown_twin=twin,
         llms_group="Start here",
+    )
+
+
+def parse_answers() -> list[dict]:
+    """answers/<slug>.md: a front matter block (question, date, optional asked) then the Markdown
+    answer, whose first paragraph is the short answer. Newest first."""
+    out = []
+    for f in ANSWERS.glob("*.md") if ANSWERS.exists() else ():
+        m = re.match(r"---\n(.*?)\n---\n(.*)", f.read_text(encoding="utf-8").replace("\r\n", "\n"), re.S)
+        if not m:
+            raise SystemExit(f"{f}: missing front matter")
+        meta = dict(line.split(":", 1) for line in m.group(1).splitlines() if ":" in line)
+        meta = {k.strip(): v.strip() for k, v in meta.items()}
+        body = m.group(2).strip()
+        out.append({"slug": f.stem, "q": meta["question"], "date": meta["date"],
+                    "asked": meta.get("asked", ""), "body": body,
+                    "short": strip_md(body.split("\n\n", 1)[0]), "src": f})
+    return sorted(out, key=lambda a: (a["date"], a["slug"]), reverse=True)
+
+
+def any_llm_cta(up: str, q: str) -> str:
+    return (
+        f'<aside class="skill-cta"><p class="label">Ask your own AI, with the statute attached</p>'
+        f"<p>General chatbots answer Indian privacy questions from GDPR memory. Give yours the "
+        f"actual text first, then ask: <q>{esc(q)}</q></p><ul>"
+        f'<li><b>Claude Code</b>: <code>/plugin marketplace add mksd0398/dpdp-act-skill</code>, then '
+        f'<code>/plugin install dpdp-analyze@dpdp</code></li>'
+        f'<li><b>Codex, Cursor, Gemini CLI and other agents</b>: '
+        f'<a href="{up}{SKILL_PATH}/#install">install the same skill</a></li>'
+        f'<li><b>ChatGPT, Gemini, Perplexity or any other LLM</b>: attach '
+        f'<a href="{up}llms-full.txt">llms-full.txt</a> to the chat</li></ul></aside>'
+    )
+
+
+def build_answers() -> None:
+    answers = parse_answers()
+    for a in answers:
+        up = "../../"
+        canonical = f"{SITE}/answers/{a['slug']}/"
+        asked = (f' &middot; <a href="{esc(a["asked"])}" rel="nofollow noopener">where it was asked</a>'
+                 if a["asked"] else "")
+        page(
+            url=f"answers/{a['slug']}",
+            title=a["q"],
+            description=meta_desc(a["short"]),
+            body=(f"<h1>{esc(a['q'])}</h1><p class='sub'>Answered {esc(a['date'])}{asked}</p>"
+                  + md2html(link_refs(a["body"], up)) + any_llm_cta(up, a["q"])),
+            sources=(a["src"],),
+            breadcrumbs=[("Home", ""), ("Answers", "answers"), (a["q"], None)],
+            page_type="FAQPage",
+            page_extra={"datePublished": a["date"], "mainEntity": [{
+                "@type": "Question", "name": a["q"], "url": canonical,
+                "acceptedAnswer": {"@type": "Answer", "text": strip_md(a["body"])},
+            }]},
+            markdown_twin=f"# {a['q']}\n\n{a['body']}",
+            llms_group="Answers",
+        )
+    items = "".join(
+        f'<section class="qa"><h3><a href="{a["slug"]}/">{esc(a["q"])}</a></h3>'
+        f'<p>{esc(meta_desc(a["short"], 220))}</p><p class="sources">{esc(a["date"])}</p></section>'
+        for a in answers
+    )
+    page(
+        url="answers",
+        title="DPDP Act questions answered, with the section for every claim",
+        description=("Real questions people ask about India's DPDP Act 2023 and DPDP Rules 2025, "
+                     "answered from the verbatim statute with a section or rule citation."),
+        body=("<h1>DPDP questions, answered</h1><p class='sub'>Questions people actually ask, "
+              "answered from the Gazette text. New ones added regularly.</p>" + items),
+        sources=tuple(a["src"] for a in answers) or (THIS,),
+        breadcrumbs=[("Home", ""), ("Answers", None)],
+        page_type="CollectionPage",
+        changefreq="daily",
+        llms_group="Answers",
     )
 
 
@@ -2500,7 +2577,7 @@ def build_llms(sections: list[dict], rules: list[dict]) -> None:
     for p in PAGES:
         if p["group"]:
             groups.setdefault(p["group"], []).append(p)
-    order = ["Start here", "Guides", "The AI skill", "The Rules, 2025",
+    order = ["Start here", "Guides", "Answers", "The AI skill", "The Rules, 2025",
              "The Act, section by section", "About"]
 
     def link(p: dict) -> str:
