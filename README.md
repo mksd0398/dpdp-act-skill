@@ -1,9 +1,9 @@
 # India DPDP Act 2023 + DPDP Rules 2025: full text and a compliance analysis skill
 
-[![Read the Act online](https://img.shields.io/badge/read-DPDP%20Act%202023-0b6bcb)](https://mksd0398.github.io/dpdp-act-skill/act/)
-[![Read the Rules](https://img.shields.io/badge/read-DPDP%20Rules%202025-0b6bcb)](https://mksd0398.github.io/dpdp-act-skill/rules/)
+[![Read the Act online](https://img.shields.io/badge/read-DPDP%20Act%202023-0b6bcb)](https://dpdp.mksdcommerce.com/act/)
+[![Read the Rules](https://img.shields.io/badge/read-DPDP%20Rules%202025-0b6bcb)](https://dpdp.mksdcommerce.com/rules/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Install the Claude Code skill](https://img.shields.io/badge/Claude%20Code-install%20skill-d97757)](https://mksd0398.github.io/dpdp-act-skill/claude-code-skill/)
+[![Install the Claude Code skill](https://img.shields.io/badge/Claude%20Code-install%20skill-d97757)](https://dpdp.mksdcommerce.com/claude-code-skill/)
 [![Agent Skills format](https://img.shields.io/badge/Agent%20Skills-SKILL.md-555)](https://agentskills.io)
 [![Not legal advice](https://img.shields.io/badge/⚠-not%20legal%20advice-b00020)](DISCLAIMER.md)
 
@@ -33,18 +33,18 @@ A complete, verbatim, section-by-section reference for the **Digital Personal Da
 installable **Claude Code skill** that analyses privacy notices, consent flows, vendor contracts and
 whole products against Indian data protection law.
 
-**Read it in your browser:** [mksd0398.github.io/dpdp-act-skill](https://mksd0398.github.io/dpdp-act-skill/)
+**Read it in your browser:** [dpdp.mksdcommerce.com](https://dpdp.mksdcommerce.com/)
 
 | On the site | |
 |---|---|
-| [The Act, section by section](https://mksd0398.github.io/dpdp-act-skill/act/) | All 44 sections verbatim, each with a one-line summary |
-| [The Rules, 2025](https://mksd0398.github.io/dpdp-act-skill/rules/) | 23 rules, 7 schedules, commencement dates |
-| [The DPDP Act explained](https://mksd0398.github.io/dpdp-act-skill/dpdp-act-explained/) | The five gates, consent, exemptions, enforcement, 16 traps |
-| [Readiness self-check](https://mksd0398.github.io/dpdp-act-skill/dpdp-compliance-checker/) | A three-minute interactive check that scores your readiness and ranks your gaps by penalty ceiling. Runs in your browser. |
-| [Compliance checklist](https://mksd0398.github.io/dpdp-act-skill/compliance-checklist/) | 78 checks, each anchored to a section or rule |
-| [Glossary](https://mksd0398.github.io/dpdp-act-skill/glossary/) | Every section 2 definition, verbatim, with plain-English notes |
-| [FAQ](https://mksd0398.github.io/dpdp-act-skill/faq/) | 30+ direct answers, each with its source |
-| [Penalties](https://mksd0398.github.io/dpdp-act-skill/penalties/) and [DPDP vs GDPR](https://mksd0398.github.io/dpdp-act-skill/dpdp-vs-gdpr/) | The Schedule, and the 17 differences that change what you build |
+| [The Act, section by section](https://dpdp.mksdcommerce.com/act/) | All 44 sections verbatim, each with a one-line summary |
+| [The Rules, 2025](https://dpdp.mksdcommerce.com/rules/) | 23 rules, 7 schedules, commencement dates |
+| [The DPDP Act explained](https://dpdp.mksdcommerce.com/dpdp-act-explained/) | The five gates, consent, exemptions, enforcement, 16 traps |
+| [Readiness self-check](https://dpdp.mksdcommerce.com/dpdp-compliance-checker/) | A three-minute interactive check that scores your readiness and ranks your gaps by penalty ceiling. Runs in your browser. |
+| [Compliance checklist](https://dpdp.mksdcommerce.com/compliance-checklist/) | 78 checks, each anchored to a section or rule |
+| [Glossary](https://dpdp.mksdcommerce.com/glossary/) | Every section 2 definition, verbatim, with plain-English notes |
+| [FAQ](https://dpdp.mksdcommerce.com/faq/) | 30+ direct answers, each with its source |
+| [Penalties](https://dpdp.mksdcommerce.com/penalties/) and [DPDP vs GDPR](https://dpdp.mksdcommerce.com/dpdp-vs-gdpr/) | The Schedule, and the 17 differences that change what you build |
 
 ---
 
@@ -97,13 +97,13 @@ so it is not tied to Claude Code.
 
 | Tool | How |
 |---|---|
-| **Claude.ai** (web, desktop, mobile) | Download [`dpdp-analyze.zip`](https://mksd0398.github.io/dpdp-act-skill/downloads/dpdp-analyze.zip), then Customize > Skills > + > Create skill > Upload a skill. Code execution must be on. |
+| **Claude.ai** (web, desktop, mobile) | Download [`dpdp-analyze.zip`](https://dpdp.mksdcommerce.com/downloads/dpdp-analyze.zip), then Customize > Skills > + > Create skill > Upload a skill. Code execution must be on. |
 | **GitHub Copilot** (CLI, VS Code, coding agent) | `gh skill install mksd0398/dpdp-act-skill dpdp-analyze` |
 | **Gemini CLI** | `gemini skills install https://github.com/mksd0398/dpdp-act-skill.git --path skills/dpdp-analyze` |
 | **Many agents at once** | `npx skills add mksd0398/dpdp-act-skill` |
 | **OpenAI Codex, Cursor, Goose, OpenCode, Junie, Amp** | Copy `skills/dpdp-analyze` into `~/.agents/skills/`, or `.agents/skills/` in a project |
 | **Claude API** | Upload the folder with the [Skills API](https://platform.claude.com/docs/en/build-with-claude/skills-guide) |
-| **RAG, custom GPTs, prompt libraries** | Index [`references/`](skills/dpdp-analyze/references/) or the site's [`llms-full.txt`](https://mksd0398.github.io/dpdp-act-skill/llms-full.txt) |
+| **RAG, custom GPTs, prompt libraries** | Index [`references/`](skills/dpdp-analyze/references/) or the site's [`llms-full.txt`](https://dpdp.mksdcommerce.com/llms-full.txt) |
 
 ### Using it
 
@@ -122,7 +122,7 @@ Or just ask a question. The skill triggers on Indian privacy topics without bein
 
 The reference files are plain Markdown, so they drop into any agent, RAG index or prompt library
 unchanged. AI crawlers and agents can start from the site's
-[`llms.txt`](https://mksd0398.github.io/dpdp-act-skill/llms.txt); every content page also has a
+[`llms.txt`](https://dpdp.mksdcommerce.com/llms.txt); every content page also has a
 Markdown twin at `index.md`.
 
 ---
@@ -294,7 +294,7 @@ If this saved you time, the most useful things you can do are:
 - **Star the repository.** Several skill directories and awesome lists only list projects above a
   star threshold.
 - **Share the site** with whoever owns privacy, security or product compliance for Indian users:
-  [mksd0398.github.io/dpdp-act-skill](https://mksd0398.github.io/dpdp-act-skill/).
+  [dpdp.mksdcommerce.com](https://dpdp.mksdcommerce.com/).
 - **Report an error.** A correction to the statutory text is worth more than a star.
 
 To cite it, use GitHub's "Cite this repository" button, which reads [`CITATION.cff`](CITATION.cff).

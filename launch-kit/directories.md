@@ -28,7 +28,7 @@ you submit. "Unverified" means I could not confirm the detail from the directory
 ```
 
 **Category:** Legal / Compliance / Privacy. **Licence:** MIT.
-**Homepage:** https://mksd0398.github.io/dpdp-act-skill/
+**Homepage:** https://dpdp.mksdcommerce.com/
 
 ---
 

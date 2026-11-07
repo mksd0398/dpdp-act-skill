@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the static GitHub Pages site for dpdp-act-skill.
+"""Build the static site (hosted on Firebase) for dpdp-act-skill.
 
 Reads the Markdown reference files that ship with the skill and emits a static site into docs/,
 built for three kinds of reader at once:
@@ -2509,7 +2509,7 @@ def build_skill_zip() -> None:
 
 
 def build_404() -> None:
-    """GitHub Pages serves docs/404.html for any missing path, at any depth, so use absolute URLs."""
+    """Firebase Hosting serves docs/404.html for any missing path, at any depth, so use absolute URLs."""
     write(
         "404.html",
         f"""<!doctype html>

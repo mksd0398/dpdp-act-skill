@@ -24,11 +24,11 @@ gate first, collect stars, then submit to the gated lists.
 - Every page has schema.org JSON-LD as a single `@graph`: `WebSite`, `Person`, `WebPage`,
   `BreadcrumbList`. Pages add `Legislation` for the Act and Rules, `FAQPage`, `DefinedTermSet`,
   `SoftwareApplication` and `HowTo` for the skill, and `Article` where they fit.
-- New high-intent pages: [compliance checklist](https://mksd0398.github.io/dpdp-act-skill/compliance-checklist/),
-  [DPDP Act explained](https://mksd0398.github.io/dpdp-act-skill/dpdp-act-explained/),
-  [glossary](https://mksd0398.github.io/dpdp-act-skill/glossary/),
-  [AI skill](https://mksd0398.github.io/dpdp-act-skill/claude-code-skill/) and
-  [about](https://mksd0398.github.io/dpdp-act-skill/about/).
+- New high-intent pages: [compliance checklist](https://dpdp.mksdcommerce.com/compliance-checklist/),
+  [DPDP Act explained](https://dpdp.mksdcommerce.com/dpdp-act-explained/),
+  [glossary](https://dpdp.mksdcommerce.com/glossary/),
+  [AI skill](https://dpdp.mksdcommerce.com/claude-code-skill/) and
+  [about](https://dpdp.mksdcommerce.com/about/).
 - Every `s.8(6)` and `Rule 7(2)` in the commentary links to that section or rule page. That is
   several hundred internal links, with references to other Acts (IT Act, RTI Act, IBC) left
   alone.
@@ -44,9 +44,9 @@ gate first, collect stars, then submit to the gated lists.
   the deadline, the regulator, the maximum penalty, the child age, the breach clock.
 
 **AI answer engines (GEO)**
-- [`llms.txt`](https://mksd0398.github.io/dpdp-act-skill/llms.txt) indexes every page for AI
+- [`llms.txt`](https://dpdp.mksdcommerce.com/llms.txt) indexes every page for AI
   agents and carries notes on the facts models most often get wrong.
-- [`llms-full.txt`](https://mksd0398.github.io/dpdp-act-skill/llms-full.txt) holds the whole corpus
+- [`llms-full.txt`](https://dpdp.mksdcommerce.com/llms-full.txt) holds the whole corpus
   in one file.
 - Every content page has a Markdown twin at `index.md`, linked with `rel="alternate"`.
 - `robots.txt` explicitly welcomes GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot,
@@ -57,7 +57,7 @@ gate first, collect stars, then submit to the gated lists.
   up.
 
 **Interactive readiness self-check**
-- On the home page and at [`/dpdp-compliance-checker/`](https://mksd0398.github.io/dpdp-act-skill/dpdp-compliance-checker/),
+- On the home page and at [`/dpdp-compliance-checker/`](https://dpdp.mksdcommerce.com/dpdp-compliance-checker/),
   which targets searches like "DPDP compliance checker".
 - Up to 22 questions. It returns a readiness score, a score per area, and gaps ranked by the
   penalty ceiling behind each one, each with its section or rule.
@@ -71,7 +71,7 @@ gate first, collect stars, then submit to the gated lists.
 - Every section and rule page ends with a "Use this with AI" box holding a prompt written for that
   provision.
 - The site footer promotes the skill on all 69 pages.
-- A one-click [`dpdp-analyze.zip`](https://mksd0398.github.io/dpdp-act-skill/downloads/dpdp-analyze.zip)
+- A one-click [`dpdp-analyze.zip`](https://dpdp.mksdcommerce.com/downloads/dpdp-analyze.zip)
   for uploading to Claude.ai.
 - Install instructions for Claude.ai, GitHub Copilot, Gemini CLI, Codex, Cursor and the
   `npx skills` installer.
@@ -94,21 +94,21 @@ These steps need your accounts, so I could not do them from here.
    gear next to **About**.
    - **Description** (paste it as is):
      `Free DPDP Act skill for Claude Code + verbatim text of India's Digital Personal Data Protection Act 2023 and DPDP Rules 2025. 78-point compliance checklist, FAQ, glossary. Cites the section for every claim. Not legal advice.`
-   - **Website:** `https://mksd0398.github.io/dpdp-act-skill/`
+   - **Website:** `https://dpdp.mksdcommerce.com/`
    - **Topics** (20, the maximum):
      `dpdp` `dpdp-act` `dpdp-act-2023` `dpdp-rules` `india` `data-protection` `data-privacy`
      `privacy-law` `gdpr` `compliance` `regtech` `legaltech` `claude` `claude-code`
      `claude-code-plugin` `claude-skills` `agent-skills` `anthropic` `llms-txt` `privacy`
 2. **Social preview.** Settings › General › Social preview › upload
    [`github-social-preview.png`](github-social-preview.png).
-3. **Merge this branch to `main`.** The site only rebuilds from `main`. Check that GitHub Pages is
-   serving from `main` › `/docs`.
+3. **Merge this branch to `main`, then deploy.** The site is hosted on Firebase (project
+   `pchef-01`, site `mksd-dpdp`). Run `py tools/build_site.py`, then
+   `firebase deploy --only hosting --project pchef-01`.
 4. **Cut a release.** Go to Releases › Draft a new release, tag `v1.1.0`, and attach
    `docs/downloads/dpdp-analyze.zip`. Releases show up in GitHub search, in watchers' feeds and in
    some directories' crawlers.
-5. **Google Search Console.** Add a URL-prefix property for
-   `https://mksd0398.github.io/dpdp-act-skill/`. Choose the **HTML file** method, put the file
-   Google gives you into `tools/static/`, push, then verify. Submit `sitemap.xml`. Use URL
+5. **Google Search Console.** Add a Domain property for `mksdcommerce.com` (TXT record in
+   Cloudflare), which covers `dpdp.mksdcommerce.com` too. Submit `sitemap.xml`. Use URL
    Inspection › Request indexing on the home page, `/faq/`, `/compliance-checklist/` and
    `/claude-code-skill/`.
 6. **Bing Webmaster Tools.** Use "Import from Google Search Console", which takes one click.
@@ -141,24 +141,11 @@ Copy for all of these is in [`posts.md`](posts.md). The submission details are i
 - **Press:** pitch MediaNama, Inc42 and YourStory using the drafts in `posts.md`. LiveLaw only
   accepts columns you wrote yourself.
 
-### Strongly recommended: a custom domain
+### Custom domain
 
-`mksd0398.github.io/dpdp-act-skill` is a project path on a shared host. That costs you three
-things:
-
-- crawlers only read `robots.txt` and `llms.txt` at a host's root, so the ones in `docs/` are
-  ignored for now;
-- Google shows a host-level favicon, so you get GitHub's;
-- a short branded domain (something like `dpdp<something>.in`) is easier to cite, remember and
-  link.
-
-Switching is quick once you have the domain:
-
-1. Buy the domain and point it at GitHub Pages (Settings › Pages › Custom domain).
-2. Add a `CNAME` file containing the domain to `tools/static/`.
-3. In `tools/build_site.py`, change the default `SITE` (or set `SITE_URL` in the workflow).
-4. Rebuild and push. Every canonical URL, sitemap entry and `llms.txt` link moves over, and GitHub
-   Pages redirects the old URLs.
+The site lives at the root of `dpdp.mksdcommerce.com`, so crawlers read its `robots.txt` and
+`llms.txt`, and Google shows its own favicon. To connect the domain: Firebase console › Hosting ›
+`mksd-dpdp` › Add custom domain, then add the records it shows in Cloudflare as DNS only.
 
 ---
 
