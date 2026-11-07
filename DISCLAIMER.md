@@ -1,7 +1,7 @@
 # Disclaimer: this is not legal advice
 
 **Read this before relying on anything in this repository or on the accompanying website at
-https://mksd0398.github.io/dpdp-act-skill/**
+https://dpdp.mksdcommerce.com/**
 
 ## 1. Not legal advice
 

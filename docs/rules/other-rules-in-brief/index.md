@@ -1,6 +1,6 @@
 # DPDP Rules 2025: Rules 5, 9, 16 and 17 to 23 in brief
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/rules/other-rules-in-brief/
+> Canonical page: https://dpdp.mksdcommerce.com/rules/other-rules-in-brief/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 Digital Personal Data Protection Rules, 2025. Secondary-sourced from the PIB release and cross-checked sources; verify against the notified Gazette text before external use.

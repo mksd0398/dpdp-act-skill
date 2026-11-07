@@ -1,6 +1,6 @@
 # DPDP Act AI skill for Claude Code: free, cites every section
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/claude-code-skill/
+> Canonical page: https://dpdp.mksdcommerce.com/claude-code-skill/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 dpdp-analyze is a free, open-source (MIT) Claude Code skill that answers Indian data protection questions from the verbatim DPDP Act 2023 and the DPDP Rules 2025, citing a section or rule for every claim. It reviews privacy notices, consent flows, vendor contracts and whole products.
@@ -21,7 +21,7 @@ git clone https://github.com/mksd0398/dpdp-act-skill.git
 cp -r dpdp-act-skill/skills/dpdp-analyze ~/.claude/skills/
 ```
 
-Claude.ai: download https://mksd0398.github.io/dpdp-act-skill/downloads/dpdp-analyze.zip and upload it under Customize > Skills. GitHub Copilot: `gh skill install mksd0398/dpdp-act-skill dpdp-analyze`. Gemini CLI: `gemini skills install https://github.com/mksd0398/dpdp-act-skill.git --path skills/dpdp-analyze`. Codex, Cursor and other Agent Skills tools: copy `skills/dpdp-analyze` into `~/.agents/skills/`.
+Claude.ai: download https://dpdp.mksdcommerce.com/downloads/dpdp-analyze.zip and upload it under Customize > Skills. GitHub Copilot: `gh skill install mksd0398/dpdp-act-skill dpdp-analyze`. Gemini CLI: `gemini skills install https://github.com/mksd0398/dpdp-act-skill.git --path skills/dpdp-analyze`. Codex, Cursor and other Agent Skills tools: copy `skills/dpdp-analyze` into `~/.agents/skills/`.
 
 ## Example prompts
 

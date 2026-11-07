@@ -1,6 +1,6 @@
 # DPDP compliance checklist: 78 checks anchored to the Act and Rules
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/compliance-checklist/
+> Canonical page: https://dpdp.mksdcommerce.com/compliance-checklist/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 The working checklist for auditing an organisation, a product, a contract, or a privacy notice.

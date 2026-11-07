@@ -1,6 +1,6 @@
 # Section 2 DPDP Act 2023: Definitions (full text)
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/act/section-2/
+> Canonical page: https://dpdp.mksdcommerce.com/act/section-2/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 **CHAPTER I: PRELIMINARY.** The Digital Personal Data Protection Act, 2023 (Act 22 of 2023), section 2. Verbatim from the Gazette of India.

@@ -1,6 +1,6 @@
 # DPDP Act glossary: Data Fiduciary, Data Principal and more
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/glossary/
+> Canonical page: https://dpdp.mksdcommerce.com/glossary/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 ## Appellate Tribunal

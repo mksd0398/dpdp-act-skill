@@ -21,4 +21,4 @@ User-agent: MistralAI-User
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://mksd0398.github.io/dpdp-act-skill/sitemap.xml
+Sitemap: https://dpdp.mksdcommerce.com/sitemap.xml

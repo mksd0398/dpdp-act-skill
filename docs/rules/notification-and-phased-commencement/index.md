@@ -1,6 +1,6 @@
 # DPDP Rules 2025 commencement dates: when each rule applies
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/rules/notification-and-phased-commencement/
+> Canonical page: https://dpdp.mksdcommerce.com/rules/notification-and-phased-commencement/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 Digital Personal Data Protection Rules, 2025. Secondary-sourced from the PIB release and cross-checked sources; verify against the notified Gazette text before external use.

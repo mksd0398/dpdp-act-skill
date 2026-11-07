@@ -1,10 +1,10 @@
 # Disclaimer: this is not legal advice
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/disclaimer/
+> Canonical page: https://dpdp.mksdcommerce.com/disclaimer/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 **Read this before relying on anything in this repository or on the accompanying website at
-https://mksd0398.github.io/dpdp-act-skill/**
+https://dpdp.mksdcommerce.com/**
 
 ## 1. Not legal advice
 

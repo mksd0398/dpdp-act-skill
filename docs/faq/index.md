@@ -1,6 +1,6 @@
 # DPDP Act 2023 FAQ: deadline, penalties, DPO, consent, breach reporting
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/faq/
+> Canonical page: https://dpdp.mksdcommerce.com/faq/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 ## Status and deadlines
