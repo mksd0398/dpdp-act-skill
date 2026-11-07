@@ -677,6 +677,9 @@ GLOSSARY_NOTES = {
 }
 
 EXTRA_TERMS = [
+    ("DPDPA (DPDP Act)",
+     "Short form of the Digital Personal Data Protection Act, 2023, India's data protection law. "
+     "DPDP Act and DPDPA mean the same statute; the DPDP Rules, 2025 are made under it (s.40)."),
     ("Data Protection Impact Assessment (DPIA)",
      "A periodic assessment that Significant Data Fiduciaries must carry out. The Act defines it "
      "as a description of Data Principal rights and the purpose of processing, plus the "
@@ -706,6 +709,10 @@ EXTRA_TERMS = [
 
 FAQ_GROUPS: list[tuple[str, list[tuple[str, str, list[tuple[str, str]]]]]] = [
     ("Status and deadlines", [
+        ("Is the DPDP Act the same as the DPDPA?",
+         "Yes. DPDP Act and DPDPA are both short forms of the Digital Personal Data Protection Act, "
+         "2023 (Act No. 22 of 2023). The DPDP Rules, 2025 are the separate rules notified under it.",
+         [("s.1", "act/section-1/"), ("Rules", "rules/")]),
         ("Is the DPDP Act in force?",
          "Partly. The Act received Presidential assent on 11 August 2023, but section 1(2) permits "
          "staggered commencement. Data Protection Board machinery has been live since 14 November "
@@ -1250,7 +1257,7 @@ def build_explained() -> None:
         url="dpdp-act-explained",
         title="DPDP Act explained: how India's data protection law works",
         description=(
-            "A plain-English guide to India's DPDP Act 2023: the five gates, consent, the s.7 "
+            "A plain-English guide to India's DPDP Act 2023 (DPDPA): the five gates, consent, the s.7 "
             "legitimate uses, children, Significant Data Fiduciaries, rights, transfers, "
             "exemptions, enforcement and 16 common misreadings."
         ),
@@ -1294,7 +1301,7 @@ def build_checklist() -> None:
         url="compliance-checklist",
         title=f"DPDP compliance checklist: {count} checks anchored to the Act and Rules",
         description=(
-            f"A {count}-point DPDP Act 2023 compliance checklist for India: scoping, lawful basis, "
+            f"A {count}-point DPDP Act 2023 (DPDPA) compliance checklist for India: scoping, lawful basis, "
             "notice, consent, security, breach, retention, children, SDF duties, rights and "
             "transfers. Every item cites a section or rule."
         ),
@@ -1579,7 +1586,7 @@ def build_faq() -> None:
         url="faq",
         title="DPDP Act 2023 FAQ: deadline, penalties, DPO, consent, breach reporting",
         description=(
-            "Answers on India's DPDP Act 2023: compliance deadline, whether it applies outside "
+            "Answers on India's DPDP Act 2023 (DPDPA): compliance deadline, whether it applies outside "
             "India, consent and notice, children, data localisation, DPO, breach reporting, "
             "penalties, rights and the SPDI Rules."
         ),
@@ -2284,7 +2291,8 @@ def build_landing() -> None:
         f'<span><b data-days-left="{DEADLINE}">{days}</b> days until the DPDP Rules fully '
         "commence</span></p>"
         '<h1>Get ready for India&rsquo;s <span class="hl">DPDP Act</span>.</h1>'
-        '<p class="lead">The Digital Personal Data Protection Act, 2023 and the DPDP Rules, 2025, '
+        '<p class="lead">The Digital Personal Data Protection Act, 2023 (DPDP Act or DPDPA) and the '
+        "DPDP Rules, 2025, "
         "verbatim and section by section. Check your readiness in three minutes, then ask an AI "
         "that cites the section for every answer.</p>"
         '<div class="hero-ctas">'
@@ -2339,7 +2347,7 @@ def build_landing() -> None:
         ("penalties/", "scale", "Penalties", "The full Schedule, up to Rs 250 crore, and how the Board decides."),
         ("dpdp-vs-gdpr/", "compare", "DPDP vs GDPR", "The 17 differences that change what you build."),
         ("glossary/", "type", "Glossary", "Data Fiduciary, Data Principal and every defined term."),
-        ("faq/", "help", "FAQ", "32 direct answers: deadline, DPO, consent, breaches, transfers."),
+        ("faq/", "help", "FAQ", "33 direct answers: deadline, DPO, consent, breaches, transfers."),
     ]
     card_html = "".join(
         f'<a class="card icon-card" href="{href}">{icon(ic, "card-ic")}<h3>{esc(t)}</h3>'
@@ -2457,7 +2465,7 @@ def build_landing() -> None:
         url="",
         title="DPDP Act 2023 full text, Rules 2025 and compliance checklist",
         description=(
-            "India's Digital Personal Data Protection Act, 2023 and DPDP Rules, 2025 in full, "
+            "India's Digital Personal Data Protection Act, 2023 (DPDPA) and DPDP Rules, 2025 in full, "
             "with a free readiness self-check, a 78-point compliance checklist and a free "
             "Claude Code skill that cites every section."
         ),

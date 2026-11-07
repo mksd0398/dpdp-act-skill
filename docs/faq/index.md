@@ -5,6 +5,10 @@
 
 ## Status and deadlines
 
+### Is the DPDP Act the same as the DPDPA?
+
+Yes. DPDP Act and DPDPA are both short forms of the Digital Personal Data Protection Act, 2023 (Act No. 22 of 2023). The DPDP Rules, 2025 are the separate rules notified under it.
+
 ### Is the DPDP Act in force?
 
 Partly. The Act received Presidential assent on 11 August 2023, but section 1(2) permits staggered commencement. Data Protection Board machinery has been live since 14 November 2025. Consent Manager rules commence 14 November 2026. The substantive obligations on businesses, covering notice, security, breach reporting, retention, children's data and rights, commence on 14 May 2027.

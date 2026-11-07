@@ -29,7 +29,7 @@ get the section number back.
 > Full terms in [DISCLAIMER.md](DISCLAIMER.md).
 
 A complete, verbatim, section-by-section reference for the **Digital Personal Data Protection Act,
-2023** (Act 22 of 2023) and the **Digital Personal Data Protection Rules, 2025**, packaged as an
+2023** (DPDP Act or DPDPA, Act 22 of 2023) and the **Digital Personal Data Protection Rules, 2025**, packaged as an
 installable **Claude Code skill** that analyses privacy notices, consent flows, vendor contracts and
 whole products against Indian data protection law.
 
@@ -328,7 +328,7 @@ Rules, 2025 are Government of India works, reproduced under s.52(1)(q) of the Co
 
 ---
 
-**Keywords:** DPDP Act 2023, Digital Personal Data Protection Act India, DPDP Rules 2025, Indian data
+**Keywords:** DPDP Act 2023, DPDPA, Digital Personal Data Protection Act India, DPDP Rules 2025, Indian data
 protection law, DPDP compliance checklist, Data Protection Board of India, Significant Data
 Fiduciary, Data Fiduciary obligations, Data Principal rights, DPDP penalties, DPDP vs GDPR, India
 privacy law, personal data breach notification India, verifiable parental consent India, consent

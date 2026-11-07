@@ -83,6 +83,10 @@ The Act only applies to personal data in digital form, or collected on paper and
 
 > "digital personal data" means personal data in digital form (s.2(n), verbatim)
 
+## DPDPA (DPDP Act)
+
+Short form of the Digital Personal Data Protection Act, 2023, India's data protection law. DPDP Act and DPDPA mean the same statute; the DPDP Rules, 2025 are made under it (s.40).
+
 ## Eighth Schedule languages
 
 The 22 languages in the Eighth Schedule to the Constitution. Notice and the consent request must be available in English or any of them, at the Data Principal's option (s.5(3), s.6(3)).
