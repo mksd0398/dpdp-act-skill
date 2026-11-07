@@ -1,6 +1,6 @@
 # Does the DPDP Act apply to CCTV cameras in my office, shop or housing society?
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/answers/does-the-dpdp-act-apply-to-cctv-cameras-in-my-office-shop-or-society/
+> Canonical page: https://dpdp.mksdcommerce.com/answers/does-the-dpdp-act-apply-to-cctv-cameras-in-my-office-shop-or-society/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 # Does the DPDP Act apply to CCTV cameras in my office, shop or housing society?

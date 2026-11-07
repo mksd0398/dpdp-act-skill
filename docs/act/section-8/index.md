@@ -1,6 +1,6 @@
 # Section 8 DPDP Act 2023: General obligations of Data Fiduciary
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/act/section-8/
+> Canonical page: https://dpdp.mksdcommerce.com/act/section-8/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 **CHAPTER II: OBLIGATIONS OF DATA FIDUCIARY.** The Digital Personal Data Protection Act, 2023 (Act 22 of 2023), section 8. Verbatim from the Gazette of India.

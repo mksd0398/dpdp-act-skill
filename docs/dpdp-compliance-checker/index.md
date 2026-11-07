@@ -1,6 +1,6 @@
 # DPDP compliance checker: free readiness self-check
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/dpdp-compliance-checker/
+> Canonical page: https://dpdp.mksdcommerce.com/dpdp-compliance-checker/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 A free, browser-only readiness self-check for India's DPDP Act 2023 and DPDP Rules 2025. Nothing is sent anywhere. It scores readiness and ranks gaps by the Schedule penalty ceiling behind each one. Not legal advice.

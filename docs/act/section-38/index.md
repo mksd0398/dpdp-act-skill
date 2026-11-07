@@ -1,6 +1,6 @@
 # Section 38 DPDP Act 2023: Consistency with other laws
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/act/section-38/
+> Canonical page: https://dpdp.mksdcommerce.com/act/section-38/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 **CHAPTER IX: MISCELLANEOUS.** The Digital Personal Data Protection Act, 2023 (Act 22 of 2023), section 38. Verbatim from the Gazette of India.

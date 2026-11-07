@@ -1,6 +1,6 @@
 # DPDP Act penalties: the full Schedule, up to Rs 250 crore
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/penalties/
+> Canonical page: https://dpdp.mksdcommerce.com/penalties/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 Every figure is a ceiling ("may extend to"), imposed only if the Data Protection Board finds the breach "significant" (s.33(1)).

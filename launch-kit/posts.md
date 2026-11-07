@@ -4,10 +4,10 @@ These are drafts. Rewrite them in your own voice before posting. Every one says 
 and none asks for upvotes, which is against the rules on Hacker News, Reddit and Product Hunt.
 
 Links used throughout:
-- Site: https://mksd0398.github.io/dpdp-act-skill/
-- Skill page: https://mksd0398.github.io/dpdp-act-skill/claude-code-skill/
+- Site: https://dpdp.mksdcommerce.com/
+- Skill page: https://dpdp.mksdcommerce.com/claude-code-skill/
 - Repository: https://github.com/mksd0398/dpdp-act-skill
-- Checklist: https://mksd0398.github.io/dpdp-act-skill/compliance-checklist/
+- Checklist: https://dpdp.mksdcommerce.com/compliance-checklist/
 
 ---
 
@@ -39,7 +39,7 @@ verbatim text, check commencement before calling anything binding, and never imp
 concepts.
 
 The same Markdown builds a static site with the Act section by section:
-https://mksd0398.github.io/dpdp-act-skill/
+https://dpdp.mksdcommerce.com/
 
 I'm not a lawyer and this is not legal advice. What I would value most is corrections: if you know
 the Act or the Rules and spot something wrong, please open an issue.
@@ -84,7 +84,7 @@ Board and users, and by when?"
 
 It also works in Claude.ai: upload the ZIP from the site.
 
-Site with the Act section by section: https://mksd0398.github.io/dpdp-act-skill/
+Site with the Act section by section: https://dpdp.mksdcommerce.com/
 Repo: https://github.com/mksd0398/dpdp-act-skill
 
 Not legal advice, and I'm not a lawyer. Corrections are very welcome.
@@ -134,7 +134,7 @@ retention and erasure, and children's data.
 
 I put together a free reference with the full Act verbatim, section by section. It also has the
 Rules, a 78-point compliance checklist with every item tied to a section, a glossary and an FAQ:
-https://mksd0398.github.io/dpdp-act-skill/
+https://dpdp.mksdcommerce.com/
 
 There's also an open-source Claude Code skill that audits a privacy notice, consent flow or
 codebase against the Act and cites the section for every finding. It also installs into
@@ -180,12 +180,12 @@ the Act actually says:
 
 I've published the full Act, verbatim and section by section, with the Rules, a 78-point
 compliance checklist, a glossary and an FAQ, free:
-https://mksd0398.github.io/dpdp-act-skill/
+https://dpdp.mksdcommerce.com/
 
 And because general AI keeps importing GDPR into Indian law, I packaged it as an open-source
 skill for Claude Code. It reviews privacy notices, consent flows and vendor contracts, and
 cites the section for every claim:
-https://mksd0398.github.io/dpdp-act-skill/claude-code-skill/
+https://dpdp.mksdcommerce.com/claude-code-skill/
 
 Not legal advice. I'm not a lawyer, and I'd genuinely welcome corrections from privacy
 practitioners.
@@ -217,7 +217,7 @@ I built a free Claude Code skill that answers from the verbatim Act and cites th
 Also works in Claude.ai, Copilot, Gemini CLI and Codex.
 
 7/ The full Act section by section, the Rules, a 78-point checklist and an FAQ:
-https://mksd0398.github.io/dpdp-act-skill/
+https://dpdp.mksdcommerce.com/
 
 Not legal advice. Corrections welcome.
 ```
@@ -231,7 +231,7 @@ products; ask for feedback, never upvotes.
 
 - **Name:** DPDP Act Skill
 - **Tagline** (60-character limit): `Ask AI about India's privacy law, get the section back`
-- **Link:** https://mksd0398.github.io/dpdp-act-skill/claude-code-skill/
+- **Link:** https://dpdp.mksdcommerce.com/claude-code-skill/
 - **Topics:** Legal, Privacy, Developer Tools, Artificial Intelligence, Open Source
 - **Gallery:** `tools/static/assets/og.jpg`, plus screenshots of the home page, a section page,
   the checklist and a real Claude Code answer.
@@ -318,7 +318,7 @@ Then ask "Is this privacy policy DPDP compliant?" or point it at your signup flo
 in Claude.ai, GitHub Copilot, Gemini CLI and Codex, because it uses the open Agent Skills format.
 
 The same Markdown builds a free reference site with the Act section by section, the Rules, the
-checklist, a glossary and an FAQ: https://mksd0398.github.io/dpdp-act-skill/
+checklist, a glossary and an FAQ: https://dpdp.mksdcommerce.com/
 
 *This is not legal advice, and I'm not a lawyer. If you find an error, please open an issue on
 [GitHub](https://github.com/mksd0398/dpdp-act-skill).*
@@ -346,7 +346,7 @@ reviews privacy notices, consent flows and vendor contracts against the Act and 
 section or rule for every claim. It's built because general AI models routinely answer Indian
 privacy questions with GDPR concepts the DPDP Act doesn't contain.
 
-Site: https://mksd0398.github.io/dpdp-act-skill/
+Site: https://dpdp.mksdcommerce.com/
 Code: https://github.com/mksd0398/dpdp-act-skill
 
 Happy to share examples or talk through what AI tools get wrong about the Act. It is an
@@ -371,5 +371,5 @@ misreadings in `doctrine.md` section 13. Mention the resource in your author bio
 ```
 Free, open-source DPDP Act 2023 reference: the full Act section by section, Rules 2025, a 78-point
 compliance checklist, FAQ. There's also an AI skill for Claude that cites the section for every
-answer. https://mksd0398.github.io/dpdp-act-skill/ (not legal advice)
+answer. https://dpdp.mksdcommerce.com/ (not legal advice)
 ```

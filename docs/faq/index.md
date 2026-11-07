@@ -1,9 +1,13 @@
 # DPDP Act 2023 FAQ: deadline, penalties, DPO, consent, breach reporting
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/faq/
+> Canonical page: https://dpdp.mksdcommerce.com/faq/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 ## Status and deadlines
+
+### Is the DPDP Act the same as the DPDPA?
+
+Yes. DPDP Act and DPDPA are both short forms of the Digital Personal Data Protection Act, 2023 (Act No. 22 of 2023). The DPDP Rules, 2025 are the separate rules notified under it.
 
 ### Is the DPDP Act in force?
 

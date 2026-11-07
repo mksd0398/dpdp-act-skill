@@ -1,6 +1,6 @@
 # Section 32 DPDP Act 2023: Voluntary undertaking (full text)
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/act/section-32/
+> Canonical page: https://dpdp.mksdcommerce.com/act/section-32/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 **CHAPTER VII: APPEAL AND ALTERNATE DISPUTE RESOLUTION.** The Digital Personal Data Protection Act, 2023 (Act 22 of 2023), section 32. Verbatim from the Gazette of India.

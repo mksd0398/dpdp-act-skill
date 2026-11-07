@@ -1,6 +1,6 @@
 # Section 4 DPDP Act 2023: Grounds for processing personal data
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/act/section-4/
+> Canonical page: https://dpdp.mksdcommerce.com/act/section-4/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 **CHAPTER II: OBLIGATIONS OF DATA FIDUCIARY.** The Digital Personal Data Protection Act, 2023 (Act 22 of 2023), section 4. Verbatim from the Gazette of India.

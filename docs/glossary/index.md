@@ -1,6 +1,6 @@
 # DPDP Act glossary: Data Fiduciary, Data Principal and more
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/glossary/
+> Canonical page: https://dpdp.mksdcommerce.com/glossary/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 ## Appellate Tribunal
@@ -82,6 +82,10 @@ Required only for notified Significant Data Fiduciaries, and must be based in In
 The Act only applies to personal data in digital form, or collected on paper and digitised later (s.3(a)).
 
 > "digital personal data" means personal data in digital form (s.2(n), verbatim)
+
+## DPDPA (DPDP Act)
+
+Short form of the Digital Personal Data Protection Act, 2023, India's data protection law. DPDP Act and DPDPA mean the same statute; the DPDP Rules, 2025 are made under it (s.40).
 
 ## Eighth Schedule languages
 

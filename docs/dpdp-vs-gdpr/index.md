@@ -1,6 +1,6 @@
 # DPDP Act vs GDPR: 17 differences that change your compliance programme
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/dpdp-vs-gdpr/
+> Canonical page: https://dpdp.mksdcommerce.com/dpdp-vs-gdpr/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 The DPDP Act is consent-heavy, rights-light, State-friendly, and has no sensitive-data tier.

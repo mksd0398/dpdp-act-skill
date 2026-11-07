@@ -1,6 +1,6 @@
 # DPDP Act 2023 full text, Rules 2025 and compliance checklist
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/
+> Canonical page: https://dpdp.mksdcommerce.com/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 Free reference for India's Digital Personal Data Protection Act, 2023 (Act No. 22 of 2023) and the DPDP Rules, 2025.
@@ -29,5 +29,5 @@ Free reference for India's Digital Personal Data Protection Act, 2023 (Act No. 2
 
 ## Tools
 
-- Readiness self-check: https://mksd0398.github.io/dpdp-act-skill/dpdp-compliance-checker/
-- Free Claude Code skill that answers from this text and cites every section: https://mksd0398.github.io/dpdp-act-skill/claude-code-skill/
+- Readiness self-check: https://dpdp.mksdcommerce.com/dpdp-compliance-checker/
+- Free Claude Code skill that answers from this text and cites every section: https://dpdp.mksdcommerce.com/claude-code-skill/

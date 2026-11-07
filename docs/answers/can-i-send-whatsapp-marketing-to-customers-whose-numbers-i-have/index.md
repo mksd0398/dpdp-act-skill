@@ -1,6 +1,6 @@
 # Can I send WhatsApp marketing messages to customers whose numbers I already have?
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/answers/can-i-send-whatsapp-marketing-to-customers-whose-numbers-i-have/
+> Canonical page: https://dpdp.mksdcommerce.com/answers/can-i-send-whatsapp-marketing-to-customers-whose-numbers-i-have/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 # Can I send WhatsApp marketing messages to customers whose numbers I already have?

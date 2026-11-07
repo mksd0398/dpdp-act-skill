@@ -1,6 +1,6 @@
 # Does an NGO or charitable trust need verifiable parental consent to collect student data?
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/answers/does-an-ngo-or-trust-need-verifiable-parental-consent-for-student-data/
+> Canonical page: https://dpdp.mksdcommerce.com/answers/does-an-ngo-or-trust-need-verifiable-parental-consent-for-student-data/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 # Does an NGO or charitable trust need verifiable parental consent to collect student data?

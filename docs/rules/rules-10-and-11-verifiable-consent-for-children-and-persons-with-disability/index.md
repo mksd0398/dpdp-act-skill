@@ -1,6 +1,6 @@
 # DPDP Rules 2025, Rules 10 and 11: verifiable parental consent
 
-> Canonical page: https://mksd0398.github.io/dpdp-act-skill/rules/rules-10-and-11-verifiable-consent-for-children-and-persons-with-disability/
+> Canonical page: https://dpdp.mksdcommerce.com/rules/rules-10-and-11-verifiable-consent-for-children-and-persons-with-disability/
 > Not legal advice. Educational compliance reference only; no lawyer-client relationship arises from its use and the author is not a lawyer. Verify statutory text against the Gazette of India and consult qualified Indian legal counsel before acting.
 
 Digital Personal Data Protection Rules, 2025. Secondary-sourced from the PIB release and cross-checked sources; verify against the notified Gazette text before external use.
